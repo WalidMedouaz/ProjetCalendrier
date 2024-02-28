@@ -8,11 +8,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ParserTest {
-    Calendar myCalendar;
-    public static void main(String[] args) throws IOException, ParseException {
+    public CalendarCERI getCalendarHeader() throws IOException, ParseException {
         Date startDate = null;
         Date endDate = null;
-        String course;
+        String course = null;
 
         final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def50200c81a68c12a4acc32822b8773e379ac7b489b9799138dbeba79f24e4a65fbdc51ed192440883a797fb60703bff239a539c87f12da5dca57b5336934b6055684e40cf673254768cdbd863aaf704cd3a6ab75233190";
         //final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def50200c7a4509b49242abad75bde9ec3807bc263605e824b95746d79d9f00dfb38346170d195fee1497b1118633b26af8a114f467cb4606a93a4fcdf0bb2cae2ca80d69aeeabea553382292598c6ae151b3d1855e49c2583691d409bd8a1ade68675fa30550f78673b771bb9b0e6ea59c55bd4ad31f2b82c358a5702e8cb68dbca31eda4ce337a6df2dcf202ed32";
@@ -54,18 +53,59 @@ public class ParserTest {
                     else {
                         course = inputLine.substring(inputLine.indexOf("<") + 1, inputLine.indexOf(">"));
                     }
-                    System.out.println(course);
                 }
-            }
-            while ((inputLine = in.readLine()) != null) {
-                if(inputLine.contains("END:VEVENT")) {
-                    break;
-                }
-                //else if(inputLine.contains("END:VEVENT"))
-                //System.out.println(inputLine);
             }
             in.close();
+            return new CalendarCERI(startDate, endDate, course);
+        }
+        else {
+            System.out.println("GET request didn't work");
+        }
+        return null;
+    }
 
+    public void getCalendarEvents(CalendarCERI calendarCERI) throws IOException, ParseException {
+        final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def50200c81a68c12a4acc32822b8773e379ac7b489b9799138dbeba79f24e4a65fbdc51ed192440883a797fb60703bff239a539c87f12da5dca57b5336934b6055684e40cf673254768cdbd863aaf704cd3a6ab75233190";
+        //final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def50200c7a4509b49242abad75bde9ec3807bc263605e824b95746d79d9f00dfb38346170d195fee1497b1118633b26af8a114f467cb4606a93a4fcdf0bb2cae2ca80d69aeeabea553382292598c6ae151b3d1855e49c2583691d409bd8a1ade68675fa30550f78673b771bb9b0e6ea59c55bd4ad31f2b82c358a5702e8cb68dbca31eda4ce337a6df2dcf202ed32";
+        URL url = new URL(QUERY_URL);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        int responseCode = conn.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String inputLine;
+
+            while ((inputLine = in.readLine()) != null) {
+                if(inputLine.contains("BEGIN:VEVENT")) {
+                     Date startDate;
+                     Date endDate;
+                     String location;
+
+                     String subject;
+                     String teacher;
+                     String classroom;
+                     while(!(inputLine = in.readLine()).contains("END:VEVENT")) {
+                        if(inputLine.contains("DTSTART") && !inputLine.contains("VALUE")) {
+                            String myTimestamp = inputLine.substring(8, inputLine.length() - 1);
+                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+                            startDate = dateFormat.parse(myTimestamp);
+                        }
+                        else if(inputLine.contains("DTEND") && !inputLine.contains("VALUE")) {
+                            String myTimestamp = inputLine.substring(6, inputLine.length() - 1);
+                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+                            endDate = dateFormat.parse(myTimestamp);
+                        }
+                        else if(inputLine.contains("LOCATION")) {
+                            location = inputLine.substring(inputLine.indexOf(":") + 1).replace("\\", "");
+                        }
+                        else if(inputLine.contains("SUMMARY") && inputLine.contains("-")) {
+                            subject = inputLine.substring(inputLine.indexOf(":") + 1, inputLine.indexOf("-"));
+                        }
+                     }
+
+                }
+            }
+            in.close();
         }
         else {
             System.out.println("GET request didn't work");
