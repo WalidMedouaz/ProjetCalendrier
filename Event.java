@@ -5,14 +5,16 @@ public class Event {
     private Date endDate;
     private String teacher;
     private String location;
-    private String classroom;
     private String subject;
-    public Event(Date startDate, Date endDate, String teacher, String location, String classroom) {
+    private String type;
+
+    public Event(Date startDate, Date endDate, String teacher, String location, String subject, String type) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.teacher = teacher;
         this.location = location;
-        this.classroom = classroom;
+        this.subject = subject;
+        this.type = type;
     }
 
     public Date getStartDate() {
@@ -31,11 +33,12 @@ public class Event {
         return location;
     }
 
-    public String getClassroom() {
-        return classroom;
-    }
     public String getSubject() {
         return subject;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public void setStartDate(Date startDate) {
@@ -54,11 +57,21 @@ public class Event {
         this.location = location;
     }
 
-    public void setClassroom(String classroom) {
-        this.classroom = classroom;
-    }
-
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Start date : " + startDate + "\n" +
+                "End date : " + endDate + "\n" +
+                "Teacher : " + teacher + "\n" +
+                "Location : " + location + "\n" +
+                "Subject : " + subject + "\n" +
+                "Type : " + type;
     }
 }

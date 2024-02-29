@@ -6,6 +6,7 @@ import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class ParserTest {
     public CalendarCERI getCalendarHeader() throws IOException, ParseException {
@@ -27,6 +28,7 @@ public class ParserTest {
                 if(inputLine.contains("X-CALSTART")) { // date de début du calendrier
                     String myTimestamp = inputLine.substring(11, inputLine.length() - 1); // on isole la date
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss"); // le format de la date en "timestamp"
+                    dateFormat.setTimeZone(TimeZone.getTimeZone("UTC")); // Date récupérée en UTC +0 (London)
                     startDate = dateFormat.parse(myTimestamp);
 
                     /* Affichage propre de la date
@@ -39,6 +41,7 @@ public class ParserTest {
                 else if(inputLine.contains("X-CALEND")) { // date de fin du calendrier
                     String myTimestamp = inputLine.substring(9, inputLine.length() - 1);
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+                    dateFormat.setTimeZone(TimeZone.getTimeZone("UTC")); // Date récupérée en UTC +0 (London)
                     endDate = dateFormat.parse(myTimestamp);
                 }
                 else if(inputLine.contains("X-WR-CALNAME")) { // nom de la formation
@@ -73,39 +76,77 @@ public class ParserTest {
         int responseCode = conn.getResponseCode();
         if (responseCode == HttpURLConnection.HTTP_OK) {
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String inputLine;
+            String inputLine = in.readLine();
 
-            while ((inputLine = in.readLine()) != null) {
+            while ((inputLine != null)) {
                 if(inputLine.contains("BEGIN:VEVENT")) {
-                     Date startDate;
-                     Date endDate;
-                     String location;
+                     Date startDate = null;
+                     Date endDate = null;
+                     String location = null;
 
-                     String subject;
-                     String teacher;
-                     String classroom;
-                     while(!(inputLine = in.readLine()).contains("END:VEVENT")) {
-                        if(inputLine.contains("DTSTART") && !inputLine.contains("VALUE")) {
+                     String subject = null;
+                     String teacher = null;
+                     String type = null;
+
+                     while(!(inputLine.contains("END:VEVENT"))) {
+                         if(inputLine.contains("DTSTART") && !inputLine.contains("VALUE")) {
                             String myTimestamp = inputLine.substring(8, inputLine.length() - 1);
                             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+                            dateFormat.setTimeZone(TimeZone.getTimeZone("UTC")); // Date récupérée en UTC +0 (London)
                             startDate = dateFormat.parse(myTimestamp);
+                            inputLine = in.readLine();
                         }
                         else if(inputLine.contains("DTEND") && !inputLine.contains("VALUE")) {
                             String myTimestamp = inputLine.substring(6, inputLine.length() - 1);
                             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+                            dateFormat.setTimeZone(TimeZone.getTimeZone("UTC")); // Date récupérée en UTC +0 (London)
                             endDate = dateFormat.parse(myTimestamp);
+                            inputLine = in.readLine();
                         }
                         else if(inputLine.contains("LOCATION")) {
-                            location = inputLine.substring(inputLine.indexOf(":") + 1).replace("\\", "");
+                            String fullLocationLine = inputLine; // Si représenté sur plusieurs lignes
+                            while(!(inputLine = in.readLine()).contains("DESCRIPTION")) {
+                                fullLocationLine += inputLine;
+                            }
+                            location = fullLocationLine.substring(fullLocationLine.indexOf(":") + 1).replace("\\", "");
                         }
-                        else if(inputLine.contains("SUMMARY") && inputLine.contains("-")) {
-                            subject = inputLine.substring(inputLine.indexOf(":") + 1, inputLine.indexOf("-"));
+                        else if(inputLine.contains("SUMMARY")) {
+                            if(!(inputLine.contains("-"))) { // Jours feriés
+                                subject = inputLine.substring(inputLine.indexOf(":") + 1);
+                            }
+                            inputLine = in.readLine();
+                        }
+                        else if (inputLine.contains("DESCRIPTION")) {
+                            String fullDescriptionLine = inputLine;
+                            while (!(inputLine = in.readLine()).contains("X-ALT-DESC")) {
+                                fullDescriptionLine += inputLine.substring(1); // Le premier charactère d'une nouvelle ligne est toujours un espace
+                            }
+                            subject = fullDescriptionLine.substring(fullDescriptionLine.indexOf("Matière :") + 10, fullDescriptionLine.indexOf("\\n"));
+                            int teacherIndex = fullDescriptionLine.indexOf("Enseignant");
+                            if(teacherIndex != -1) { // Si la liste d'enseignants est renseignée
+                                if(fullDescriptionLine.contains("Enseignants")) {
+                                    teacher = fullDescriptionLine.substring(teacherIndex + 14, fullDescriptionLine.indexOf("\\n", teacherIndex)).replace("\\", "");
+                                }
+                                else {
+                                    teacher = fullDescriptionLine.substring(teacherIndex + 13, fullDescriptionLine.indexOf("\\n", teacherIndex)).replace("\\", "");
+                                }
+                            }
+                            int typeIndex = fullDescriptionLine.indexOf("Type");
+                            if(typeIndex != -1) {
+                                type = fullDescriptionLine.substring(typeIndex + 7, fullDescriptionLine.indexOf("\\n", typeIndex));
+                            }
+                            inputLine = in.readLine();
+                        }
+                        else {
+                            inputLine = in.readLine();
                         }
                      }
-
+                     calendarCERI.getEvents().add(new Event(startDate, endDate, teacher, location, subject, type));
                 }
+                inputLine = in.readLine();
             }
             in.close();
+            System.out.println(calendarCERI.getEvents().get(200).toString());
         }
         else {
             System.out.println("GET request didn't work");
