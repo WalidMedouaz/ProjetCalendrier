@@ -1,0 +1,2600 @@
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29623-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-08T09:00:00
+End Time: 2023-11-08T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-18T07:59:12
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-31202-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-11T06:30:00
+End Time: 2023-10-11T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:08:04
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1 INGE
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54266-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-05T10:30:00
+End Time: 2024-02-05T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-18T09:40:52
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-20588-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-09T10:30:00
+End Time: 2024-01-09T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:40
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis - M1-IA-I
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-80070-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-07T12:00:00
+End Time: 2023-11-07T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-12T07:59:42
+
+Summary: LANGUAGE=fr:UE PROJET 2 - HADDAD Majed\, VERNET Mathilde - M1-IA-IL
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UE PROJET 2\nEnseignants : HADDAD Majed\,
+Categories: HYPERPLANNING
+UID: Cours-79616-42-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-12T06:30:00
+End Time: 2024-04-12T08:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-09T07:35:10
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-31918-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-14T15:00:00
+End Time: 2023-12-14T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:41:29
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - PELERIN Aurelien - M1-I
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5526-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-13T06:30:00
+End Time: 2023-10-13T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:56:08
+
+Summary: LANGUAGE=fr:Rentree specifique - BENSLIMANE Abderrahim\, LABATUT Vi
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : Rentree specifique\nEnseignants : BENSLIM
+Categories: HYPERPLANNING
+UID: Cours-2643-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-11T08:00:00
+End Time: 2023-09-11T09:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-08-29T10:47:26
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29623-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-18T08:00:00
+End Time: 2023-10-18T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-18T07:59:12
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-30340-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-14T12:00:00
+End Time: 2023-12-14T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:41:29
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-IA-IL-A
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5239-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-12T15:00:00
+End Time: 2024-01-12T16:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-18T07:58:36
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-ILSEN-
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-44246-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-16T15:00:00
+End Time: 2023-11-16T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-03T13:31:54
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53943-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-23T13:30:00
+End Time: 2024-02-23T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:49:20
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5161-22-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-20T07:30:00
+End Time: 2023-11-20T09:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-27T06:32:26
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-ILSEN-
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-5336-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-19T08:00:00
+End Time: 2023-09-19T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:18:08
+
+Summary: LANGUAGE=fr:UCE 2 INSERTION PROFESSIONNEL - BROCHARD Marc - M1-IA-I
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 INSERTION PROFESSIONNEL\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5716-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-05T09:00:00
+End Time: 2023-12-05T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-20T12:31:22
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne\, JABAIAN
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignants : FR
+Categories: HYPERPLANNING
+UID: Cours-5006-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-08T12:00:00
+End Time: 2024-01-08T13:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - JABAIAN Bassam - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : JAB
+Categories: HYPERPLANNING
+UID: Cours-5024-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-21T06:30:00
+End Time: 2023-09-21T08:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53582-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-20T09:00:00
+End Time: 2024-03-20T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:33:59
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5137-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-13T09:30:00
+End Time: 2023-10-13T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:13:15
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-cla-Gr1\
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-53471-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-16T07:30:00
+End Time: 2024-02-16T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-16T12:07:22
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-alt-GR1\
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-73702-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-17T07:30:00
+End Time: 2024-02-17T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T13:27:45
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-31632-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-06T15:00:00
+End Time: 2023-12-06T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:39:52
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - LABRAK Yanis - M1-ILSEN-cla-Gr1 -
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : LABRAK Y
+Categories: HYPERPLANNING
+UID: Cours-40486-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-04T13:30:00
+End Time: 2023-12-04T16:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-22T07:18:02
+
+Summary: LANGUAGE=fr:UE PROJET 2 - HADDAD Majed\, VERNET Mathilde - M1-IA-IL
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UE PROJET 2\nEnseignants : HADDAD Majed\,
+Categories: HYPERPLANNING
+UID: Cours-53238-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-22T08:00:00
+End Time: 2024-03-22T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-09T07:35:06
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53887-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-26T12:00:00
+End Time: 2024-03-26T13:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-15T07:13:39
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 5 = Info - C 130
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53880-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-13T13:30:00
+End Time: 2024-03-13T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:37:47
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53628-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-05T16:30:00
+End Time: 2024-02-05T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:36:49
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - HADDAD Majed\, LEFEVRE Fab
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignants :
+Categories: HYPERPLANNING
+UID: Cours-54285-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-14T15:00:00
+End Time: 2024-03-14T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-19T07:39:19
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-31239-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-20T12:00:00
+End Time: 2023-12-20T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:42:36
+
+Summary: LANGUAGE=fr:UCE 2 INSERTION PROFESSIONNEL - BROCHARD Marc - M1-IA-I
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 INSERTION PROFESSIONNEL\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-33494-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-22T15:00:00
+End Time: 2023-12-22T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-08-21T06:56:01
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1 INGE
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54324-43-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-17T15:30:00
+End Time: 2024-04-17T17:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-18T13:46:31
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53797-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-12T13:30:00
+End Time: 2024-03-12T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-13T12:01:16
+
+Summary: LANGUAGE=fr:UCE 1 PROJET - HADDAD Majed\, VERNET Mathilde - M1-IA-I
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 PROJET\nEnseignants : HADDAD Majed\
+Categories: HYPERPLANNING
+UID: Cours-5684-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-16T09:00:00
+End Time: 2023-11-16T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-12T07:48:24
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-5846-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-04T07:30:00
+End Time: 2023-12-04T09:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-IA-IL
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53899-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-02T09:00:00
+End Time: 2024-02-02T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:49:20
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53503-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-07T12:00:00
+End Time: 2024-03-07T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-30T10:14:28
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-ILSEN-cla-
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53314-42-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-08T06:30:00
+End Time: 2024-04-08T08:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:25:26
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53514-41-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-04T08:00:00
+End Time: 2024-04-04T11:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:00:57
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-alt-GR1\
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-73701-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-29T07:30:00
+End Time: 2024-01-29T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T13:33:30
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-4984-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-21T16:30:00
+End Time: 2023-12-21T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-11-13T06:50:49
+
+Summary: LANGUAGE=fr:Férié
+Location: 
+Description: 
+Categories: HYPERPLANNING
+UID: Ferie-89-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-20T00:00:00
+End Time: 2024-05-21T00:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-42527-22-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-23T15:00:00
+End Time: 2023-11-23T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-27T08:18:21
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53813-46-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-07T12:30:00
+End Time: 2024-05-07T14:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:14:22
+
+Summary: LANGUAGE=fr:Reservation de salles - BEILLON Jennifer\, HUET Stephan
+Location: LANGUAGE=fr:Amphi Ada\, Amphi Blaise\, S1 = C 042 Nodes\, S2 = C 0
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignants : BEIL
+Categories: HYPERPLANNING
+UID: Cours-40436-47-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-14T06:00:00
+End Time: 2024-05-14T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:50:44
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-ILSEN-cla-
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53317-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-04T07:30:00
+End Time: 2024-03-04T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T12:06:30
+
+Summary: LANGUAGE=fr:Reservation de salles - BENSLIMANE Abderrahim\, FIGUEIR
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignants : BENS
+Categories: HYPERPLANNING
+UID: Cours-2653-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-20T15:30:00
+End Time: 2023-10-20T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-02T08:52:18
+
+Summary: LANGUAGE=fr:Férié
+Location: 
+Description: 
+Categories: HYPERPLANNING
+UID: Ferie-85-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-25T00:00:00
+End Time: 2023-12-26T00:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-37759-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-22T13:30:00
+End Time: 2023-12-22T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:45:26
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:CERI\, Stat 2 = Info - C 136\, Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-33514-22-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-24T09:00:00
+End Time: 2023-11-24T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-21T06:49:54
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis - M1-IA-I
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-35391-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-17T14:00:00
+End Time: 2023-10-17T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-IA-IL-C
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-62806-30-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-17T07:30:00
+End Time: 2024-01-17T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-10T07:21:45
+
+Summary: LANGUAGE=fr:Reservation de salles - FREDOUILLE Corinne - IA-IL-ALT\
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignant : FREDO
+Categories: HYPERPLANNING
+UID: Cours-2644-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-11T07:00:00
+End Time: 2023-09-11T08:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-12T07:48:51
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53352-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-07T13:30:00
+End Time: 2024-02-07T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:36:54
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - LABRAK Yanis - M1-IA-IL
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5499-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-14T06:30:00
+End Time: 2023-09-14T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53945-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-04T15:00:00
+End Time: 2024-03-04T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:49:20
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53935-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-25T12:00:00
+End Time: 2024-03-25T13:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-23T14:12:58
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-ILSEN-
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-31240-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-21T14:00:00
+End Time: 2023-09-21T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:25:52
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-71329-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-19T10:30:00
+End Time: 2024-03-19T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-12-18T10:52:01
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53725-42-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-09T12:30:00
+End Time: 2024-04-09T14:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:46:49
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-ILSEN-
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-40501-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-11T14:00:00
+End Time: 2023-10-11T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-27T09:18:46
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 1 = Info - C 137\, Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-40488-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-12T12:00:00
+End Time: 2024-01-12T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:38:07
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53354-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-07T09:00:00
+End Time: 2024-02-07T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:36:59
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1 INGE
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54275-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-14T09:00:00
+End Time: 2024-02-14T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-18T09:40:52
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-31014-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-12T11:00:00
+End Time: 2023-09-12T12:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-11-14T08:48:34
+
+Summary: LANGUAGE=fr:Reservation de salles - FIGUEIREDO Rosa - L1 INFORMATIQ
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignant : FIGUE
+Categories: HYPERPLANNING
+UID: Cours-46640-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-16T12:00:00
+End Time: 2024-02-16T13:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-09T13:33:18
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE MSI - MARTIN Yannis - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat 8 = Info - C 127
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE MSI\nEnseignant : MA
+Categories: HYPERPLANNING
+UID: Cours-37512-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-15T07:30:00
+End Time: 2023-11-15T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:24:02
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne\, JABAIAN
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignants : FR
+Categories: HYPERPLANNING
+UID: Cours-5033-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-18T07:30:00
+End Time: 2023-12-18T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1 INGE
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53808-47-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-17T15:30:00
+End Time: 2024-05-17T17:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-30T07:36:03
+
+Summary: LANGUAGE=fr:UCE 2 INSERTION PROFESSIONNEL - BROCHARD Marc - M1-IA-I
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 INSERTION PROFESSIONNEL\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5689-22-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-20T09:00:00
+End Time: 2023-11-20T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-17T07:02:09
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-74215-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-20T16:30:00
+End Time: 2024-03-20T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-11T10:12:37
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53510-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-14T07:30:00
+End Time: 2024-03-14T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-13T08:30:33
+
+Summary: LANGUAGE=fr:Reservation de salles - M1 INGE DU LOGICIEL DE LA SOCIE
+Location: 
+Description: LANGUAGE=fr:Matière : Reservation de salles\nPromotions : M1 IN
+Categories: HYPERPLANNING
+UID: Cours-53592-43-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-19T06:00:00
+End Time: 2024-04-19T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:43:15
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne\, JABAIAN
+Location: LANGUAGE=fr:Stat 5 = Info - C 130
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignants : FR
+Categories: HYPERPLANNING
+UID: Cours-5845-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-10T12:30:00
+End Time: 2023-10-10T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - LABRAK Yanis - M1-ILSEN-cla-Gr1 -
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : LABRAK Y
+Categories: HYPERPLANNING
+UID: Cours-40519-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-17T09:00:00
+End Time: 2023-11-17T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-10T09:22:34
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-37892-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-16T13:30:00
+End Time: 2023-11-16T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:30:26
+
+Summary: LANGUAGE=fr:Reservation de salles - FIGUEIREDO Rosa\, VERNET Mathil
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignants : FIGU
+Categories: HYPERPLANNING
+UID: Cours-2652-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-10T14:00:00
+End Time: 2023-10-10T17:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis\, PUY CAZ
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5278-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-10T12:00:00
+End Time: 2024-01-10T13:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:16:50
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-42527-23-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-30T15:00:00
+End Time: 2023-11-30T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-27T08:18:21
+
+Summary: LANGUAGE=fr:Férié
+Location: 
+Description: 
+Categories: HYPERPLANNING
+UID: Ferie-84-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-01T00:00:00
+End Time: 2023-11-02T00:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis - M1-IA-I
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5241-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-21T08:00:00
+End Time: 2023-09-21T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:08
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-IA-IL-C
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-62801-30-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-16T12:00:00
+End Time: 2024-01-16T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-10T07:20:40
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-5005-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-09T06:30:00
+End Time: 2023-10-09T08:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53783-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-12T15:00:00
+End Time: 2024-03-12T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-13T12:01:20
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53695-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-13T07:30:00
+End Time: 2024-03-13T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:42:31
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-31263-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-08T12:00:00
+End Time: 2023-12-08T13:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:13:51
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-ILSEN-
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-5350-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-16T11:00:00
+End Time: 2023-10-16T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:18:08
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-IA-IL
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53898-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-30T09:00:00
+End Time: 2024-01-30T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T11:57:42
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53664-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-15T07:30:00
+End Time: 2024-02-15T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:38:27
+
+Summary: LANGUAGE=fr:UCE 1 PROJET - BENSLIMANE Abderrahim\, BONASTRE Jean-Fr
+Location: LANGUAGE=fr:AGRB020 ( HDMI )\, AGRB021 ( HDMI )\, AGRB022 ( HDMI )
+Description: LANGUAGE=fr:Matière : UCE 1 PROJET\nEnseignants : BENSLIMANE Ab
+Categories: HYPERPLANNING
+UID: Cours-44776-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-10T13:30:00
+End Time: 2024-01-10T17:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-11-23T13:12:50
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-IA-IL-C
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-75618-31-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-22T13:00:00
+End Time: 2024-01-22T16:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-18T07:10:42
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - NABITZ Sophie - M1-ILSEN-alt-GR1\, M
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : NABITZ Sop
+Categories: HYPERPLANNING
+UID: Cours-53401-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-14T07:30:00
+End Time: 2024-02-14T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T06:51:14
+
+Summary: LANGUAGE=fr:Reservation de salles - M1 INGE DU LOGICIEL DE LA SOCIE
+Location: 
+Description: LANGUAGE=fr:Matière : Reservation de salles\nPromotions : M1 IN
+Categories: HYPERPLANNING
+UID: Cours-53590-43-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-18T06:00:00
+End Time: 2024-04-18T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:37:38
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53731-43-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-17T08:00:00
+End Time: 2024-04-17T09:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:47:35
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-20569-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-09T15:00:00
+End Time: 2024-01-09T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-11-23T12:45:19
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53511-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-28T13:30:00
+End Time: 2024-03-28T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:00:43
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S7 = C 032
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53781-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-07T09:00:00
+End Time: 2024-03-07T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-30T10:14:17
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - NABITZ Sophie - M1-ILSEN-cla-Gr1\, M
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : NABITZ Sop
+Categories: HYPERPLANNING
+UID: Cours-53506-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-15T09:00:00
+End Time: 2024-02-15T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T06:59:17
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53517-41-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-04T12:30:00
+End Time: 2024-04-04T15:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:01:05
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53872-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-19T13:30:00
+End Time: 2024-03-19T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-15T07:14:39
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53761-43-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-16T15:30:00
+End Time: 2024-04-16T17:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T07:45:09
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-IA-IL-C
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-62797-30-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-15T07:30:00
+End Time: 2024-01-15T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-10T07:20:16
+
+Summary: LANGUAGE=fr:Férié
+Location: 
+Description: 
+Categories: HYPERPLANNING
+UID: Ferie-87-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-01T00:00:00
+End Time: 2024-05-02T00:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 1 = Info - C 137\, Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-33514-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-08T09:00:00
+End Time: 2023-12-08T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-21T06:49:54
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - CECILLON Noe - M1-IA-IL
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53843-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-09T07:30:00
+End Time: 2024-02-09T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-11T07:06:14
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-5500-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-21T12:30:00
+End Time: 2023-09-21T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53815-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-18T15:00:00
+End Time: 2024-03-18T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-31T12:57:17
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5157-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-11T09:00:00
+End Time: 2023-12-11T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:33:49
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE MSI - MARTIN Yannis - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE MSI\nEnseignant : MA
+Categories: HYPERPLANNING
+UID: Cours-35437-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-07T15:00:00
+End Time: 2023-11-07T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:51:44
+
+Summary: LANGUAGE=fr:Reservation de salles - BENSLIMANE Abderrahim\, ROUVIER
+Location: LANGUAGE=fr:S5 = C 024\, S6 = C 022
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignants : BENS
+Categories: HYPERPLANNING
+UID: Cours-30946-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-11T11:30:00
+End Time: 2023-09-11T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-09-11T07:39:53
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-63390-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-21T09:00:00
+End Time: 2024-03-21T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-13T08:30:33
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-5501-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-13T15:30:00
+End Time: 2023-09-13T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-IA-IL-ALT\
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53327-43-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-15T08:00:00
+End Time: 2024-04-15T09:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:26:03
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-5422-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-20T14:00:00
+End Time: 2023-09-20T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:08:03
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5131-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-18T08:00:00
+End Time: 2023-09-18T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:58:21
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54312-46-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-07T08:00:00
+End Time: 2024-05-07T11:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-18T10:51:28
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-69497-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-20T15:00:00
+End Time: 2023-12-20T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-05T12:11:55
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - PELERIN Aurelien - M1-I
+Location: LANGUAGE=fr:Stat 8 = Info - C 127
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-20601-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-09T12:30:00
+End Time: 2023-10-09T15:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:33:14
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-4992-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-12T06:30:00
+End Time: 2023-09-12T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-12T06:45:23
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice\, TORRES M
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignants :
+Categories: HYPERPLANNING
+UID: Cours-54278-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-06T13:30:00
+End Time: 2024-03-06T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-19T07:39:06
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - JABAIAN Bassam - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : JAB
+Categories: HYPERPLANNING
+UID: Cours-5024-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-16T07:30:00
+End Time: 2023-11-16T09:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-ILSEN-
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-5335-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-12T14:00:00
+End Time: 2023-10-12T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-28T12:55:32
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-63838-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-15T13:30:00
+End Time: 2023-12-15T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-14T08:50:07
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-ILSEN-
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-5352-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-06T07:30:00
+End Time: 2023-11-06T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:18:08
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE MSI - MARTIN Yannis - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE MSI\nEnseignant : MA
+Categories: HYPERPLANNING
+UID: Cours-5401-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-19T11:00:00
+End Time: 2023-10-19T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:22:25
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53351-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-31T13:30:00
+End Time: 2024-01-31T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:36:54
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5132-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-09T09:30:00
+End Time: 2023-10-09T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:19:14
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - PELERIN Aurelien - M1-I
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-6058-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-10T12:00:00
+End Time: 2023-11-10T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:57:08
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-5407-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-13T14:00:00
+End Time: 2023-09-13T15:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:08:03
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis - M1-IA-I
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-80070-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-14T12:00:00
+End Time: 2023-11-14T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-12T07:59:42
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-6059-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-19T14:00:00
+End Time: 2023-10-19T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:08:04
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - CARIAS Patrick - M1-IA-
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53841-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-13T12:00:00
+End Time: 2024-02-13T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-16T10:38:31
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-4896-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-07T07:30:00
+End Time: 2023-12-07T09:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:31:35
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53493-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-07T07:30:00
+End Time: 2024-03-07T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-30T10:14:28
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53817-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-27T07:30:00
+End Time: 2024-03-27T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:18:14
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53406-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-21T09:00:00
+End Time: 2024-02-21T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:46:30
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5262-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-16T10:30:00
+End Time: 2023-11-16T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53818-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-29T07:30:00
+End Time: 2024-03-29T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:18:19
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5127-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-12T15:30:00
+End Time: 2023-09-12T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:22:19
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5149-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-13T09:00:00
+End Time: 2023-11-13T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:59:33
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-ILSEN-cla-
+Location: LANGUAGE=fr:Stat 7 = Info - C 128
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53317-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-11T07:30:00
+End Time: 2024-03-11T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T12:06:30
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 1 = Info - C 137\, Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-33514-23-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-01T09:00:00
+End Time: 2023-12-01T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-21T06:49:54
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 6 = Info - C 129\, Stat 7 = Info - C 128
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-40496-22-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-21T09:00:00
+End Time: 2023-11-21T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-26T11:41:14
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1 INGE
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54267-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-30T13:30:00
+End Time: 2024-01-30T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-18T09:40:52
+
+Summary: LANGUAGE=fr:UCE 1 PROJET - HADDAD Majed\, VERNET Mathilde - M1-IA-I
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 1 PROJET\nEnseignants : HADDAD Majed\
+Categories: HYPERPLANNING
+UID: Cours-5686-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-19T08:00:00
+End Time: 2023-10-19T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-12T07:48:24
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53762-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-29T12:00:00
+End Time: 2024-01-29T13:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:02:03
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53800-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-21T07:30:00
+End Time: 2024-03-21T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T07:41:48
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53345-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-01T13:30:00
+End Time: 2024-02-01T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:36:31
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53871-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-12T13:30:00
+End Time: 2024-02-12T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-30T10:06:01
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE MSI - MARTIN Yannis - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE MSI\nEnseignant : MA
+Categories: HYPERPLANNING
+UID: Cours-56794-22-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-23T09:00:00
+End Time: 2023-11-23T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-07T07:26:06
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53364-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-08T13:30:00
+End Time: 2024-02-08T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:37:55
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53407-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-21T13:30:00
+End Time: 2024-02-21T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:46:32
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53340-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-07T16:30:00
+End Time: 2024-02-07T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:33:05
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - ROUVIER Mickael - M1-ILSEN-alt-GR1
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : ROUVIER
+Categories: HYPERPLANNING
+UID: Cours-5530-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-22T09:00:00
+End Time: 2023-12-22T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-01T07:00:09
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - LABRAK Yanis - M1-ILSEN-cla-Gr1 -
+Location: LANGUAGE=fr:Stat 8 = Info - C 127
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : LABRAK Y
+Categories: HYPERPLANNING
+UID: Cours-35448-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-20T06:30:00
+End Time: 2023-10-20T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-22T07:18:02
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-ILSEN-cla-
+Location: LANGUAGE=fr:Stat 8 = Info - C 127
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53317-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-12T07:30:00
+End Time: 2024-02-12T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T12:06:30
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53511-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-21T13:30:00
+End Time: 2024-03-21T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:00:43
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - LABRAK Yanis - M1-ILSEN-cla-Gr1 -
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : LABRAK Y
+Categories: HYPERPLANNING
+UID: Cours-40506-14-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-27T06:30:00
+End Time: 2023-09-27T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-22T07:18:37
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 1 = Info - C 137\, Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-7182-30-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-16T09:00:00
+End Time: 2024-01-16T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - LABRAK Yanis - M1-ILSEN-cla-Gr1 -
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : LABRAK Y
+Categories: HYPERPLANNING
+UID: Cours-40509-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-10T15:00:00
+End Time: 2023-11-10T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-22T07:18:02
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - CARIAS Patrick - M1-IA-
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53842-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-30T07:30:00
+End Time: 2024-01-30T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-16T10:41:17
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53782-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-05T15:00:00
+End Time: 2024-03-05T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T07:41:24
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1 INGE
+Location: LANGUAGE=fr:Stat 1 = Info - C 137\, Stat 2 = Info - C 136\, Stat 7
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54288-47-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-17T09:30:00
+End Time: 2024-05-17T11:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-18T10:52:15
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53812-47-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-16T08:00:00
+End Time: 2024-05-16T09:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:14:29
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29706-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-21T10:30:00
+End Time: 2023-12-21T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:16:50
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53875-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-19T07:30:00
+End Time: 2024-02-19T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T07:34:16
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53938-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-15T13:30:00
+End Time: 2024-02-15T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:49:20
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53344-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-01T09:00:00
+End Time: 2024-02-01T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:36:34
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53585-41-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-02T06:30:00
+End Time: 2024-04-02T09:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:17:22
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-alt-GR1\
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-73710-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-10T12:00:00
+End Time: 2024-02-10T13:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-29T11:11:24
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice\, TORRES M
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignants :
+Categories: HYPERPLANNING
+UID: Cours-54268-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-14T12:00:00
+End Time: 2024-02-14T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-08T15:47:39
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-38377-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-13T12:30:00
+End Time: 2023-09-13T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-07T06:28:15
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53341-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-08T07:30:00
+End Time: 2024-02-08T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:37:07
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53822-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-19T16:30:00
+End Time: 2024-03-19T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-11T10:12:26
+
+Summary: LANGUAGE=fr:UCE 3 APPLICATIONS ORIENTEES - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 3 APPLICATIONS ORIENTEES\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53514-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-28T09:00:00
+End Time: 2024-03-28T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T07:00:57
+
+Summary: LANGUAGE=fr:UE PROJET 2 - BENSLIMANE Abderrahim\, BONASTRE Jean-Fra
+Location: LANGUAGE=fr:S2 = C 040\, S3 = C 036\, S4 = C 034\, S7 = C 032
+Description: LANGUAGE=fr:Matière : UE PROJET 2\nEnseignants : BENSLIMANE Abd
+Categories: HYPERPLANNING
+UID: Cours-46766-52-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-06-19T06:30:00
+End Time: 2024-06-19T16:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-27T07:42:59
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53353-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-31T09:00:00
+End Time: 2024-01-31T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:36:59
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53776-42-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-12T14:00:00
+End Time: 2024-04-12T15:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:59:56
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53400-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-31T16:30:00
+End Time: 2024-01-31T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:44:44
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-ILSEN-
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-5451-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-08T12:00:00
+End Time: 2023-11-08T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-13T05:42:23
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-IA-IL-A
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5232-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-17T07:30:00
+End Time: 2023-11-17T09:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:16:28
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53362-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-08T09:00:00
+End Time: 2024-02-08T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:37:49
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53820-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-26T15:00:00
+End Time: 2024-03-26T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-11T10:13:00
+
+Summary: LANGUAGE=fr:UCE 1 SERVEURS D'APPLICATION - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 SERVEURS D'APPLICATION\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53339-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-01T16:30:00
+End Time: 2024-02-01T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:33:05
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-62796-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-08T09:00:00
+End Time: 2024-01-08T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-10T07:20:16
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-5005-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-18T06:30:00
+End Time: 2023-09-18T08:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - NABITZ Sophie - M1-ILSEN-cla-Gr1\, M
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : NABITZ Sop
+Categories: HYPERPLANNING
+UID: Cours-53412-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-22T13:30:00
+End Time: 2024-02-22T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:05:47
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-41766-14-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-27T11:00:00
+End Time: 2023-09-27T12:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-22T07:16:50
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5145-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-06T10:30:00
+End Time: 2023-11-06T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T13:19:33
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S7 = C 032
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-67783-23-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-01T07:30:00
+End Time: 2023-12-01T09:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-11-27T07:13:48
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - PELERIN Aurelien - M1-I
+Location: LANGUAGE=fr:Stat 8 = Info - C 127
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29646-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-12T11:00:00
+End Time: 2023-10-12T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:33:25
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 BIS = C 038
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53710-41-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-02T09:30:00
+End Time: 2024-04-02T11:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:45:48
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - LABRAK Yanis - M1-ILSEN-cla-Gr1 -
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : LABRAK Y
+Categories: HYPERPLANNING
+UID: Cours-40486-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-11T13:30:00
+End Time: 2023-12-11T16:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-22T07:18:02
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-4980-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-07T13:30:00
+End Time: 2023-12-07T16:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:40:04
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-39403-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-09T09:00:00
+End Time: 2023-11-09T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:31:35
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53780-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-21T07:30:00
+End Time: 2024-02-21T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:06:16
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53924-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-06T07:30:00
+End Time: 2024-02-06T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-11-24T08:04:42
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53778-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-07T07:30:00
+End Time: 2024-02-07T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:03:16
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5248-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-06T15:00:00
+End Time: 2023-11-06T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-4989-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-10T09:00:00
+End Time: 2024-01-10T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:31:35
+
+Summary: LANGUAGE=fr:Reservation de salles - BENSLIMANE Abderrahim\, COSTA J
+Location: LANGUAGE=fr:Amphi Ada\, Amphi Blaise\, S1 = C 042 Nodes\, S2 = C 0
+Description: LANGUAGE=fr:Matière : Reservation de salles\nEnseignants : BENS
+Categories: HYPERPLANNING
+UID: Cours-2658-29-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-11T07:00:00
+End Time: 2024-01-11T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-08-22T09:02:19
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5636-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-15T15:00:00
+End Time: 2023-11-15T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-31263-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-15T12:00:00
+End Time: 2023-12-15T13:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:13:51
+
+Summary: LANGUAGE=fr:UCE 1 VEILLE TECHNOLOGIQUE - LEFEVRE Fabrice - M1 INGE
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 VEILLE TECHNOLOGIQUE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-54317-47-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-16T14:00:00
+End Time: 2024-05-16T15:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-12-19T09:42:52
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-5302-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-14T11:00:00
+End Time: 2023-09-14T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:40
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis - M1-IA-I
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5271-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-12T09:00:00
+End Time: 2023-12-12T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5265-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-07T09:00:00
+End Time: 2023-12-07T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 1 PROJET - HADDAD Majed\, VERNET Mathilde - M1-IA-I
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 PROJET\nEnseignants : HADDAD Majed\
+Categories: HYPERPLANNING
+UID: Cours-5683-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-22T06:30:00
+End Time: 2023-09-22T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-12T07:48:24
+
+Summary: LANGUAGE=fr:UCE 3 URBANISATION - ROUVIER Mickael - M1-ILSEN-alt-GR1
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 3 URBANISATION\nEnseignant : ROUVIER
+Categories: HYPERPLANNING
+UID: Cours-5529-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-13T08:00:00
+End Time: 2023-09-13T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-01T07:09:08
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-4995-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-13T11:00:00
+End Time: 2023-09-13T12:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-13T11:11:39
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - FERREIRA Emmanuel - M1-IA-IL
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : FE
+Categories: HYPERPLANNING
+UID: Cours-53277-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-05T07:30:00
+End Time: 2024-02-05T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:20:36
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-cla-Gr1\
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-80843-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-23T07:30:00
+End Time: 2024-02-23T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-16T12:12:46
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1 INGE
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53809-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-22T13:30:00
+End Time: 2024-03-22T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:12:36
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-cla-Gr1\
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-80842-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-08T12:00:00
+End Time: 2024-03-08T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-16T12:12:46
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53813-45-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-30T12:30:00
+End Time: 2024-04-30T14:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:14:22
+
+Summary: LANGUAGE=fr:Vacances
+Location: 
+Description: 
+Categories: HYPERPLANNING
+UID: Ferie-88-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-05-08T00:00:00
+End Time: 2024-05-11T00:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 
+
+Summary: LANGUAGE=fr:Férié
+Location: 
+Description: 
+Categories: HYPERPLANNING
+UID: Ferie-86-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-01T00:00:00
+End Time: 2024-04-02T00:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-ILSEN-
+Location: LANGUAGE=fr:Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-5451-21-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-15T12:00:00
+End Time: 2023-11-15T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-13T05:42:23
+
+Summary: LANGUAGE=fr:UCE 2 INSERTION PROFESSIONNEL - BROCHARD Marc - M1-IA-I
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 2 INSERTION PROFESSIONNEL\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-33440-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-21T13:30:00
+End Time: 2023-12-21T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-20T12:31:52
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - CECILLON Noe - M1-IA-IL
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53843-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-02T07:30:00
+End Time: 2024-02-02T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-11T07:06:14
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5243-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-15T08:00:00
+End Time: 2023-09-15T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - JABAIAN Bassam - M1-ILSEN-alt
+Location: LANGUAGE=fr:Stat 5 = Info - C 130
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : JAB
+Categories: HYPERPLANNING
+UID: Cours-6073-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-07T09:00:00
+End Time: 2023-11-07T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-20T08:31:29
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-30940-20-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-06T13:30:00
+End Time: 2023-11-06T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:31:35
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29643-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-18T14:00:00
+End Time: 2023-09-18T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-14T12:31:35
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Stat 2 = Info - C 136
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-5444-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-18T14:00:00
+End Time: 2023-10-18T15:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - NABITZ Sophie - M1-ILSEN-cla-Gr1\, M
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : NABITZ Sop
+Categories: HYPERPLANNING
+UID: Cours-53414-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-22T07:30:00
+End Time: 2024-02-22T12:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-26T12:56:13
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53795-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-06T12:00:00
+End Time: 2024-03-06T13:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:10:46
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - PELERIN Aurelien - M1-I
+Location: LANGUAGE=fr:Stat 5 = Info - C 130
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5522-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-17T06:30:00
+End Time: 2023-10-17T09:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:33:54
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 BIS = C 038
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53676-35-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-20T07:30:00
+End Time: 2024-02-20T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T07:34:05
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 8 = Info - C 127\, Stat9 = Info - C 026
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5642-26-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-18T12:00:00
+End Time: 2023-12-18T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-12-15T07:08:11
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53872-41-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-02T12:30:00
+End Time: 2024-04-02T15:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-15T07:14:39
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:CISCO = C 133 Réseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-40483-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-13T07:30:00
+End Time: 2023-12-13T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:31:28
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S2 = C 040
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53630-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-01T07:30:00
+End Time: 2024-02-01T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T08:35:20
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 3 = Info - C 135
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53816-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-19T07:30:00
+End Time: 2024-03-19T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-31T12:56:58
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53947-38-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-11T12:00:00
+End Time: 2024-03-11T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:50:49
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53819-41-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-04-03T06:30:00
+End Time: 2024-04-03T09:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:18:26
+
+Summary: LANGUAGE=fr:UCE 1 DESIGN PATTERN AVANCE - NABITZ Sophie - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 1 DESIGN PATTERN AVANCE\nEnseignant :
+Categories: HYPERPLANNING
+UID: Cours-31806-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-07T16:30:00
+End Time: 2023-12-07T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-10-12T12:13:26
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 5 = Info - C 130\, Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5635-17-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-16T14:00:00
+End Time: 2023-10-16T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-20T07:43:16
+
+Summary: LANGUAGE=fr:UCE 3 GESTION DE PROJET - COSTA Jean-pierre - M1-IA-IL-
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 3 GESTION DE PROJET\nEnseignant : COS
+Categories: HYPERPLANNING
+UID: Cours-5304-12-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-14T14:00:00
+End Time: 2023-09-14T17:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-19T14:11:22
+
+Summary: LANGUAGE=fr:UCE 2 ANGLAIS (ORIENTE TECHNI - RONDIN Lilian - M1-ILSE
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 2 ANGLAIS (ORIENTE TECHNI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53738-34-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-13T07:30:00
+End Time: 2024-02-13T09:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:13:00
+
+Summary: LANGUAGE=fr:UCE 2 PROGRAMMATION PARALLELE - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 PROGRAMMATION PARALLELE\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-37212-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-19T12:30:00
+End Time: 2023-09-19T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-11-14T08:48:34
+
+Summary: LANGUAGE=fr:UCE 3 PROCESSUS DU DEVELOPPEM - SALAS Daniel - M1-ILSEN
+Location: LANGUAGE=fr:Stat 6 = Info - C 129
+Description: LANGUAGE=fr:Matière : UCE 3 PROCESSUS DU DEVELOPPEM\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53956-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-20T13:30:00
+End Time: 2024-03-20T16:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:51:09
+
+Summary: LANGUAGE=fr:UCE 2 INSERTION PROFESSIONNEL - BROCHARD Marc - M1-IA-I
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 INSERTION PROFESSIONNEL\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5715-23-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-28T13:30:00
+End Time: 2023-11-28T16:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-20T12:28:54
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-ILSEN-cla-
+Location: LANGUAGE=fr:Stat 7 = Info - C 128
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53299-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-06T15:00:00
+End Time: 2024-02-06T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T13:35:37
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5153-23-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-28T10:30:00
+End Time: 2023-11-28T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-27T06:32:03
+
+Summary: LANGUAGE=fr:UCE 2 INSERTION PROFESSIONNEL - BROCHARD Marc - M1-IA-I
+Location: LANGUAGE=fr:S5 = C 024
+Description: LANGUAGE=fr:Matière : UCE 2 INSERTION PROFESSIONNEL\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5699-23-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-11-29T07:30:00
+End Time: 2023-11-29T10:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-07-17T07:02:09
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - MARTIN Yannis - M1-IA-I
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5246-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-12T13:30:00
+End Time: 2023-12-12T15:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Blaise
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29703-25-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-13T15:00:00
+End Time: 2023-12-13T18:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE CONCEPTI - ROUVIER Mickael - M1-IA
+Location: LANGUAGE=fr:Stat 6 = Info - C 129\, Stat 7 = Info - C 128
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE CONCEPTI\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-7115-18-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-26T11:00:00
+End Time: 2023-10-26T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-ILSEN-cla-
+Location: LANGUAGE=fr:Stat 4 = Info - C 131
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53317-39-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-18T07:30:00
+End Time: 2024-03-18T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T12:06:30
+
+Summary: LANGUAGE=fr:UCE 2 PROTOTYPAGE ET INTERFAC - AMALVY Arthur - M1-ILSE
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 2 PROTOTYPAGE ET INTERFAC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-80573-37-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-05T12:00:00
+End Time: 2024-03-05T15:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-02-15T07:13:39
+
+Summary: LANGUAGE=fr:UCE 1 TECHNIQUES DE TEST - SALAS Daniel - M1-IA-IL-ALT\
+Location: LANGUAGE=fr:S4 = C 034
+Description: LANGUAGE=fr:Matière : UCE 1 TECHNIQUES DE TEST\nEnseignant : SA
+Categories: HYPERPLANNING
+UID: Cours-53326-32-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-01-29T15:00:00
+End Time: 2024-01-29T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T13:29:36
+
+Summary: LANGUAGE=fr:UCE 1 ANGLAIS (ORIENTE ENTREP - REY Carole - M1-ILSEN-c
+Location: LANGUAGE=fr:S3 = C 036
+Description: LANGUAGE=fr:Matière : UCE 1 ANGLAIS (ORIENTE ENTREP\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-5140-18-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-26T14:00:00
+End Time: 2023-10-26T15:30:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-27T06:31:35
+
+Summary: LANGUAGE=fr:UCE 2 ARCHITECTURES WEB - FREDOUILLE Corinne - M1-ILSEN
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 ARCHITECTURES WEB\nEnseignant : FRE
+Categories: HYPERPLANNING
+UID: Cours-4999-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-19T06:30:00
+End Time: 2023-09-19T08:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-06-27T16:15:40
+
+Summary: LANGUAGE=fr:UCE 2 MANAGEMENT PAR LES PROC - PUY CAZCARRA Emmanuel -
+Location: LANGUAGE=fr:Amphi Ada
+Description: LANGUAGE=fr:Matière : UCE 2 MANAGEMENT PAR LES PROC\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-29631-13-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-09-18T11:00:00
+End Time: 2023-09-18T14:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T06:17:09
+
+Summary: LANGUAGE=fr:UCE 1 ARCHITECTURES CLOUD ET - NABITZ Sophie - M1-ILSEN
+Location: LANGUAGE=fr:RES = C 132 Reseaux
+Description: LANGUAGE=fr:Matière : UCE 1 ARCHITECTURES CLOUD ET\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-32068-24-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-12-06T09:00:00
+End Time: 2023-12-06T12:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:44:52
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION DE MSI - MARTIN Yannis - M1-ILSEN-cla
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION DE MSI\nEnseignant : MA
+Categories: HYPERPLANNING
+UID: Cours-5403-16-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2023-10-10T08:00:00
+End Time: 2023-10-10T11:00:00
+Timestamp: 2024-02-19T08:30:57
+Last Modified: 2023-09-15T07:50:03
+
+Summary: LANGUAGE=fr:UCE 2 MIDDLEWARE - BONNEFOY Ludovic - M1-ILSEN-alt-GR1\
+Location: LANGUAGE=fr:S6 = C 022
+Description: LANGUAGE=fr:Matière : UCE 2 MIDDLEWARE\nEnseignant : BONNEFOY L
+Categories: HYPERPLANNING
+UID: Cours-73708-33-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-02-09T15:00:00
+End Time: 2024-02-09T18:00:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2024-01-09T13:36:03
+
+Summary: LANGUAGE=fr:UCE 4 APPLICATION ARCHITECTUR - MORCHID Mohamed - M1-IL
+Location: LANGUAGE=fr:Stat 1 = Info - C 137
+Description: LANGUAGE=fr:Matière : UCE 4 APPLICATION ARCHITECTUR\nEnseignant
+Categories: HYPERPLANNING
+UID: Cours-53584-40-M1-ILSEN-cla-Gr1-Index-Education
+Start Time: 2024-03-25T07:30:00
+End Time: 2024-03-25T10:30:00
+Timestamp: 2024-02-19T08:30:58
+Last Modified: 2023-10-27T09:17:22
+
