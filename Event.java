@@ -4,17 +4,19 @@ public class Event {
     private Date startDate;
     private Date endDate;
     private String teacher;
+    private String group;
     private String location;
     private String subject;
     private String type;
 
-    public Event(Date startDate, Date endDate, String teacher, String location, String subject, String type) {
+    public Event(Date startDate, Date endDate, String teacher, String location, String subject, String type, String group) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.teacher = teacher;
         this.location = location;
         this.subject = subject;
         this.type = type;
+        this.group = group;
     }
 
     public Date getStartDate() {
@@ -41,6 +43,10 @@ public class Event {
         return type;
     }
 
+    public String getGroup() {
+        return group;
+    }
+
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
@@ -65,6 +71,10 @@ public class Event {
         this.type = type;
     }
 
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
     @Override
     public String toString() {
         return "Start date : " + startDate + "\n" +
@@ -72,6 +82,7 @@ public class Event {
                 "Teacher : " + teacher + "\n" +
                 "Location : " + location + "\n" +
                 "Subject : " + subject + "\n" +
-                "Type : " + type;
+                "Type : " + type + "\n" +
+                "Group " + group + "\n";
     }
 }

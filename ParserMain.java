@@ -7,6 +7,7 @@ public class ParserMain {
         try {
             CalendarCERI calendarCERI = parser.getCalendarHeader();
             parser.getCalendarEvents(calendarCERI);
+            parser.filterBySubject(calendarCERI, "Group", "ILSEN");
         } catch (IOException | ParseException e) {
             System.out.println("Erreur !");
         }
