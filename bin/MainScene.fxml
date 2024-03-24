@@ -1,81 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
-   <children>
-      <SplitPane dividerPositions="0.1865671641791045" layoutX="3.0" layoutY="1.0" prefHeight="530.0" prefWidth="672.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="222.0">
-               <children>
-                  <RadioButton layoutX="29.0" layoutY="109.0" mnemonicParsing="false" text="Personne" />
-                  <RadioButton layoutX="28.0" layoutY="136.0" mnemonicParsing="false" text="Salle" />
-                  <RadioButton layoutX="26.0" layoutY="168.0" mnemonicParsing="false" text="Formation" />
-                  <Button layoutX="26.0" layoutY="205.0" mnemonicParsing="false" onAction="#LancerRecherche" text="Rechercher" />
-                  <TextField fx:id="tfsearch" layoutX="7.0" layoutY="71.0" prefHeight="17.0" prefWidth="107.0" />
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <TextArea fx:id="textArea1" layoutX="64.0" layoutY="14.0" prefHeight="48.0" prefWidth="432.0" promptText="13" text="Bienvenue,cher nom_rentré!Qu'avez-vous prévu aujourd'hui?">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </TextArea>
-                <TableView fx:id="tableView" layoutY="64.0" prefHeight="464.0" prefWidth="542.0">
-    <columns>
-    <TableColumn minWidth="-1.0" text="Heure">
-        </TableColumn>
-        <TableColumn minWidth="-1.0" text="Lundi">
-            <cellValueFactory>
-                <PropertyValueFactory property="nom" />
-            </cellValueFactory>
-        </TableColumn>
-        <TableColumn minWidth="-1.0" text="Mardi">
-            <cellValueFactory>
-                <PropertyValueFactory property="prenom" />
-            </cellValueFactory>
-        </TableColumn>
-        <TableColumn minWidth="-1.0" text="Mercredi">
-            <cellValueFactory>
-                <PropertyValueFactory property="age" />
-            </cellValueFactory>
-        </TableColumn>
-         <TableColumn minWidth="-1.0" text="Jeudi">
-            <cellValueFactory>
-                <PropertyValueFactory property="age" />
-            </cellValueFactory>
-        </TableColumn>
-         <TableColumn minWidth="-1.0" text="Vendredi">
-            <cellValueFactory>
-                <PropertyValueFactory property="age" />
-            </cellValueFactory>
-        </TableColumn>
-         <TableColumn minWidth="-1.0" text="Samedi">
-            <cellValueFactory>
-                <PropertyValueFactory property="age" />
-            </cellValueFactory>
-        </TableColumn>
-         <TableColumn minWidth="-1.0" text="Dimanche">
-            <cellValueFactory>
-                <PropertyValueFactory property="age" />
-            </cellValueFactory>
-        </TableColumn>
-    </columns>
-</TableView>
-
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+    <VBox spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <HBox alignment="CENTER" spacing="20.0">
+            <Button fx:id="previousWeekButton" text="Semaine précédente" onAction="#loadPreviousWeek"/>
+            <Button fx:id="nextWeekButton" text="Semaine suivante" onAction="#loadNextWeek"/>
+        </HBox>
+      <ScrollPane VBox.vgrow="ALWAYS">
+    <content>
+        <GridPane fx:id="scheduleGridPane" VBox.vgrow="ALWAYS" minWidth="900">
+        </GridPane>
+    </content>
+</ScrollPane>
+    </VBox>
 </AnchorPane>

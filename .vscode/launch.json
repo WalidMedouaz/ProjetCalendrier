@@ -6,6 +6,13 @@
             "name": "ParserMain",
             "request": "launch",
             "mainClass": "ParserMain",
+            "projectName": "ProjetCalendrier_44c593b3"
+        },
+        {
+            "type": "java",
+            "name": "ParserMain",
+            "request": "launch",
+            "mainClass": "ParserMain",
             "projectName": "ProjetCal_4ef93999"
         },
         {
@@ -13,16 +20,15 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Main",
-            "projectName": "ProjetCal_4ef93999",
+            "projectName": "ProjetCalendrier_44c593b3",
             "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml "
-      
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "ProjetCal_4ef93999",
+            "projectName": "ProjetCalendrier_44c593b3",
             "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml "
         }
     ]

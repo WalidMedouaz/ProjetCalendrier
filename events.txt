@@ -162,7 +162,6 @@ Début : 28/03/2024 10:00:00, Fin : 28/03/2024 13:00:00, Enseignant : NABITZ Sop
 Début : 04/04/2024 10:00:00, Fin : 04/04/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
 Début : 04/04/2024 14:30:00, Fin : 04/04/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
 Début : 20/03/2024 10:00:00, Fin : 20/03/2024 13:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 3 = Info - C 135, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
-Début : 25/03/2024 08:30:00, Fin : 25/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 02/04/2024 08:30:00, Fin : 02/04/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 05/02/2024 17:30:00, Fin : 05/02/2024 19:00:00, Enseignant : RONDIN Lilian, Lieu : S3 = C 036, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
 Début : 01/02/2024 08:30:00, Fin : 01/02/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
@@ -191,7 +190,6 @@ Début : 18/03/2024 16:00:00, Fin : 18/03/2024 19:00:00, Enseignant : MORCHID Mo
 Début : 19/03/2024 08:30:00, Fin : 19/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 3 = Info - C 135, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 27/03/2024 08:30:00, Fin : 27/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 29/03/2024 08:30:00, Fin : 29/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
-Début : 03/04/2024 08:30:00, Fin : 03/04/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 26/03/2024 16:00:00, Fin : 26/03/2024 19:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 19/03/2024 17:30:00, Fin : 19/03/2024 19:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 13/02/2024 13:00:00, Fin : 13/02/2024 16:00:00, Enseignant : CARIAS Patrick, Lieu : S6 = C 022, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : CM
@@ -217,6 +215,7 @@ Début : 23/11/2023 10:00:00, Fin : 23/11/2023 13:00:00, Enseignant : MARTIN Yan
 Début : 09/02/2024 16:00:00, Fin : 09/02/2024 19:00:00, Enseignant : BONNEFOY Ludovic, Lieu : S6 = C 022, Sujet : UCE 2 MIDDLEWARE, Type : CM
 Début : 10/02/2024 13:00:00, Fin : 10/02/2024 14:30:00, Enseignant : BONNEFOY Ludovic, Lieu : Amphi Ada, Sujet : UCE 2 MIDDLEWARE, Type : CM
 Début : 29/01/2024 08:30:00, Fin : 29/01/2024 11:30:00, Enseignant : BONNEFOY Ludovic, Lieu : S6 = C 022, Sujet : UCE 2 MIDDLEWARE, Type : CM
+Début : 17/04/2024 08:30:00, Fin : 17/04/2024 10:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
 Début : 08/01/2024 10:00:00, Fin : 08/01/2024 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
 Début : 15/01/2024 08:30:00, Fin : 15/01/2024 19:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
 Début : 16/01/2024 13:00:00, Fin : 16/01/2024 19:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
@@ -233,8 +232,10 @@ Début : 07/11/2023 13:00:00, Fin : 07/11/2023 16:00:00, Enseignant : MARTIN Yan
 Début : 14/11/2023 13:00:00, Fin : 14/11/2023 16:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
 Début : 23/02/2024 08:30:00, Fin : 23/02/2024 11:30:00, Enseignant : BONNEFOY Ludovic, Lieu : Stat 3 = Info - C 135, Sujet : UCE 2 MIDDLEWARE, Type : TP
 Début : 19/03/2024 14:30:00, Fin : 19/03/2024 16:00:00, Enseignant : BONNEFOY Ludovic, Lieu : Amphi Ada, Sujet : UCE 2 MIDDLEWARE, Type : Evaluation
-Début : 02/04/2024 14:30:00, Fin : 02/04/2024 17:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 02/04/2024 14:30:00, Fin : 02/04/2024 17:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : Evaluation
 Début : 12/04/2024 11:30:00, Fin : 12/04/2024 12:30:00, Enseignant : HUET Stephane, Lieu : Amphi Ada, Sujet : Reservation de salles, Type : Type inconnu
+Début : 17/04/2024 11:30:00, Fin : 17/04/2024 13:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 16/05/2024 13:00:00, Fin : 16/05/2024 16:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 8 = Info - C 127, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : Evaluation
 Début : 11/09/2023 10:00:00, Fin : 11/09/2023 11:30:00, Enseignant : BENSLIMANE Abderrahim, LABATUT Vincent, ROUVIER Mickael, Lieu : Amphi Ada, Sujet : Rentree specifique, Type : Type inconnu
 Début : 10/10/2023 16:00:00, Fin : 10/10/2023 19:00:00, Enseignant : FIGUEIREDO Rosa, VERNET Mathilde, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
 Début : 20/10/2023 17:30:00, Fin : 20/10/2023 20:00:00, Enseignant : BENSLIMANE Abderrahim, FIGUEIREDO Rosa, HUET Stephane, JABAIAN Bassam, LABATUT Vincent, MATROUF Driss, ROUVIER Mickael, SPRIET Thierry, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
@@ -242,8 +243,6 @@ Début : 11/01/2024 08:00:00, Fin : 11/01/2024 17:30:00, Enseignant : BENSLIMANE
 Début : 11/09/2023 13:30:00, Fin : 11/09/2023 18:30:00, Enseignant : BENSLIMANE Abderrahim, ROUVIER Mickael, Lieu : S5 = C 024, S6 = C 022, Sujet : Reservation de salles, Type : Type inconnu
 Début : 14/05/2024 08:00:00, Fin : 14/05/2024 20:00:00, Enseignant : BEILLON Jennifer, HUET Stephane, Lieu : Amphi Ada, Amphi Blaise, S1 = C 042 Nodes, S2 = C 0 40, S2 BIS = C 038, S3 = C 036, S4 = C 034, S5 = C 024, S6 = C 022,  S7 = C 032, S8 = C 030, Stat 1 = Info - C 137, Stat 6 = Info - C 129,  Stat 7 = Info - C 128, Sujet : Reservation de salles, Type : Type inconnu
 Début : 16/02/2024 13:00:00, Fin : 16/02/2024 14:30:00, Enseignant : FIGUEIREDO Rosa, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
-Début : 18/04/2024 08:00:00, Fin : 18/04/2024 20:00:00, Enseignant : Inconnu, Lieu : Lieu inconnu, Sujet : Reservation de salles, Type : Type inconnu
-Début : 19/04/2024 08:00:00, Fin : 19/04/2024 20:00:00, Enseignant : Inconnu, Lieu : Lieu inconnu, Sujet : Reservation de salles, Type : Type inconnu
 Début : 17/05/2024 17:30:00, Fin : 17/05/2024 19:00:00, Enseignant : RONDIN Lilian, Lieu : Amphi Blaise, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : Evaluation
 Début : 22/03/2024 14:30:00, Fin : 22/03/2024 16:00:00, Enseignant : RONDIN Lilian, Lieu : Amphi Blaise, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : Evaluation
 Début : 05/02/2024 11:30:00, Fin : 05/02/2024 13:00:00, Enseignant : LEFEVRE Fabrice, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : CM
