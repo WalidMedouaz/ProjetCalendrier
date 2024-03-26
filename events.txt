@@ -1,0 +1,256 @@
+Début : 11/09/2023 09:00:00, Fin : 11/09/2023 10:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : Reservation de salles, Type : Type inconnu
+Début : 07/12/2023 08:30:00, Fin : 07/12/2023 10:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Blaise, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : CM
+Début : 07/12/2023 14:30:00, Fin : 07/12/2023 17:30:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 21/12/2023 17:30:00, Fin : 21/12/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 10/01/2024 10:00:00, Fin : 10/01/2024 11:30:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Ada, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : Evaluation
+Début : 12/09/2023 08:30:00, Fin : 12/09/2023 11:30:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 13/09/2023 13:00:00, Fin : 13/09/2023 14:30:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Blaise, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 19/09/2023 08:30:00, Fin : 19/09/2023 10:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 18/09/2023 08:30:00, Fin : 18/09/2023 10:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 09/10/2023 08:30:00, Fin : 09/10/2023 10:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 08/01/2024 13:00:00, Fin : 08/01/2024 14:30:00, Enseignant : FREDOUILLE Corinne, JABAIAN Bassam, Lieu : Amphi Blaise, Sujet : UCE 2 ARCHITECTURES WEB, Type : Evaluation
+Début : 21/09/2023 08:30:00, Fin : 21/09/2023 10:00:00, Enseignant : JABAIAN Bassam, Lieu : Stat 2 = Info - C 136, Sujet : UCE 2 ARCHITECTURES WEB, Type : TP
+Début : 16/11/2023 08:30:00, Fin : 16/11/2023 10:00:00, Enseignant : JABAIAN Bassam, Lieu : Stat 2 = Info - C 136, Sujet : UCE 2 ARCHITECTURES WEB, Type : TP
+Début : 18/12/2023 08:30:00, Fin : 18/12/2023 11:30:00, Enseignant : FREDOUILLE Corinne, JABAIAN Bassam, Lieu : Stat 3 = Info - C 135, Sujet : UCE 2 ARCHITECTURES WEB, Type : Evaluation
+Début : 12/09/2023 17:30:00, Fin : 12/09/2023 19:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 18/09/2023 10:00:00, Fin : 18/09/2023 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 09/10/2023 11:30:00, Fin : 09/10/2023 13:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 13/10/2023 11:30:00, Fin : 13/10/2023 13:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 26/10/2023 16:00:00, Fin : 26/10/2023 17:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 06/11/2023 11:30:00, Fin : 06/11/2023 13:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 13/11/2023 10:00:00, Fin : 13/11/2023 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 28/11/2023 11:30:00, Fin : 28/11/2023 13:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 11/12/2023 10:00:00, Fin : 11/12/2023 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 20/11/2023 08:30:00, Fin : 20/11/2023 10:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 17/11/2023 08:30:00, Fin : 17/11/2023 10:00:00, Enseignant : REY Carole, Lieu : Amphi Blaise, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
+Début : 12/01/2024 16:00:00, Fin : 12/01/2024 17:30:00, Enseignant : REY Carole, Lieu : Amphi Blaise, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
+Début : 21/09/2023 10:00:00, Fin : 21/09/2023 13:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 15/09/2023 10:00:00, Fin : 15/09/2023 13:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : S5 = C 024, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 12/12/2023 14:30:00, Fin : 12/12/2023 16:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Blaise, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 06/11/2023 16:00:00, Fin : 06/11/2023 19:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Blaise, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 16/11/2023 11:30:00, Fin : 16/11/2023 13:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 07/12/2023 10:00:00, Fin : 07/12/2023 13:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 12/12/2023 10:00:00, Fin : 12/12/2023 13:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 10/01/2024 13:00:00, Fin : 10/01/2024 14:30:00, Enseignant : MARTIN Yannis, PUY CAZCARRA Emmanuel, Lieu : Amphi Blaise, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : Evaluation
+Début : 14/09/2023 13:00:00, Fin : 14/09/2023 16:00:00, Enseignant : COSTA Jean-pierre, Lieu : Amphi Blaise, Sujet : UCE 3 GESTION DE PROJET, Type : CM
+Début : 14/09/2023 16:00:00, Fin : 14/09/2023 19:00:00, Enseignant : COSTA Jean-pierre, Lieu : Amphi Blaise, Sujet : UCE 3 GESTION DE PROJET, Type : CM
+Début : 12/10/2023 16:00:00, Fin : 12/10/2023 19:00:00, Enseignant : COSTA Jean-pierre, Lieu : S4 = C 034, Sujet : UCE 3 GESTION DE PROJET, Type : TD
+Début : 19/09/2023 10:00:00, Fin : 19/09/2023 13:00:00, Enseignant : COSTA Jean-pierre, Lieu : S2 = C 040, Sujet : UCE 3 GESTION DE PROJET, Type : TD
+Début : 16/10/2023 13:00:00, Fin : 16/10/2023 16:00:00, Enseignant : COSTA Jean-pierre, Lieu : S6 = C 022, Sujet : UCE 3 GESTION DE PROJET, Type : TD
+Début : 06/11/2023 08:30:00, Fin : 06/11/2023 11:30:00, Enseignant : COSTA Jean-pierre, Lieu : S4 = C 034, Sujet : UCE 3 GESTION DE PROJET, Type : TD
+Début : 19/10/2023 13:00:00, Fin : 19/10/2023 16:00:00, Enseignant : MARTIN Yannis, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION DE MSI, Type : TP
+Début : 10/10/2023 10:00:00, Fin : 10/10/2023 13:00:00, Enseignant : MARTIN Yannis, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION DE MSI, Type : TP
+Début : 13/09/2023 16:00:00, Fin : 13/09/2023 17:30:00, Enseignant : NABITZ Sophie, Lieu : Amphi Ada, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : CM
+Début : 20/09/2023 16:00:00, Fin : 20/09/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : Amphi Blaise, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : CM
+Début : 18/10/2023 16:00:00, Fin : 18/10/2023 17:30:00, Enseignant : FREDOUILLE Corinne, Lieu : Stat 2 = Info - C 136, Sujet : UCE 2 ARCHITECTURES WEB, Type : TP
+Début : 08/11/2023 13:00:00, Fin : 08/11/2023 16:00:00, Enseignant : NABITZ Sophie, Lieu : Stat9 = Info - C 026, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : TP
+Début : 15/11/2023 13:00:00, Fin : 15/11/2023 16:00:00, Enseignant : NABITZ Sophie, Lieu : Stat9 = Info - C 026, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : TP
+Début : 14/09/2023 08:30:00, Fin : 14/09/2023 11:30:00, Enseignant : LABRAK Yanis, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : TP
+Début : 21/09/2023 14:30:00, Fin : 21/09/2023 16:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 13/09/2023 17:30:00, Fin : 13/09/2023 19:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Amphi Ada, Sujet : UCE 2 ARCHITECTURES WEB, Type : CM
+Début : 17/10/2023 08:30:00, Fin : 17/10/2023 11:30:00, Enseignant : PELERIN Aurelien, Lieu : Stat 5 = Info - C 130, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : TP
+Début : 13/10/2023 08:30:00, Fin : 13/10/2023 11:30:00, Enseignant : PELERIN Aurelien, Lieu : Stat 6 = Info - C 129, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : TP
+Début : 13/09/2023 10:00:00, Fin : 13/09/2023 11:30:00, Enseignant : ROUVIER Mickael, Lieu : S5 = C 024, Sujet : UCE 3 URBANISATION, Type : CM
+Début : 22/12/2023 10:00:00, Fin : 22/12/2023 13:00:00, Enseignant : ROUVIER Mickael, Lieu : Amphi Blaise, Sujet : UCE 3 URBANISATION, Type : Evaluation
+Début : 16/10/2023 16:00:00, Fin : 16/10/2023 19:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 5 = Info - C 130, Stat 6 = Info - C 129, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 15/11/2023 16:00:00, Fin : 15/11/2023 19:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 6 = Info - C 129, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 18/12/2023 13:00:00, Fin : 18/12/2023 16:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 8 = Info - C 127, Stat9 = Info - C 026, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 22/09/2023 08:30:00, Fin : 22/09/2023 13:00:00, Enseignant : HADDAD Majed, VERNET Mathilde, Lieu : Amphi Ada, Sujet : UCE 1 PROJET, Type : TD
+Début : 16/11/2023 10:00:00, Fin : 16/11/2023 11:30:00, Enseignant : HADDAD Majed, VERNET Mathilde, Lieu : S4 = C 034, Sujet : UCE 1 PROJET, Type : TD
+Début : 19/10/2023 10:00:00, Fin : 19/10/2023 13:00:00, Enseignant : HADDAD Majed, VERNET Mathilde, Lieu : S5 = C 024, Sujet : UCE 1 PROJET, Type : TD
+Début : 20/11/2023 10:00:00, Fin : 20/11/2023 13:00:00, Enseignant : BROCHARD Marc, Lieu : S5 = C 024, Sujet : UCE 2 INSERTION PROFESSIONNEL, Type : TD
+Début : 29/11/2023 08:30:00, Fin : 29/11/2023 11:30:00, Enseignant : BROCHARD Marc, Lieu : S5 = C 024, Sujet : UCE 2 INSERTION PROFESSIONNEL, Type : TD
+Début : 28/11/2023 14:30:00, Fin : 28/11/2023 17:30:00, Enseignant : BROCHARD Marc, Lieu : S5 = C 024, Sujet : UCE 2 INSERTION PROFESSIONNEL, Type : TD
+Début : 05/12/2023 10:00:00, Fin : 05/12/2023 11:30:00, Enseignant : BROCHARD Marc, Lieu : S5 = C 024, Sujet : UCE 2 INSERTION PROFESSIONNEL, Type : TD
+Début : 10/10/2023 14:30:00, Fin : 10/10/2023 16:00:00, Enseignant : FREDOUILLE Corinne, JABAIAN Bassam, Lieu : Stat 5 = Info - C 130, Sujet : UCE 2 ARCHITECTURES WEB, Type : TP
+Début : 04/12/2023 08:30:00, Fin : 04/12/2023 10:00:00, Enseignant : FREDOUILLE Corinne, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 ARCHITECTURES WEB, Type : TP
+Début : 10/11/2023 13:00:00, Fin : 10/11/2023 16:00:00, Enseignant : PELERIN Aurelien, Lieu : Stat 4 = Info - C 131, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : TP
+Début : 19/10/2023 16:00:00, Fin : 19/10/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : Amphi Blaise, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : CM
+Début : 07/11/2023 10:00:00, Fin : 07/11/2023 11:30:00, Enseignant : JABAIAN Bassam, Lieu : Stat 5 = Info - C 130, Sujet : UCE 2 ARCHITECTURES WEB, Type : TP
+Début : 26/10/2023 13:00:00, Fin : 26/10/2023 16:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 6 = Info - C 129, Stat 7 = Info - C 128, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 16/01/2024 10:00:00, Fin : 16/01/2024 13:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 1 = Info - C 137, Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 01/12/2023 08:30:00, Fin : 01/12/2023 10:00:00, Enseignant : REY Carole, Lieu : S7 = C 032, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
+Début : 19/03/2024 11:30:00, Fin : 19/03/2024 13:00:00, Enseignant : LEFEVRE Fabrice, Lieu : Stat 1 = Info - C 137, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : TP
+Début : 09/01/2024 16:00:00, Fin : 09/01/2024 19:00:00, Enseignant : COSTA Jean-pierre, Lieu : Amphi Blaise, Sujet : UCE 3 GESTION DE PROJET, Type : Evaluation
+Début : 09/01/2024 11:30:00, Fin : 09/01/2024 13:00:00, Enseignant : COSTA Jean-pierre, Lieu : Amphi Ada, Sujet : UCE 3 GESTION DE PROJET, Type : CM
+Début : 09/10/2023 14:30:00, Fin : 09/10/2023 17:30:00, Enseignant : PELERIN Aurelien, Lieu : Stat 8 = Info - C 127, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : TP
+Début : 18/10/2023 10:00:00, Fin : 18/10/2023 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 08/11/2023 10:00:00, Fin : 08/11/2023 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 18/09/2023 13:00:00, Fin : 18/09/2023 16:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 18/09/2023 16:00:00, Fin : 18/09/2023 19:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Ada, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : CM
+Début : 12/10/2023 13:00:00, Fin : 12/10/2023 16:00:00, Enseignant : PELERIN Aurelien, Lieu : Stat 8 = Info - C 127, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : TP
+Début : 13/12/2023 16:00:00, Fin : 13/12/2023 19:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Blaise, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 21/12/2023 11:30:00, Fin : 21/12/2023 13:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Blaise, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : Evaluation
+Début : 14/12/2023 13:00:00, Fin : 14/12/2023 16:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 06/11/2023 14:30:00, Fin : 06/11/2023 16:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Blaise, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : CM
+Début : 12/09/2023 13:00:00, Fin : 12/09/2023 14:30:00, Enseignant : ROUVIER Mickael, Lieu : Amphi Blaise, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : CM
+Début : 11/10/2023 08:30:00, Fin : 11/10/2023 11:30:00, Enseignant : NABITZ Sophie, Lieu : Amphi Ada, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : CM
+Début : 20/12/2023 13:00:00, Fin : 20/12/2023 16:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 21/09/2023 16:00:00, Fin : 21/09/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : TP
+Début : 08/12/2023 13:00:00, Fin : 08/12/2023 14:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 15/12/2023 13:00:00, Fin : 15/12/2023 14:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 06/12/2023 16:00:00, Fin : 06/12/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 07/12/2023 17:30:00, Fin : 07/12/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : Amphi Ada, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : Evaluation
+Début : 14/12/2023 16:00:00, Fin : 14/12/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 06/12/2023 10:00:00, Fin : 06/12/2023 13:00:00, Enseignant : NABITZ Sophie, Lieu : RES = C 132 Reseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 21/12/2023 14:30:00, Fin : 21/12/2023 16:00:00, Enseignant : BROCHARD Marc, Lieu : S6 = C 022, Sujet : UCE 2 INSERTION PROFESSIONNEL, Type : Evaluation
+Début : 22/12/2023 16:00:00, Fin : 22/12/2023 19:00:00, Enseignant : BROCHARD Marc, Lieu : Amphi Ada, Sujet : UCE 2 INSERTION PROFESSIONNEL, Type : TD
+Début : 24/11/2023 10:00:00, Fin : 24/11/2023 13:00:00, Enseignant : ROUVIER Mickael, Lieu : CERI, Stat 2 = Info - C 136, Stat 3 = Info - C 135, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 01/12/2023 10:00:00, Fin : 01/12/2023 13:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 1 = Info - C 137, Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 08/12/2023 10:00:00, Fin : 08/12/2023 13:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 1 = Info - C 137, Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 17/10/2023 16:00:00, Fin : 17/10/2023 19:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Blaise, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 07/11/2023 16:00:00, Fin : 07/11/2023 19:00:00, Enseignant : MARTIN Yannis, Lieu : Stat9 = Info - C 026, Sujet : UCE 4 APPLICATION DE MSI, Type : TP
+Début : 20/10/2023 08:30:00, Fin : 20/10/2023 11:30:00, Enseignant : LABRAK Yanis, Lieu : Stat 8 = Info - C 127, Sujet : UCE 3 URBANISATION, Type : TP
+Début : 19/09/2023 14:30:00, Fin : 19/09/2023 16:00:00, Enseignant : ROUVIER Mickael, Lieu : Amphi Blaise, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : CM
+Début : 15/11/2023 08:30:00, Fin : 15/11/2023 11:30:00, Enseignant : MARTIN Yannis, Lieu : Stat 8 = Info - C 127, Sujet : UCE 4 APPLICATION DE MSI, Type : TP
+Début : 22/12/2023 14:30:00, Fin : 22/12/2023 16:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 16/11/2023 14:30:00, Fin : 16/11/2023 16:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 13/09/2023 14:30:00, Fin : 13/09/2023 16:00:00, Enseignant : ROUVIER Mickael, Lieu : Amphi Ada, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : CM
+Début : 09/11/2023 10:00:00, Fin : 09/11/2023 13:00:00, Enseignant : PUY CAZCARRA Emmanuel, Lieu : Amphi Ada, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : CM
+Début : 13/12/2023 08:30:00, Fin : 13/12/2023 11:30:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 04/12/2023 14:30:00, Fin : 04/12/2023 17:30:00, Enseignant : LABRAK Yanis, Lieu : Stat 2 = Info - C 136, Sujet : UCE 3 URBANISATION, Type : TP
+Début : 11/12/2023 14:30:00, Fin : 11/12/2023 17:30:00, Enseignant : LABRAK Yanis, Lieu : Stat 2 = Info - C 136, Sujet : UCE 3 URBANISATION, Type : TP
+Début : 12/01/2024 13:00:00, Fin : 12/01/2024 16:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 1 = Info - C 137, Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 21/11/2023 10:00:00, Fin : 21/11/2023 13:00:00, Enseignant : ROUVIER Mickael, Lieu : Stat 6 = Info - C 129, Stat 7 = Info - C 128, Sujet : UCE 4 APPLICATION DE CONCEPTI, Type : TP
+Début : 11/10/2023 16:00:00, Fin : 11/10/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : Stat9 = Info - C 026, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : TP
+Début : 27/09/2023 08:30:00, Fin : 27/09/2023 11:30:00, Enseignant : LABRAK Yanis, Lieu : Stat 4 = Info - C 131, Sujet : UCE 3 URBANISATION, Type : TP
+Début : 10/11/2023 16:00:00, Fin : 10/11/2023 19:00:00, Enseignant : LABRAK Yanis, Lieu : Stat9 = Info - C 026, Sujet : UCE 3 URBANISATION, Type : TP
+Début : 17/11/2023 10:00:00, Fin : 17/11/2023 13:00:00, Enseignant : LABRAK Yanis, Lieu : Stat9 = Info - C 026, Sujet : UCE 3 URBANISATION, Type : TP
+Début : 27/09/2023 13:00:00, Fin : 27/09/2023 14:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 23/11/2023 16:00:00, Fin : 23/11/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 30/11/2023 16:00:00, Fin : 30/11/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : CISCO = C 133 Réseaux, Sujet : UCE 1 ARCHITECTURES CLOUD ET, Type : TP
+Début : 16/11/2023 16:00:00, Fin : 16/11/2023 19:00:00, Enseignant : NABITZ Sophie, Lieu : Stat9 = Info - C 026, Sujet : UCE 1 DESIGN PATTERN AVANCE, Type : TP
+Début : 10/01/2024 14:30:00, Fin : 10/01/2024 18:30:00, Enseignant : BENSLIMANE Abderrahim, BONASTRE Jean-Francois, FIGUEIREDO Rosa, FREDOUILLE Corinne, GOZLAN Philippe, HADDAD Majed, HAYEL Yezekael, HUET Stephane, JIMENEZ Tania, JOURLIN Pierre, LEFEVRE Fabrice, MORCHID Mohamed, NOCERA Pascal, PUY CAZCARRA Emmanuel, TORRES MORENO Juan manuel, VERNET Mathilde, Lieu : AGRB020 ( HDMI ), AGRB021 ( HDMI ), AGRB022 ( HDMI ) , AGRB023 ( HDMI ), Sujet : UCE 1 PROJET, Type : CM/TD
+Début : 19/06/2024 08:30:00, Fin : 19/06/2024 18:00:00, Enseignant : BENSLIMANE Abderrahim, BONASTRE Jean-Francois, FIGUEIREDO Rosa, FREDOUILLE Corinne, GOZLAN Philippe, HADDAD Majed, HAYEL Yezekael, HUET Stephane, JIMENEZ Tania, JOURLIN Pierre, LEFEVRE Fabrice, MORCHID Mohamed, NOCERA Pascal, PUY CAZCARRA Emmanuel, TORRES MORENO Juan manuel, VERNET Mathilde, Lieu : S2 = C 040, S3 = C 036, S4 = C 034, S7 = C 032, Sujet : UE PROJET 2, Type : Oraux
+Début : 20/03/2024 17:30:00, Fin : 20/03/2024 19:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 22/03/2024 09:00:00, Fin : 22/03/2024 13:00:00, Enseignant : VERNET Mathilde, Lieu : S5 = C 024, Sujet : UE PROJET 2, Type : CM/TD
+Début : 05/02/2024 08:30:00, Fin : 05/02/2024 11:30:00, Enseignant : FERREIRA Emmanuel, Lieu : S4 = C 034, Sujet : UCE 1 TECHNIQUES DE TEST, Type : CM
+Début : 06/02/2024 16:00:00, Fin : 06/02/2024 19:00:00, Enseignant : SALAS Daniel, Lieu : Stat 7 = Info - C 128, Sujet : UCE 1 TECHNIQUES DE TEST, Type : TP
+Début : 08/04/2024 08:30:00, Fin : 08/04/2024 10:00:00, Enseignant : SALAS Daniel, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 TECHNIQUES DE TEST, Type : TP
+Début : 12/02/2024 08:30:00, Fin : 12/02/2024 11:30:00, Enseignant : SALAS Daniel, Lieu : Stat 8 = Info - C 127, Sujet : UCE 1 TECHNIQUES DE TEST, Type : TP
+Début : 04/03/2024 08:30:00, Fin : 04/03/2024 11:30:00, Enseignant : SALAS Daniel, Lieu : Stat 6 = Info - C 129, Sujet : UCE 1 TECHNIQUES DE TEST, Type : TP
+Début : 11/03/2024 08:30:00, Fin : 11/03/2024 11:30:00, Enseignant : SALAS Daniel, Lieu : Stat 7 = Info - C 128, Sujet : UCE 1 TECHNIQUES DE TEST, Type : TP
+Début : 18/03/2024 08:30:00, Fin : 18/03/2024 11:30:00, Enseignant : SALAS Daniel, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 TECHNIQUES DE TEST, Type : TP
+Début : 29/01/2024 16:00:00, Fin : 29/01/2024 19:00:00, Enseignant : SALAS Daniel, Lieu : S4 = C 034, Sujet : UCE 1 TECHNIQUES DE TEST, Type : CM
+Début : 15/04/2024 10:00:00, Fin : 15/04/2024 11:30:00, Enseignant : SALAS Daniel, Lieu : Amphi Ada, Sujet : UCE 1 TECHNIQUES DE TEST, Type : Evaluation
+Début : 01/02/2024 17:30:00, Fin : 01/02/2024 19:00:00, Enseignant : NABITZ Sophie, Lieu : S4 = C 034, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : CM
+Début : 07/02/2024 17:30:00, Fin : 07/02/2024 19:00:00, Enseignant : NABITZ Sophie, Lieu : S4 = C 034, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : CM
+Début : 08/02/2024 08:30:00, Fin : 08/02/2024 10:00:00, Enseignant : NABITZ Sophie, Lieu : S4 = C 034, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : CM
+Début : 01/02/2024 10:00:00, Fin : 01/02/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 2 = Info - C 136, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 01/02/2024 14:30:00, Fin : 01/02/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 31/01/2024 14:30:00, Fin : 31/01/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 07/02/2024 14:30:00, Fin : 07/02/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 31/01/2024 10:00:00, Fin : 31/01/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 2 = Info - C 136, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 07/02/2024 10:00:00, Fin : 07/02/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 2 = Info - C 136, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 08/02/2024 10:00:00, Fin : 08/02/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 2 = Info - C 136, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 08/02/2024 14:30:00, Fin : 08/02/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 31/01/2024 17:30:00, Fin : 31/01/2024 19:00:00, Enseignant : NABITZ Sophie, Lieu : S4 = C 034, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : CM
+Début : 14/02/2024 08:30:00, Fin : 14/02/2024 10:00:00, Enseignant : NABITZ Sophie, Lieu : S4 = C 034, Sujet : UCE 2 MIDDLEWARE, Type : CM
+Début : 21/02/2024 10:00:00, Fin : 21/02/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 2 = Info - C 136, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 21/02/2024 14:30:00, Fin : 21/02/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 SERVEURS D'APPLICATION, Type : TP
+Début : 22/02/2024 14:30:00, Fin : 22/02/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 3 = Info - C 135, Sujet : UCE 2 MIDDLEWARE, Type : TP
+Début : 22/02/2024 08:30:00, Fin : 22/02/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 3 = Info - C 135, Sujet : UCE 2 MIDDLEWARE, Type : TP
+Début : 16/02/2024 08:30:00, Fin : 16/02/2024 13:00:00, Enseignant : BONNEFOY Ludovic, Lieu : Stat 6 = Info - C 129, Sujet : UCE 2 MIDDLEWARE, Type : TP
+Début : 08/03/2024 13:00:00, Fin : 08/03/2024 16:00:00, Enseignant : BONNEFOY Ludovic, Lieu : Stat 2 = Info - C 136, Sujet : UCE 2 MIDDLEWARE, Type : Evaluation
+Début : 07/03/2024 08:30:00, Fin : 07/03/2024 10:00:00, Enseignant : NABITZ Sophie, Lieu : S5 = C 024, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : CM
+Début : 07/03/2024 13:00:00, Fin : 07/03/2024 16:00:00, Enseignant : NABITZ Sophie, Lieu : S5 = C 024, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : CM
+Début : 15/02/2024 10:00:00, Fin : 15/02/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 3 = Info - C 135, Sujet : UCE 2 MIDDLEWARE, Type : TP
+Début : 14/03/2024 08:30:00, Fin : 14/03/2024 11:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 21/03/2024 14:30:00, Fin : 21/03/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 28/03/2024 14:30:00, Fin : 28/03/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 28/03/2024 10:00:00, Fin : 28/03/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 04/04/2024 10:00:00, Fin : 04/04/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 04/04/2024 14:30:00, Fin : 04/04/2024 17:30:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 20/03/2024 10:00:00, Fin : 20/03/2024 13:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 3 = Info - C 135, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 02/04/2024 08:30:00, Fin : 02/04/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 05/02/2024 17:30:00, Fin : 05/02/2024 19:00:00, Enseignant : RONDIN Lilian, Lieu : S3 = C 036, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 01/02/2024 08:30:00, Fin : 01/02/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 15/02/2024 08:30:00, Fin : 15/02/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S3 = C 036, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 05/03/2024 17:30:00, Fin : 05/03/2024 19:00:00, Enseignant : RONDIN Lilian, Lieu : S2 BIS = C 038, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 13/03/2024 08:30:00, Fin : 13/03/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S4 = C 034, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 02/04/2024 11:30:00, Fin : 02/04/2024 13:00:00, Enseignant : RONDIN Lilian, Lieu : S2 BIS = C 038, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 09/04/2024 14:30:00, Fin : 09/04/2024 16:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 17/04/2024 10:00:00, Fin : 17/04/2024 11:30:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 13/02/2024 08:30:00, Fin : 13/02/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S3 = C 036, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 16/04/2024 17:30:00, Fin : 16/04/2024 19:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 29/01/2024 13:00:00, Fin : 29/01/2024 14:30:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 12/04/2024 16:00:00, Fin : 12/04/2024 17:30:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 07/02/2024 08:30:00, Fin : 07/02/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S3 = C 036, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 21/02/2024 08:30:00, Fin : 21/02/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S4 = C 034, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 07/03/2024 10:00:00, Fin : 07/03/2024 11:30:00, Enseignant : RONDIN Lilian, Lieu : S7 = C 032, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 05/03/2024 16:00:00, Fin : 05/03/2024 17:30:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 12/03/2024 16:00:00, Fin : 12/03/2024 17:30:00, Enseignant : RONDIN Lilian, Lieu : S4 = C 034, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 06/03/2024 13:00:00, Fin : 06/03/2024 14:30:00, Enseignant : RONDIN Lilian, Lieu : S4 = C 034, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 12/03/2024 14:30:00, Fin : 12/03/2024 16:00:00, Enseignant : RONDIN Lilian, Lieu : S4 = C 034, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 21/03/2024 08:30:00, Fin : 21/03/2024 10:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 16/05/2024 10:00:00, Fin : 16/05/2024 11:30:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 30/04/2024 14:30:00, Fin : 30/04/2024 16:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 07/05/2024 14:30:00, Fin : 07/05/2024 16:00:00, Enseignant : RONDIN Lilian, Lieu : S2 = C 040, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : TD
+Début : 18/03/2024 16:00:00, Fin : 18/03/2024 19:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 19/03/2024 08:30:00, Fin : 19/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 3 = Info - C 135, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 27/03/2024 08:30:00, Fin : 27/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 29/03/2024 08:30:00, Fin : 29/03/2024 11:30:00, Enseignant : MORCHID Mohamed, Lieu : Stat 1 = Info - C 137, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 26/03/2024 16:00:00, Fin : 26/03/2024 19:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 19/03/2024 17:30:00, Fin : 19/03/2024 19:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 4 = Info - C 131, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 13/02/2024 13:00:00, Fin : 13/02/2024 16:00:00, Enseignant : CARIAS Patrick, Lieu : S6 = C 022, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : CM
+Début : 30/01/2024 08:30:00, Fin : 30/01/2024 10:00:00, Enseignant : CARIAS Patrick, Lieu : S6 = C 022, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : CM
+Début : 02/02/2024 08:30:00, Fin : 02/02/2024 10:00:00, Enseignant : CECILLON Noe, Lieu : S5 = C 024, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : CM
+Début : 09/02/2024 08:30:00, Fin : 09/02/2024 10:00:00, Enseignant : CECILLON Noe, Lieu : S5 = C 024, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : CM
+Début : 12/02/2024 14:30:00, Fin : 12/02/2024 17:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 6 = Info - C 129, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 18/03/2024 13:00:00, Fin : 18/03/2024 16:00:00, Enseignant : AMALVY Arthur, Lieu : Stat 5 = Info - C 130, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 19/02/2024 08:30:00, Fin : 19/02/2024 11:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 13/03/2024 14:30:00, Fin : 13/03/2024 17:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 5 = Info - C 130, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 26/03/2024 13:00:00, Fin : 26/03/2024 14:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 30/01/2024 10:00:00, Fin : 30/01/2024 13:00:00, Enseignant : SALAS Daniel, Lieu : S6 = C 022, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : CM
+Début : 02/02/2024 10:00:00, Fin : 02/02/2024 13:00:00, Enseignant : SALAS Daniel, Lieu : S5 = C 024, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : CM
+Début : 06/02/2024 08:30:00, Fin : 06/02/2024 11:30:00, Enseignant : SALAS Daniel, Lieu : Stat 3 = Info - C 135, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : TP
+Début : 25/03/2024 13:00:00, Fin : 25/03/2024 14:30:00, Enseignant : SALAS Daniel, Lieu : Stat 3 = Info - C 135, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : Evaluation
+Début : 15/02/2024 14:30:00, Fin : 15/02/2024 17:30:00, Enseignant : SALAS Daniel, Lieu : Stat 6 = Info - C 129, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : TP
+Début : 23/02/2024 14:30:00, Fin : 23/02/2024 17:30:00, Enseignant : SALAS Daniel, Lieu : Stat 2 = Info - C 136, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : TP
+Début : 04/03/2024 16:00:00, Fin : 04/03/2024 19:00:00, Enseignant : SALAS Daniel, Lieu : Stat 4 = Info - C 131, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : TP
+Début : 11/03/2024 13:00:00, Fin : 11/03/2024 16:00:00, Enseignant : SALAS Daniel, Lieu : Stat 6 = Info - C 129, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : TP
+Début : 20/03/2024 14:30:00, Fin : 20/03/2024 17:30:00, Enseignant : SALAS Daniel, Lieu : Stat 6 = Info - C 129, Sujet : UCE 3 PROCESSUS DU DEVELOPPEM, Type : TP
+Début : 07/05/2024 10:00:00, Fin : 07/05/2024 13:00:00, Enseignant : LEFEVRE Fabrice, Lieu : Stat 1 = Info - C 137, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : TP
+Début : 23/11/2023 10:00:00, Fin : 23/11/2023 13:00:00, Enseignant : MARTIN Yannis, Lieu : Stat 6 = Info - C 129, Sujet : UCE 4 APPLICATION DE MSI, Type : Evaluation
+Début : 09/02/2024 16:00:00, Fin : 09/02/2024 19:00:00, Enseignant : BONNEFOY Ludovic, Lieu : S6 = C 022, Sujet : UCE 2 MIDDLEWARE, Type : CM
+Début : 10/02/2024 13:00:00, Fin : 10/02/2024 14:30:00, Enseignant : BONNEFOY Ludovic, Lieu : Amphi Ada, Sujet : UCE 2 MIDDLEWARE, Type : CM
+Début : 29/01/2024 08:30:00, Fin : 29/01/2024 11:30:00, Enseignant : BONNEFOY Ludovic, Lieu : S6 = C 022, Sujet : UCE 2 MIDDLEWARE, Type : CM
+Début : 17/04/2024 08:30:00, Fin : 17/04/2024 10:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 08/01/2024 10:00:00, Fin : 08/01/2024 11:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 15/01/2024 08:30:00, Fin : 15/01/2024 19:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
+Début : 16/01/2024 13:00:00, Fin : 16/01/2024 19:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
+Début : 17/01/2024 08:30:00, Fin : 17/01/2024 19:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Evaluation
+Début : 21/03/2024 10:00:00, Fin : 21/03/2024 13:00:00, Enseignant : NABITZ Sophie, Lieu : Stat 1 = Info - C 137, Sujet : UCE 3 APPLICATIONS ORIENTEES, Type : TP
+Début : 15/12/2023 14:30:00, Fin : 15/12/2023 17:30:00, Enseignant : ROUVIER Mickael, Lieu : Amphi Ada, Sujet : UCE 2 PROGRAMMATION PARALLELE, Type : Evaluation
+Début : 20/12/2023 16:00:00, Fin : 20/12/2023 17:30:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : TP
+Début : 17/02/2024 08:30:00, Fin : 17/02/2024 10:00:00, Enseignant : BONNEFOY Ludovic, Lieu : S4 = C 034, Sujet : UCE 2 MIDDLEWARE, Type : CM
+Début : 25/03/2024 11:30:00, Fin : 25/03/2024 12:30:00, Enseignant : HUET Stephane, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
+Début : 22/01/2024 14:00:00, Fin : 22/01/2024 17:00:00, Enseignant : REY Carole, Lieu : S3 = C 036, Sujet : UCE 1 ANGLAIS (ORIENTE ENTREP, Type : Rattrapage
+Début : 05/03/2024 13:00:00, Fin : 05/03/2024 16:00:00, Enseignant : AMALVY Arthur, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : TP
+Début : 12/04/2024 08:30:00, Fin : 12/04/2024 10:00:00, Enseignant : HADDAD Majed, VERNET Mathilde, Lieu : S5 = C 024, Sujet : UE PROJET 2, Type : CM/TD
+Début : 07/11/2023 13:00:00, Fin : 07/11/2023 16:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 14/11/2023 13:00:00, Fin : 14/11/2023 16:00:00, Enseignant : MARTIN Yannis, Lieu : Amphi Ada, Sujet : UCE 2 MANAGEMENT PAR LES PROC, Type : CM
+Début : 23/02/2024 08:30:00, Fin : 23/02/2024 11:30:00, Enseignant : BONNEFOY Ludovic, Lieu : Stat 3 = Info - C 135, Sujet : UCE 2 MIDDLEWARE, Type : TP
+Début : 19/03/2024 14:30:00, Fin : 19/03/2024 16:00:00, Enseignant : BONNEFOY Ludovic, Lieu : Amphi Ada, Sujet : UCE 2 MIDDLEWARE, Type : Evaluation
+Début : 02/04/2024 14:30:00, Fin : 02/04/2024 17:30:00, Enseignant : AMALVY Arthur, Lieu : Stat 1 = Info - C 137, Sujet : UCE 2 PROTOTYPAGE ET INTERFAC, Type : Evaluation
+Début : 12/04/2024 11:30:00, Fin : 12/04/2024 12:30:00, Enseignant : HUET Stephane, Lieu : Amphi Ada, Sujet : Reservation de salles, Type : Type inconnu
+Début : 17/04/2024 11:30:00, Fin : 17/04/2024 13:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 2 = Info - C 136, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : TP
+Début : 16/05/2024 13:00:00, Fin : 16/05/2024 16:00:00, Enseignant : MORCHID Mohamed, Lieu : Stat 8 = Info - C 127, Sujet : UCE 4 APPLICATION ARCHITECTUR, Type : Evaluation
+Début : 11/09/2023 10:00:00, Fin : 11/09/2023 11:30:00, Enseignant : BENSLIMANE Abderrahim, LABATUT Vincent, ROUVIER Mickael, Lieu : Amphi Ada, Sujet : Rentree specifique, Type : Type inconnu
+Début : 10/10/2023 16:00:00, Fin : 10/10/2023 19:00:00, Enseignant : FIGUEIREDO Rosa, VERNET Mathilde, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
+Début : 20/10/2023 17:30:00, Fin : 20/10/2023 20:00:00, Enseignant : BENSLIMANE Abderrahim, FIGUEIREDO Rosa, HUET Stephane, JABAIAN Bassam, LABATUT Vincent, MATROUF Driss, ROUVIER Mickael, SPRIET Thierry, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
+Début : 11/01/2024 08:00:00, Fin : 11/01/2024 17:30:00, Enseignant : BENSLIMANE Abderrahim, COSTA Jean-pierre, DE PELLEGRINI Francesco, ELAZOUZI Rachid, ESTEVE Yannick, FIGUEIREDO Rosa, FREDOUILLE Corinne, GILLES Philippe, GOZLAN Philippe, GUEYE Serigne, HADDAD Majed, HAYEL Yezekael, HUET Stephane, JABAIAN Bassam, JOURLIN Pierre, LABATUT Vincent, LEFEVRE Fabrice, MATROUF Driss, NOCERA Pascal, ROUVIER Mickael, SPRIET Thierry, TORRES MORENO Juan manuel, VERNET Mathilde, ZHOU Fen, Lieu : Amphi Ada, Amphi Blaise, S1 = C 042 Nodes, S2 = C 0 40, S2 BIS = C 038, S3 = C 036, S4 = C 034, S5 = C 024, S6 = C 022,  S7 = C 032, S8 = C 030, Sujet : Reservation de salles, Type : Type inconnu
+Début : 11/09/2023 13:30:00, Fin : 11/09/2023 18:30:00, Enseignant : BENSLIMANE Abderrahim, ROUVIER Mickael, Lieu : S5 = C 024, S6 = C 022, Sujet : Reservation de salles, Type : Type inconnu
+Début : 14/05/2024 08:00:00, Fin : 14/05/2024 20:00:00, Enseignant : BEILLON Jennifer, HUET Stephane, Lieu : Amphi Ada, Amphi Blaise, S1 = C 042 Nodes, S2 = C 0 40, S2 BIS = C 038, S3 = C 036, S4 = C 034, S5 = C 024, S6 = C 022,  S7 = C 032, S8 = C 030, Stat 1 = Info - C 137, Stat 6 = Info - C 129,  Stat 7 = Info - C 128, Sujet : Reservation de salles, Type : Type inconnu
+Début : 16/02/2024 13:00:00, Fin : 16/02/2024 14:30:00, Enseignant : FIGUEIREDO Rosa, Lieu : Amphi Blaise, Sujet : Reservation de salles, Type : Type inconnu
+Début : 17/05/2024 17:30:00, Fin : 17/05/2024 19:00:00, Enseignant : RONDIN Lilian, Lieu : Amphi Blaise, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : Evaluation
+Début : 22/03/2024 14:30:00, Fin : 22/03/2024 16:00:00, Enseignant : RONDIN Lilian, Lieu : Amphi Blaise, Sujet : UCE 2 ANGLAIS (ORIENTE TECHNI, Type : Evaluation
+Début : 05/02/2024 11:30:00, Fin : 05/02/2024 13:00:00, Enseignant : LEFEVRE Fabrice, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : CM
+Début : 30/01/2024 14:30:00, Fin : 30/01/2024 17:30:00, Enseignant : LEFEVRE Fabrice, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : CM
+Début : 14/02/2024 13:00:00, Fin : 14/02/2024 16:00:00, Enseignant : LEFEVRE Fabrice, TORRES MORENO Juan manuel, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : Conférence
+Début : 14/02/2024 10:00:00, Fin : 14/02/2024 11:30:00, Enseignant : LEFEVRE Fabrice, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : CM
+Début : 06/03/2024 14:30:00, Fin : 06/03/2024 17:30:00, Enseignant : LEFEVRE Fabrice, TORRES MORENO Juan manuel, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : Conférence
+Début : 14/03/2024 16:00:00, Fin : 14/03/2024 19:00:00, Enseignant : HADDAD Majed, LEFEVRE Fabrice, Lieu : Amphi Blaise, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : Conférence
+Début : 17/05/2024 11:30:00, Fin : 17/05/2024 13:00:00, Enseignant : LEFEVRE Fabrice, Lieu : Stat 1 = Info - C 137, Stat 2 = Info - C 136, Stat 7  = Info - C 128, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : CM/TD
+Début : 16/05/2024 16:00:00, Fin : 16/05/2024 17:30:00, Enseignant : LEFEVRE Fabrice, Lieu : Stat 4 = Info - C 131, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : Evaluation
+Début : 17/04/2024 17:30:00, Fin : 17/04/2024 19:00:00, Enseignant : LEFEVRE Fabrice, Lieu : Stat 2 = Info - C 136, Sujet : UCE 1 VEILLE TECHNOLOGIQUE, Type : Conférence

@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ParserMain",
+            "request": "launch",
+            "mainClass": "ParserMain",
+            "projectName": "ProjetCalendrier_44c593b3"
+        },
+        {
+            "type": "java",
+            "name": "ParserMain",
+            "request": "launch",
+            "mainClass": "ParserMain",
+            "projectName": "ProjetCal_4ef93999"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "ProjetCalendrier_44c593b3",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml "
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "ProjetCalendrier_44c593b3",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml "
+        }
+    ]
+}
