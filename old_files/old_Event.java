@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Event {
+public class old_Event {
     private Date startDate;
     private Date endDate;
     private String teacher;
@@ -9,7 +9,7 @@ public class Event {
     private String subject;
     private String type;
 
-    public Event(Date startDate, Date endDate, String teacher, String location, String subject, String type, String group) {
+    public old_Event(Date startDate, Date endDate, String teacher, String location, String subject, String type, String group) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.teacher = teacher;
