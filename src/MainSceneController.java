@@ -80,7 +80,12 @@ public class MainSceneController {
         int startRow = timeToRow(startTime);
         int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
 
-        VBox eventBox = new VBox(new Text(event.getSubject()));
+        String[] teachers = event.getTeacher().split(","); // Séparez les noms des enseignants en utilisant la virgule comme délimiteur
+        StringBuilder teachersWithNewLines = new StringBuilder();
+        for (String teacher : teachers) {
+            teachersWithNewLines.append(teacher.trim()).append("\n"); // Ajoutez chaque nom suivi d'un retour à la ligne
+        }
+        VBox eventBox = new VBox(new Text(event.getSubject() + "\n" + teachersWithNewLines.toString()));
         eventBox.setStyle("-fx-background-color: lightblue; -fx-border-color: black;");
         double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
         eventBox.setMinHeight(eventHeight);
@@ -88,6 +93,8 @@ public class MainSceneController {
         GridPane.setValignment(eventBox, VPos.TOP);
         GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
+
+
 
     private void createDefaultTimeSlots() {
         LocalTime startTime = LocalTime.of(8, 0);
