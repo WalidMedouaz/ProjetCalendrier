@@ -9,7 +9,8 @@ public class ParserMain {
         ParserTest parser = new ParserTest();
         try {
             CalendarCERI calendarCERI = parser.getCalendarHeader();
-            parser.getCalendarEvents(calendarCERI);
+            parser.getCalendarEvents(calendarCERI.getEvents());
+            System.out.println(calendarCERI.getEvents().size());
             saveEventsToFile(calendarCERI, "events.txt");
         } catch (IOException | ParseException e) {
             System.out.println("Erreur !");
