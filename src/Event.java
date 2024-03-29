@@ -1,6 +1,8 @@
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
+
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Event {
@@ -111,5 +113,16 @@ public class Event {
 
     public SimpleStringProperty groupProperty() {
         return group;
+    }
+
+    @Override
+    public String toString() {
+        return "Start date : " + startDate + "\n" +
+                "End date : " + endDate + "\n" +
+                "Teacher : " + teacher + "\n" +
+                "Location : " + location + "\n" +
+                "Subject : " + subject + "\n" +
+                "Type : " + type + "\n" +
+                "Group " + group + "\n";
     }
 }

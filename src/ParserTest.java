@@ -5,14 +5,32 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
+import java.util.*;
 
 public class ParserTest {
+    private ArrayList<String> distinctGroups = new ArrayList<String>(); // List of all possible groups
+    private ArrayList<String> distinctSubjects = new ArrayList<String>(); // List of all possible subjects
+    private ArrayList<String> distinctTypes = new ArrayList<String>() ; // List of all possible class types
+    private ArrayList<String> distinctLocation = new ArrayList<String>(); // List of all possible locations
 
-    final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def50200c81a68c12a4acc32822b8773e379ac7b489b9799138dbeba79f24e4a65fbdc51ed192440883a797fb60703bff239a539c87f12da5dca57b5336934b6055684e40cf673254768cdbd863aaf704cd3a6ab75233190";
+    final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def502000a1ec3e8fa2fae0bf9f59ebb42d6c062a30f8baf4dee868998cca57bff5014c07acf4fb9f52d825a28156f43af4551b9aa2b11b8af5ae4e9578d5baeecbc5fa83fa4fc2e07b085b70e0c22ef6fd2f2bc5d967d2616dd998c034a0e6e40fab347486aa9";
     //final String QUERY_URL = "https://edt-api.univ-avignon.fr/api/exportAgenda/tdoption/def50200c7a4509b49242abad75bde9ec3807bc263605e824b95746d79d9f00dfb38346170d195fee1497b1118633b26af8a114f467cb4606a93a4fcdf0bb2cae2ca80d69aeeabea553382292598c6ae151b3d1855e49c2583691d409bd8a1ade68675fa30550f78673b771bb9b0e6ea59c55bd4ad31f2b82c358a5702e8cb68dbca31eda4ce337a6df2dcf202ed32";
 
+    public ArrayList<String> getDistinctGroups() {
+        return distinctGroups;
+    }
+
+    public ArrayList<String> getDistinctSubjects() {
+        return distinctSubjects;
+    }
+
+    public ArrayList<String> getDistinctTypes() {
+        return distinctTypes;
+    }
+
+    public ArrayList<String> getDistinctLocation() {
+        return distinctLocation;
+    }
     public CalendarCERI getCalendarHeader() throws IOException, ParseException {
         Date startDate = null;
         Date endDate = null;
@@ -64,7 +82,7 @@ public class ParserTest {
         return null;
     }
 
-    public void getCalendarEvents(CalendarCERI calendarCERI) throws IOException, ParseException {
+    public void getCalendarEvents(ArrayList<Event> events) throws IOException, ParseException {
         URL url = new URL(QUERY_URL);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
@@ -107,14 +125,17 @@ public class ParserTest {
                             if (!(inputLine.contains("-"))) { // Jours feriés
                                 subject = inputLine.substring(inputLine.indexOf(":") + 1);
                             }
+                            else {
+                                subject = inputLine.substring(inputLine.indexOf("SUMMARY;LANGUAGE=fr:") + 20, inputLine.indexOf("-") - 1);
+                            }
                             inputLine = in.readLine();
                         } else if (inputLine.contains("DESCRIPTION")) {
                             String fullDescriptionLine = inputLine;
                             while (!(inputLine = in.readLine()).contains("X-ALT-DESC")) {
                                 fullDescriptionLine += inputLine.substring(1); // Le premier charactère d'une nouvelle ligne est toujours un espace
                             }
-                            if(fullDescriptionLine.indexOf("TD : ") != -1) {
-                                group = fullDescriptionLine.substring(fullDescriptionLine.indexOf("TD :"), fullDescriptionLine.indexOf("\\n", fullDescriptionLine.indexOf("TD :")));
+                            if(fullDescriptionLine.contains("TD : ")) {
+                                group = fullDescriptionLine.substring(fullDescriptionLine.indexOf("TD :") + 4, fullDescriptionLine.indexOf("\\n", fullDescriptionLine.indexOf("TD :"))).replace("\\", "");;
                             }
                             else if(fullDescriptionLine.contains("Promotions :")) {
                                 group = fullDescriptionLine.substring(fullDescriptionLine.indexOf("Promotions :") + 13, fullDescriptionLine.indexOf("\\n", fullDescriptionLine.indexOf("Promotions :"))).replace("\\", "");
@@ -137,7 +158,11 @@ public class ParserTest {
                             inputLine = in.readLine();
                         }
                     }
-                    calendarCERI.getEvents().add(new Event(startDate, endDate, teacher, location, subject, type, group));
+                    events.add(new Event(startDate, endDate, teacher, location, subject, type, group));
+                    getDistinctSubject(subject);
+                    getDistinctLocation(location);
+                    getDistinctGroup(group);
+                    getDistinctType(type);
                 }
                 inputLine = in.readLine();
             }
@@ -147,28 +172,90 @@ public class ParserTest {
         }
     }
 
-    public void filterBySubject(CalendarCERI calendarCERI, String filterType, String filterContent) {
+    private void getDistinctLocation(String location) {
+        if(location == null) {
+            return;
+        }
+        if (location.contains(",")) {
+            String[] splitStrings = location.split(",");
+            for(String s : splitStrings) {
+                if(!distinctLocation.contains(s.stripLeading())) {
+                    distinctLocation.add(s.stripLeading()); // Retirer les espaces au début
+                }
+            }
+        } else if(!distinctLocation.contains(location.stripLeading())){
+            distinctLocation.add(location.stripLeading());
+        }
+    }
+
+    private void getDistinctType(String type) {
+        if (type == null) {
+            return;
+        }
+        if (type.contains(",")) {
+            String[] splitStrings = type.split(",");
+            for(String s : splitStrings) {
+                if(!distinctTypes.contains(s.stripLeading())) {
+                    distinctTypes.add(s.stripLeading()); // Retirer les espaces au début
+                }
+            }
+        } else if(!distinctTypes.contains(type.stripLeading())){
+            distinctTypes.add(type.stripLeading());
+        }
+    }
+
+    private void getDistinctSubject(String subject) {
+        if(subject == null) {
+            return;
+        }
+        if (subject.contains(",")) {
+            String[] splitStrings = subject.split(",");
+            for(String s : splitStrings) {
+                if(!distinctSubjects.contains(s.stripLeading())) {
+                    distinctSubjects.add(s.stripLeading()); // Retirer les espaces au début
+                }
+            }
+        } else if(!distinctSubjects.contains(subject.stripLeading())){
+            distinctSubjects.add(subject.stripLeading());
+        }
+    }
+
+    private void getDistinctGroup(String group) {
+        if(group == null) {
+            return;
+        }
+        if (group.contains(",")) {
+            String[] splitStrings = group.split(",");
+            for(String s : splitStrings) {
+                s = s.replaceFirst("^TD : ", "").replaceAll("\\\\+$", "");
+                if(!distinctGroups.contains(s.stripLeading())) {
+                    distinctGroups.add(s.stripLeading()); // Retirer les espaces au début
+                }
+            }
+        } else if(!distinctGroups.contains(group.stripLeading())){
+            distinctGroups.add(group.stripLeading());
+        }
+    }
+
+    public void filter(ArrayList<Event> events, String filterType, String filterContent) {
         try {
             switch (filterType) {
-                case "Subject":
-                    calendarCERI.getEvents().removeIf(p -> !p.getSubject().contains(filterContent));
+                case "Matière":
+                    events.removeIf(p -> p.getSubject()!= null && !p.getSubject().contains(filterContent));
                     break;
-                case "Group":
-                    calendarCERI.getEvents().removeIf(p -> p.getGroup() != null && !p.getGroup().contains(filterContent));
+                case "Groupe":
+                    events.removeIf(p -> p.getGroup() != null && !p.getGroup().contains(filterContent));
                     break;
-                case "Location":
-                    calendarCERI.getEvents().removeIf(p -> !p.getLocation().contains(filterContent));
+                case "Salle":
+                    events.removeIf(p -> p.getLocation() != null && !p.getLocation().contains(filterContent));
                     break;
-                case "Type":
-                    calendarCERI.getEvents().removeIf(p -> !p.getType().contains(filterContent));
+                case "Type de cours":
+                    events.removeIf(p -> p.getType() != null && !p.getType().contains(filterContent));
                     break;
             }
         }
         catch (Exception e) {
             System.out.println("Error with " + filterType + " for this event !");
-        }
-        for(Event e : calendarCERI.getEvents()) {
-            System.out.println(e.toString());
         }
     }
 

@@ -30,7 +30,7 @@ public class CalendarService {
     public CalendarCERI parseEvents() throws IOException, ParseException {
         ParserTest parser = new ParserTest();
         CalendarCERI calendarCERI = parser.getCalendarHeader();
-        parser.getCalendarEvents(calendarCERI);
+        parser.getCalendarEvents(calendarCERI.getEvents());
         return calendarCERI;
     }
 }

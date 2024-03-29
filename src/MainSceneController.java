@@ -1,9 +1,9 @@
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
+import javafx.scene.control.ComboBox;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -20,31 +20,99 @@ public class MainSceneController {
 
     @FXML
     private GridPane scheduleGridPane;
+    @FXML
+    private ComboBox filterType;
+    @FXML
+    private ComboBox filterChoice;
     private static final double MIN_HEIGHT_PER_HALF_HOUR = 60.0;
-    private List<Event> events; // Your events list
+    private ArrayList<Event> events = new ArrayList<Event>(); // Your events list
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
+    private ParserTest parser;
+
 
     @FXML
     private void initialize() {
         try {
+            parser = new ParserTest();
             loadEvents();
             createDefaultTimeSlots();
             currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
             setupWeekdaysHeader();
             displayEvents();
             setEqualColumnWidths();
+
+            List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
+            filterType.getItems().addAll(stringList);
+            if (!stringList.isEmpty()) {
+                filterType.setValue(stringList.get(0));
+            }
+
+            ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
+            filterChoice.getItems().addAll(distinctSubjects);
+            if(!distinctSubjects.isEmpty()) {
+                filterChoice.setValue(distinctSubjects.get(0));
+            }
+
+            filterType.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+                if (newValue != null) {
+                    handleFilterTypeSelection((String) newValue);
+                }
+            });
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
 
+    private void handleFilterTypeSelection(String selectedItem) {
+        filterChoice.getItems().clear();
+        switch (selectedItem) {
+            case "Matière":
+                ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
+                filterChoice.getItems().addAll(distinctSubjects);
+                if(!distinctSubjects.isEmpty()) {
+                    filterChoice.setValue(distinctSubjects.get(0));
+                }                break;
+            case "Groupe":
+                ArrayList<String> distinctGroups = parser.getDistinctGroups();
+                filterChoice.getItems().addAll(distinctGroups);
+                if(!distinctGroups.isEmpty()) {
+                    filterChoice.setValue(distinctGroups.get(0));
+                }
+                break;
+            case "Salle":
+                ArrayList<String> distinctLocation = parser.getDistinctLocation();
+                filterChoice.getItems().addAll(distinctLocation);
+                if(!distinctLocation.isEmpty()) {
+                    filterChoice.setValue(distinctLocation.get(0));
+                }
+                break;
+            case "Type de cours":
+                ArrayList<String> distinctTypes = parser.getDistinctTypes();
+                filterChoice.getItems().addAll(distinctTypes);
+                if(!distinctTypes.isEmpty()) {
+                    filterChoice.setValue(distinctTypes.get(0));
+                }
+                break;
+            default:
+                System.out.println("Not found...");
+                break;
+        }
+    }
+
+    @FXML
+    private void handleFilterButton() throws IOException, ParseException {
+        events.clear();
+        events.addAll(calendarCERI.getEvents());
+        parser.filter(events, filterType.getValue().toString(), filterChoice.getValue().toString());
+        updateWeekView();
+        System.out.println(events.size());
+    }
+
     private void loadEvents() throws IOException, ParseException {
-        ParserTest parser = new ParserTest();
         calendarCERI = parser.getCalendarHeader();
-        parser.getCalendarEvents(calendarCERI);
-        events = calendarCERI.getEvents();
-        parser.filterBySubject(calendarCERI, "Group", "ILSEN");
+        parser.getCalendarEvents(calendarCERI.getEvents());
+        events.addAll(calendarCERI.getEvents());
     }
 
     private void setupWeekdaysHeader() {
@@ -61,14 +129,16 @@ public class MainSceneController {
     private void displayEvents() {
         for (Event event : events) {
             if (event.getStartDate() == null) {
-                System.out.println("Date nulle détectée...");
+                //System.out.println("Date nulle détectée...");
                 return;
             }
+
             LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
             if (!eventDate.isBefore(currentMonday) && !eventDate.isAfter(currentMonday.plusDays(6))) {
                 addEventToGrid(event);
             }
         }
+
     }
 
     private void addEventToGrid(Event event) {
@@ -80,7 +150,10 @@ public class MainSceneController {
         int startRow = timeToRow(startTime);
         int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
 
-        String[] teachers = event.getTeacher().split(","); // Séparez les noms des enseignants en utilisant la virgule comme délimiteur
+        String[] teachers = Arrays.asList("").toArray(new String[0]);
+        if(event.getTeacher() != null) {
+            teachers = event.getTeacher().split(","); // Séparez les noms des enseignants en utilisant la virgule comme délimiteur
+        }
         StringBuilder teachersWithNewLines = new StringBuilder();
         for (String teacher : teachers) {
             teachersWithNewLines.append(teacher.trim()).append("\n"); // Ajoutez chaque nom suivi d'un retour à la ligne
