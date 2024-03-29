@@ -1,0 +1,44 @@
+.root {
+    -fx-background-color: #f0f0f0;  
+    -fx-text-fill: #333; 
+    -fx-base: #ffffff; 
+    -fx-control-inner-background: #ffffff;
+    -fx-accent: #0096C9;
+    -fx-default-button: #abd8ed;
+    -fx-focus-color: #0096C9; 
+    -fx-faint-focus-color: #0096C922; 
+}
+
+.button {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #e6e6e6),
+        linear-gradient(#fcfcfc, #f9f9f9),
+        linear-gradient(#dddddd, #f6f6f6); 
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10 5 10; 
+    -fx-text-fill: #333; 
+}
+
+.button:hover {
+    -fx-background-color: 
+        linear-gradient(#f8f8f8, #f8f8f8),
+        linear-gradient(#f9f9f9, #f9f9f9),
+        linear-gradient(#eeeeee, #f8f8f8); 
+}
+
+.label {
+    -fx-text-fill: #333; 
+}
+
+.text-field {
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: #333; 
+}
+
+.scroll-bar {
+    -fx-background-color: #f0f0f0; 
+}
+
+
+

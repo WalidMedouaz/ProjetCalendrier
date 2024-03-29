@@ -1,0 +1,44 @@
+.root {
+    -fx-background-color: #2b2b2b; /* Couleur de fond plus sombre pour tout l'arrière-plan */
+    -fx-text-fill: #e0e0e0; /* Couleur du texte qui contraste bien avec le fond sombre */
+    -fx-base: #424242; /* Couleur de base pour de nombreux composants */
+    -fx-control-inner-background: #1d1d1d; /* Couleur de fond pour les composants internes comme les champs de texte */
+    -fx-accent: #00bcd4; /* Couleur d'accent pour les éléments sélectionnés et les focus */
+    -fx-default-button: #333; /* Couleur de fond pour le bouton par défaut */
+    -fx-focus-color: #00bcd4; /* Couleur du focus sur les composants */
+    -fx-faint-focus-color: #00bcd422; /* Couleur du focus plus subtil */
+}
+
+.button {
+    -fx-background-color: 
+        linear-gradient(#424242, #383838),
+        linear-gradient(#3a3a3a, #3a3a3a),
+        linear-gradient(#4b4b4b, #383838); /* Gradient pour le fond des boutons */
+    -fx-background-insets: 0, 1, 2; /* Insets pour les layers du gradient */
+    -fx-background-radius: 5; /* Rayon pour les coins arrondis des boutons */
+    -fx-padding: 5 10 5 10; /* Padding autour du texte du bouton */
+    -fx-text-fill: #e0e0e0; /* Couleur du texte du bouton */
+}
+
+.button:hover {
+    -fx-background-color: 
+        linear-gradient(#2b2b2b, #2a2a2a),
+        linear-gradient(#3a3a3a, #3a3a3a),
+        linear-gradient(#4b4b4b, #2a2a2a); /* Gradient pour le bouton en hover */
+}
+
+.label {
+    -fx-text-fill: #e0e0e0; /* Couleur du texte pour les étiquettes */
+}
+
+.text-field {
+    -fx-background-color: #1d1d1d; /* Couleur de fond pour les champs de texte */
+    -fx-text-fill: #e0e0e0; /* Couleur du texte dans les champs de texte */
+}
+
+.scroll-bar {
+    -fx-background-color: #2b2b2b; /* Couleur de fond des barres de défilement */
+}
+
+/* Et ainsi de suite pour les autres éléments que vous souhaitez styliser */
+
