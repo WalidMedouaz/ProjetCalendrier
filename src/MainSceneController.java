@@ -38,6 +38,7 @@ public class MainSceneController {
             loadEvents();
             createDefaultTimeSlots();
             currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+            System.out.println(currentMonday);
             setupWeekdaysHeader();
             displayEvents();
             setEqualColumnWidths();
@@ -95,7 +96,7 @@ public class MainSceneController {
                 }
                 break;
             default:
-                System.out.println("Not found...");
+                System.out.println("Filter not found...");
                 break;
         }
     }
@@ -104,9 +105,8 @@ public class MainSceneController {
     private void handleFilterButton() throws IOException, ParseException {
         events.clear();
         events.addAll(calendarCERI.getEvents());
-        parser.filter(events, filterType.getValue().toString(), filterChoice.getValue().toString());
+        parser.filter(events, filterType.getValue().toString().strip(), filterChoice.getValue().toString().strip());
         updateWeekView();
-        System.out.println(events.size());
     }
 
     private void loadEvents() throws IOException, ParseException {
@@ -130,15 +130,14 @@ public class MainSceneController {
         for (Event event : events) {
             if (event.getStartDate() == null) {
                 //System.out.println("Date nulle détectée...");
-                return;
+                continue;
             }
-
+            System.out.println(event.toString());
             LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
             if (!eventDate.isBefore(currentMonday) && !eventDate.isAfter(currentMonday.plusDays(6))) {
                 addEventToGrid(event);
             }
         }
-
     }
 
     private void addEventToGrid(Event event) {
@@ -150,7 +149,7 @@ public class MainSceneController {
         int startRow = timeToRow(startTime);
         int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
 
-        String[] teachers = Arrays.asList("").toArray(new String[0]);
+        String[] teachers = List.of("").toArray(new String[0]);
         if(event.getTeacher() != null) {
             teachers = event.getTeacher().split(","); // Séparez les noms des enseignants en utilisant la virgule comme délimiteur
         }
@@ -166,9 +165,6 @@ public class MainSceneController {
         GridPane.setValignment(eventBox, VPos.TOP);
         GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
-
-
-
     private void createDefaultTimeSlots() {
         LocalTime startTime = LocalTime.of(8, 0);
         int row = 1;

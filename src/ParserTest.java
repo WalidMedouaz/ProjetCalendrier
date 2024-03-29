@@ -179,12 +179,12 @@ public class ParserTest {
         if (location.contains(",")) {
             String[] splitStrings = location.split(",");
             for(String s : splitStrings) {
-                if(!distinctLocation.contains(s.stripLeading())) {
-                    distinctLocation.add(s.stripLeading()); // Retirer les espaces au début
+                if(!distinctLocation.contains(s.strip())) {
+                    distinctLocation.add(s.strip()); // Retirer les espaces au début
                 }
             }
-        } else if(!distinctLocation.contains(location.stripLeading())){
-            distinctLocation.add(location.stripLeading());
+        } else if(!distinctLocation.contains(location.strip())){
+            distinctLocation.add(location.strip());
         }
     }
 
@@ -195,12 +195,12 @@ public class ParserTest {
         if (type.contains(",")) {
             String[] splitStrings = type.split(",");
             for(String s : splitStrings) {
-                if(!distinctTypes.contains(s.stripLeading())) {
-                    distinctTypes.add(s.stripLeading()); // Retirer les espaces au début
+                if(!distinctTypes.contains(s.strip())) {
+                    distinctTypes.add(s.strip()); // Retirer les espaces au début
                 }
             }
-        } else if(!distinctTypes.contains(type.stripLeading())){
-            distinctTypes.add(type.stripLeading());
+        } else if(!distinctTypes.contains(type.strip())){
+            distinctTypes.add(type.strip());
         }
     }
 
@@ -211,12 +211,12 @@ public class ParserTest {
         if (subject.contains(",")) {
             String[] splitStrings = subject.split(",");
             for(String s : splitStrings) {
-                if(!distinctSubjects.contains(s.stripLeading())) {
-                    distinctSubjects.add(s.stripLeading()); // Retirer les espaces au début
+                if(!distinctSubjects.contains(s.strip())) {
+                    distinctSubjects.add(s.strip()); // Retirer les espaces au début
                 }
             }
-        } else if(!distinctSubjects.contains(subject.stripLeading())){
-            distinctSubjects.add(subject.stripLeading());
+        } else if(!distinctSubjects.contains(subject.strip())){
+            distinctSubjects.add(subject.strip());
         }
     }
 
@@ -228,12 +228,12 @@ public class ParserTest {
             String[] splitStrings = group.split(",");
             for(String s : splitStrings) {
                 s = s.replaceFirst("^TD : ", "").replaceAll("\\\\+$", "");
-                if(!distinctGroups.contains(s.stripLeading())) {
-                    distinctGroups.add(s.stripLeading()); // Retirer les espaces au début
+                if(!distinctGroups.contains(s.strip())) {
+                    distinctGroups.add(s.strip()); // Retirer les espaces au début
                 }
             }
-        } else if(!distinctGroups.contains(group.stripLeading())){
-            distinctGroups.add(group.stripLeading());
+        } else if(!distinctGroups.contains(group.strip())){
+            distinctGroups.add(group.strip());
         }
     }
 
