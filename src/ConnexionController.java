@@ -1,7 +1,3 @@
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,15 +12,6 @@ import org.bson.Document;
 import java.io.IOException;
 
 public class ConnexionController {
-    private MongoClient mongoClient;
-    private MongoDatabase database;
-    private MongoCollection<Document> userCollection;
-
-    public ConnexionController() {
-        mongoClient = MongoClients.create("mongodb://pedago.univ-avignon.fr:27017");
-        database = mongoClient.getDatabase("cal_aw");
-        userCollection = database.getCollection("user");
-    }
 
     @FXML
     private TextField tfpassword;
@@ -32,15 +19,19 @@ public class ConnexionController {
     @FXML
     private TextField tfusername;
 
+    MongoService mongoService = new MongoService();
+
+    public static Utilisateur currentUser;
+
     @FXML
     void Connexion(ActionEvent event) {
         String username = tfusername.getText();
         String password = tfpassword.getText();
 
-        Document query = new Document("Id", username).append("Mdp", password);
-        Document userDocument = userCollection.find(query).first();
-
+        Document userDocument = mongoService.connect(username, password);
         if (userDocument != null) {
+            currentUser = new Utilisateur(userDocument.get("id").toString(), userDocument.get("nom").toString(), (String) userDocument.get("prenom"), userDocument.get("isEnseignant").toString(), userDocument.get("modeFavori").toString(), userDocument.get("eventPerso").toString());
+
             System.out.println("Connexion réussie ! " + userDocument.toJson());
 
             try {
@@ -61,7 +52,5 @@ public class ConnexionController {
             alert.showAndWait();
         }
     }
-    public void closeMongoClient() {
-        mongoClient.close();
-    }
+
 }

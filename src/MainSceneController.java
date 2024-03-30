@@ -1,22 +1,25 @@
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
 import javafx.scene.Scene;
-import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.scene.control.Label;
+import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-import javafx.scene.layout.RowConstraints;
 
+import java.io.IOException;
+import java.text.ParseException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
-import java.util.*;
-import java.io.IOException;
-import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
 
 public class MainSceneController {
 
@@ -32,38 +35,44 @@ public class MainSceneController {
     private CalendarCERI calendarCERI;
     private ParserTest parser;
 
-
     @FXML
     private void initialize() {
-        try {
-            parser = new ParserTest();
-            loadEvents();
-            createDefaultTimeSlots();
-            currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
-            setupWeekdaysHeader();
-            displayEvents();
-            setEqualColumnWidths();
+        parser = new ParserTest();
+        currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+        Thread parserThread = new Thread(() -> {
+            try {
+                parser = new ParserTest();
+                loadEvents();
+                Platform.runLater(() -> {
+                    createDefaultTimeSlots();
+                    setupWeekdaysHeader();
+                    displayEvents();
+                    setEqualColumnWidths();
 
-            List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
-            filterType.getItems().addAll(stringList);
-            if (!stringList.isEmpty()) {
-                filterType.setValue(stringList.get(0));
+                    List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
+                    filterType.getItems().addAll(stringList);
+                    if (!stringList.isEmpty()) {
+                        filterType.setValue(stringList.get(0));
+                    }
+
+                    ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
+                    filterChoice.getItems().addAll(distinctSubjects);
+                    if(!distinctSubjects.isEmpty()) {
+                        filterChoice.setValue(distinctSubjects.get(0));
+                    }
+
+                    filterType.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+                        if (newValue != null) {
+                            handleFilterTypeSelection((String) newValue);
+                        }
+                    });
+                });
+            } catch (IOException | ParseException e) {
+                e.printStackTrace();
             }
+        });
+        parserThread.start();
 
-            ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
-            filterChoice.getItems().addAll(distinctSubjects);
-            if(!distinctSubjects.isEmpty()) {
-                filterChoice.setValue(distinctSubjects.get(0));
-            }
-
-            filterType.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-                if (newValue != null) {
-                    handleFilterTypeSelection((String) newValue);
-                }
-            });
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
-        }
     }
 
     private void handleFilterTypeSelection(String selectedItem) {
