@@ -11,52 +11,92 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sneux.MainSceneController">
     <VBox layoutX="250.0" prefHeight="560.0" prefWidth="630.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
         <HBox alignment="CENTER" spacing="20.0">
             <Button fx:id="previousWeekButton" onAction="#loadPreviousWeek" text="Semaine précédente" />
             <Button fx:id="nextWeekButton" onAction="#loadNextWeek" text="Semaine suivante" />
             <Button fx:id="currentWeekButton" text="Aujourd'hui" onAction="#loadCurrentWeek"/>
         </HBox>
-      <ScrollPane prefHeight="525.0" prefWidth="817.0" VBox.vgrow="ALWAYS">
-    <content>
-        <GridPane fx:id="scheduleGridPane" alignment="TOP_CENTER" minWidth="900" VBox.vgrow="ALWAYS">
-        </GridPane>
-    </content>
-         <VBox.margin>
-            <Insets />
-         </VBox.margin>
-</ScrollPane>
+        <ScrollPane prefHeight="525.0" prefWidth="817.0" VBox.vgrow="ALWAYS">
+            <content>
+                <GridPane fx:id="scheduleGridPane" alignment="TOP_CENTER" minWidth="900" VBox.vgrow="ALWAYS">
+                </GridPane>
+            </content>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </ScrollPane>
     </VBox>
-   <VBox fx:id="filterVBox" layoutX="35.0" layoutY="55.0" prefHeight="525.0" prefWidth="189.0" spacing="10.0">
-        <Button fx:id="lightModeButton" text="Mode Clair" onAction="#applyLightMode"/>
-            <Button fx:id="darkModeButton" text="Mode Sombre" onAction="#applyDarkMode"/>
-      <children>
-         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="94.0" text="Filtrer par :" textAlignment="CENTER">
+    <VBox fx:id="filterVBox" layoutX="35.0" layoutY="55.0" prefHeight="525.0" prefWidth="189.0" spacing="10.0">
+        <Button fx:id="lightModeButton" text="Mode Clair" onAction="#applyLightMode">
             <VBox.margin>
-               <Insets left="40.0" />
+                <Insets left="40.0" top="30.0" />
             </VBox.margin>
-            <font>
-               <Font size="17.0" />
-            </font>
-         </Label>
-         <ComboBox fx:id="filterType" prefWidth="150.0">
+        </Button>
+        <Button fx:id="darkModeButton" text="Mode Sombre" onAction="#applyDarkMode">
             <VBox.margin>
-               <Insets left="15.0" top="15.0" />
+                <Insets left="40.0" top="30.0" />
             </VBox.margin>
-         </ComboBox>
-         <ComboBox fx:id="filterChoice" prefWidth="150.0">
-            <VBox.margin>
-               <Insets left="15.0" top="15.0" />
-            </VBox.margin>
-         </ComboBox>
-         <Button fx:id="filterButton" onAction="#handleFilterButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" text="Filtrer">
-            <VBox.margin>
-               <Insets left="35.0" top="15.0" />
-            </VBox.margin>
-            <font>
-               <Font size="19.0" />
-            </font>
-         </Button>
-      </children></VBox>
+        </Button>
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="94.0" text="Filtrer par :" textAlignment="CENTER">
+                <VBox.margin>
+                    <Insets left="40.0" top="60.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </Label>
+            <ComboBox fx:id="filterType" prefWidth="150.0">
+                <VBox.margin>
+                    <Insets left="15.0" top="15.0" />
+                </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="filterChoice" prefWidth="150.0">
+                <VBox.margin>
+                    <Insets left="15.0" top="15.0" />
+                </VBox.margin>
+            </ComboBox>
+            <Button fx:id="filterButton" onAction="#handleFilterButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="130.0" text="Filtrer">
+                <VBox.margin>
+                    <Insets left="25.0" top="15.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="150.0" text="Rechercher par :" textAlignment="CENTER">
+                <VBox.margin>
+                    <Insets left="20.0" top="60.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <ComboBox fx:id="searchBox" prefWidth="150.0">
+                <VBox.margin>
+                    <Insets left="15.0" top="15.0" />
+                </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="searchField" promptText="Entrez votre recherche..." prefWidth="300.0" prefHeight="100.0" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="10.0" top="15.0" />
+                </VBox.margin>
+            </TextField>
+            <Button fx:id="searchButton" onAction="#handleSearchButton" mnemonicParsing="false" prefWidth="130.0" text="Rechercher">
+                <VBox.margin>
+                    <Insets left="25.0" top="15.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Button>
+
+        </children>
+    </VBox>
 </AnchorPane>

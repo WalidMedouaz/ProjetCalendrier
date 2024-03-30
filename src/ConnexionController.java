@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import org.bson.Document;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class ConnexionController {
 
@@ -30,9 +31,12 @@ public class ConnexionController {
 
         Document userDocument = mongoService.connect(username, password);
         if (userDocument != null) {
-            currentUser = new Utilisateur(userDocument.get("id").toString(), userDocument.get("nom").toString(), (String) userDocument.get("prenom"), userDocument.get("isEnseignant").toString(), userDocument.get("modeFavori").toString(), userDocument.get("eventPerso").toString());
-
-            System.out.println("Connexion réussie ! " + userDocument.toJson());
+            if(Objects.equals(userDocument.get("isEnseignant").toString(), "false")) {
+                currentUser = new Utilisateur(userDocument.getString("id"), userDocument.getString("nom"), userDocument.getString("prenom"), userDocument.getString("filiere"), userDocument.getString("groupe"), userDocument.getBoolean("isEnseignant"), userDocument.getString("modeFavori"), userDocument.getList("eventPerso", String.class));
+            }
+            else {
+                currentUser = new Utilisateur(userDocument.getString("id"), userDocument.getString("nom"), userDocument.getString("prenom"), userDocument.getBoolean("isEnseignant"), userDocument.getString("modeFavori"), userDocument.getList("eventPerso", String.class), userDocument.getList("reservations", String.class));
+            }
 
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScene.fxml"));

@@ -3,8 +3,10 @@ import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
@@ -30,6 +32,11 @@ public class MainSceneController {
     private ComboBox filterType;
     @FXML
     private ComboBox filterChoice;
+    @FXML
+    private ComboBox searchBox;
+    @FXML
+    private TextField searchField;
+
     private ArrayList<Event> events = new ArrayList<Event>(); // Your events list
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
@@ -55,6 +62,12 @@ public class MainSceneController {
                         filterType.setValue(stringList.get(0));
                     }
 
+                    List<String> searchOptions = Arrays.asList("Formation", "Enseignant", "Salle");
+                    searchBox.getItems().addAll(searchOptions);
+                    if (!searchOptions.isEmpty()) {
+                        searchBox.setValue(searchOptions.get(0));
+                    }
+
                     ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
                     filterChoice.getItems().addAll(distinctSubjects);
                     if(!distinctSubjects.isEmpty()) {
@@ -66,6 +79,7 @@ public class MainSceneController {
                             handleFilterTypeSelection((String) newValue);
                         }
                     });
+
                 });
             } catch (IOException | ParseException e) {
                 e.printStackTrace();
@@ -117,6 +131,37 @@ public class MainSceneController {
         events.addAll(calendarCERI.getEvents());
         parser.filter(events, filterType.getValue().toString().strip(), filterChoice.getValue().toString().strip());
         updateWeekView();
+    }
+
+    @FXML
+    private void handleSearchButton() throws IOException, ParseException {
+        switch (searchBox.getValue().toString()) {
+            case "Formation":
+                parser.setFormationURL(searchField.getText());
+                break;
+            case "Enseignant":
+                parser.setEnseignantURL(searchField.getText());
+                break;
+            case "Salle":
+                parser.setSalleURL(searchField.getText());
+                break;
+            default:
+                System.out.println("Sélection invalide ...");
+        }
+        events.clear();
+        Thread parserThread = new Thread(() -> {
+            try {
+                loadEvents();
+            }
+            catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+            Platform.runLater(this::updateWeekView);
+        });
+        parserThread.start();
     }
 
     private void loadEvents() throws IOException, ParseException {
