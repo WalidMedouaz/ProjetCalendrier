@@ -2,6 +2,7 @@ import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
 import javafx.scene.Scene;
+import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
@@ -19,13 +20,13 @@ import java.text.ParseException;
 
 public class MainSceneController {
 
+    private static final double MIN_HEIGHT_PER_HALF_HOUR = 60.0;
     @FXML
     private GridPane scheduleGridPane;
     @FXML
     private ComboBox filterType;
     @FXML
     private ComboBox filterChoice;
-    private static final double MIN_HEIGHT_PER_HALF_HOUR = 60.0;
     private ArrayList<Event> events = new ArrayList<Event>(); // Your events list
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
@@ -39,7 +40,6 @@ public class MainSceneController {
             loadEvents();
             createDefaultTimeSlots();
             currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
-            System.out.println(currentMonday);
             setupWeekdaysHeader();
             displayEvents();
             setEqualColumnWidths();
@@ -207,8 +207,6 @@ public void applyDarkMode() {
         GridPane.setValignment(eventBox, VPos.TOP);
         GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
-
-
 
     private void createDefaultTimeSlots() {
         LocalTime startTime = LocalTime.of(8, 0);
