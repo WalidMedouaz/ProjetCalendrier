@@ -1,6 +1,7 @@
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
@@ -96,7 +97,7 @@ public class MainSceneController {
                 }
                 break;
             default:
-                System.out.println("Filter not found...");
+                System.out.println("Not found...");
                 break;
         }
     }
@@ -132,13 +133,36 @@ public class MainSceneController {
                 //System.out.println("Date nulle détectée...");
                 continue;
             }
-            System.out.println(event.toString());
             LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
             if (!eventDate.isBefore(currentMonday) && !eventDate.isAfter(currentMonday.plusDays(6))) {
                 addEventToGrid(event);
             }
         }
+
     }
+    @FXML
+    private void loadCurrentWeek() {
+        currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+        updateWeekView();  
+    }
+     public void applyLightMode() {
+    // Récupère la scène à partir de n'importe quel composant ajouté à celle-ci, ici le GridPane.
+    Scene scene = scheduleGridPane.getScene();
+    if (scene != null) {
+        scene.getStylesheets().clear();
+        scene.getStylesheets().add(getClass().getResource("/lightmode.css").toExternalForm());
+    }
+}
+
+public void applyDarkMode() {
+    // Même chose pour le mode sombre.
+    Scene scene = scheduleGridPane.getScene();
+    if (scene != null) {
+        scene.getStylesheets().clear();
+        scene.getStylesheets().add(getClass().getResource("/darkmode.css").toExternalForm());
+    }
+}
+
 
     private void addEventToGrid(Event event) {
         LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
@@ -155,16 +179,37 @@ public class MainSceneController {
         }
         StringBuilder teachersWithNewLines = new StringBuilder();
         for (String teacher : teachers) {
-            teachersWithNewLines.append(teacher.trim()).append("\n"); // Ajoutez chaque nom suivi d'un retour à la ligne
+            teachersWithNewLines.append(teacher.trim()).append("\n"); 
         }
-        VBox eventBox = new VBox(new Text(event.getSubject() + "\n" + teachersWithNewLines.toString()));
-        eventBox.setStyle("-fx-background-color: lightblue; -fx-border-color: black;");
+        String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
+        String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
+        String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
+
+
+        VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
+       String backgroundColor = "lightblue";
+        String textColor = "black";
+        if(event.getType() != null){
+            if (event.getType().equals("Evaluation")) {
+                backgroundColor = "red";
+                textColor = "white";
+            }
+        }
+        else{
+            backgroundColor = "green";
+            textColor = "white";
+        }
+            eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
+
         double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
         eventBox.setMinHeight(eventHeight);
         scheduleGridPane.add(eventBox, dayColumn, startRow, 1, durationInHalfHours);
         GridPane.setValignment(eventBox, VPos.TOP);
         GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
+
+
+
     private void createDefaultTimeSlots() {
         LocalTime startTime = LocalTime.of(8, 0);
         int row = 1;

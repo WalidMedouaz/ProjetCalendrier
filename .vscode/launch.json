@@ -10,19 +10,11 @@
         },
         {
             "type": "java",
-            "name": "ParserMain",
+            "name": "Debug (Launch)-<MainClass>",
             "request": "launch",
-            "mainClass": "ParserMain",
-            "projectName": "ProjetCal_4ef93999"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "ProjetCalendrier_44c593b3",
-            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml "
-        },
+            "mainClass": "<App.class>",
+            "projectName": "<ProjetCalendrier_44c593b3>"
+        },        
         {
             "type": "java",
             "name": "App",
