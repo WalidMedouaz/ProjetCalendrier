@@ -1,16 +1,21 @@
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.layout.RowConstraints;
+import javafx.scene.layout.StackPane;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -20,6 +25,26 @@ import java.io.IOException;
 import java.text.ParseException;
 
 public class MainSceneController {
+    @FXML
+    private Button previousWeekButton;
+    @FXML
+    private Button nextWeekButton;
+    @FXML
+    private Button currentWeekButton;
+    @FXML
+    private ScrollPane scrollPane;
+    @FXML
+    private RadioButton radioButtonDay;
+    @FXML
+    private RadioButton radioButtonWeek;
+    @FXML
+    private RadioButton radioButtonMonth;
+    @FXML
+    private ToggleGroup viewToggleGroup = new ToggleGroup();
+    @FXML
+    private ComboBox searchBox;
+    @FXML
+    private TextField searchField;
 
     @FXML
     private VBox newEventFieldsContainer;
@@ -34,11 +59,20 @@ public class MainSceneController {
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
     private ParserTest parser;
+    @FXML
+private Button previousDayButton;
+@FXML
+private Button nextDayButton; 
+@FXML
+private Label dayHeader=new Label();
+
+private LocalDate currentDay;
 
 
     @FXML
     private void initialize() {
         try {
+           
             parser = new ParserTest();
             loadEvents();
             createDefaultTimeSlots();
@@ -46,7 +80,6 @@ public class MainSceneController {
             setupWeekdaysHeader();
             displayEvents();
             setEqualColumnWidths();
-
             List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
             filterType.getItems().addAll(stringList);
             if (!stringList.isEmpty()) {
@@ -63,12 +96,64 @@ public class MainSceneController {
                 if (newValue != null) {
                     handleFilterTypeSelection((String) newValue);
                 }
+                
+        
             });
+            radioButtonDay.setToggleGroup(viewToggleGroup);
+                radioButtonWeek.setToggleGroup(viewToggleGroup);
+                radioButtonMonth.setToggleGroup(viewToggleGroup);
+                viewToggleGroup.selectedToggleProperty().addListener((observable, oldToggle, newToggle) -> {
+                    if (newToggle != null) {
+                        RadioButton selectedRadioButton = (RadioButton) newToggle;
+                        switch (selectedRadioButton.getText()) {
+                            case "Jour":
+                                updateButtonLabels("Jour précédent", "Jour suivant", "Jour d'aujourd'hui");
+                                break;
+                            case "Semaine":
+                                updateButtonLabels("Semaine précédente", "Semaine suivante", "Aujourd'hui");
+                                break;
+                            case "Mois":
+                                updateButtonLabels("Mois précédent", "Mois suivant", "Ce mois-ci");
+                                break;
+                        }
+                    }
+                });
+                viewToggleGroup.selectedToggleProperty().addListener((observable, oldToggle, newToggle) -> {
+                    if (newToggle != null) {
+                        updateViewBasedOnRadioButton((RadioButton) newToggle);
+                    }
+                });
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
-    
+
+    private void updateViewBasedOnRadioButton(RadioButton selectedRadioButton) {
+        if (selectedRadioButton == radioButtonDay) {
+            // Changez le texte des boutons pour l'affichage "Jour"
+            previousWeekButton.setText("Jour précédent");
+            nextWeekButton.setText("Jour suivant");
+            currentWeekButton.setText("Jour actuel");
+            // Mettez ici le code pour mettre à jour la vue d'affichage en mode "Jour"
+        } else if (selectedRadioButton == radioButtonWeek) {
+            // Changez le texte des boutons pour l'affichage "Semaine"
+            previousWeekButton.setText("Semaine précédente");
+            nextWeekButton.setText("Semaine suivante");
+            currentWeekButton.setText("Semaine actuelle");
+            // Mettez ici le code pour mettre à jour la vue d'affichage en mode "Semaine"
+        } else if (selectedRadioButton == radioButtonMonth) {
+            // Changez le texte des boutons pour l'affichage "Mois"
+            previousWeekButton.setText("Mois précédent");
+            nextWeekButton.setText("Mois suivant");
+            currentWeekButton.setText("Mois actuel");
+            // Mettez ici le code pour mettre à jour la vue d'affichage en mode "Mois"
+        }
+    }
+    private void updateButtonLabels(String prevLabel, String nextLabel, String currentLabel) {
+        previousWeekButton.setText(prevLabel); // Changez l'id en fonction de votre FXML
+        nextWeekButton.setText(nextLabel); // Changez l'id en fonction de votre FXML
+        currentWeekButton.setText(currentLabel); // Changez l'id en fonction de votre FXML
+    }
     @FXML
     private void handleAddEvent() {
         System.out.println("Ajouter un nouvel événement cliqué");
@@ -89,16 +174,18 @@ public class MainSceneController {
         group.setPromptText("Groupe concerné");
         newEventFieldsContainer.getChildren().addAll(eventNameField, dateField, startTimeField, endTimeField,location);
     
-        // Bouton pour soumettre l'événement
+        // Bouton pour soumettre le nouvel événement
         Button submitButton = new Button("Ajouter l'événement");
-        submitButton.setOnAction(e -> handleSubmitEvent(eventNameField.getText(), dateField.getText(), startTimeField.getText(), endTimeField.getText(),location.getText(),type.getText(),group.getText()));
-        newEventFieldsContainer.getChildren().add(submitButton);
+        submitButton.setOnAction(e -> {
+            handleSubmitEvent(eventNameField.getText(), dateField.getText(), startTimeField.getText(), endTimeField.getText(), location.getText(), type.getText(), group.getText());
+            newEventFieldsContainer.getChildren().clear();
+        });
+         newEventFieldsContainer.getChildren().add(submitButton);
     }
 
     private void handleSubmitEvent(String eventName, String date, String startTime, String endTime,String l,String t,String g) {
-        // Ici, vous traiterez l'ajout de l'événement, par exemple :
+        // Ici,je vais devoir rajouter cela à la base de données
         System.out.println("Événement ajouté: " + eventName + ", Date: " + date + ", De: " + startTime + " à " + endTime);
-
  }
     private void handleFilterTypeSelection(String selectedItem) {
         filterChoice.getItems().clear();
@@ -152,15 +239,62 @@ public class MainSceneController {
     }
 
     private void setupWeekdaysHeader() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
-        for (int i = 1; i <= 7; i++) {
-            LocalDate date = currentMonday.plusDays(i - 1);
-            String headerText = date.format(formatter);
-            Label dayLabel = new Label(headerText);
-            scheduleGridPane.add(dayLabel, i, 0);
-            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
+    for (int i = 0; i < 7; i++) { // commencez à 0 pour l'alignement avec les colonnes
+        LocalDate date = currentMonday.plusDays(i);
+        String headerText = date.format(formatter);
+        Label dayLabel = new Label(headerText);
+        dayLabel.setOnMouseClicked(e -> displayDayView(date)); // Ajoutez le gestionnaire de clic ici
+        scheduleGridPane.add(dayLabel, i + 1, 0); // i+1 car la première colonne est pour les heures
+        GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
+    }
+}
+
+private void displayDayView(LocalDate l) {
+    clearGridPane();
+  
+}
+
+private void displayEventsForDay(LocalDate l) {
+    for (Event event : events) {
+        if (event.getStartDate() == null) {
+            continue;
+        }
+        LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        if (eventDate.equals(l)) {
+            addEventToGridday(event, l);
         }
     }
+}
+
+private void setupDayHeader(LocalDate date) {
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
+    String headerText = date.format(formatter);
+    Label dayLabel = new Label(headerText);
+    scheduleGridPane.add(dayLabel, 1, 0); // i+1 car la première colonne est pour les heures
+    GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 100));
+
+}
+private void updateDayView() {
+    displayDayView(currentDay);
+}
+
+@FXML
+private void loadPreviousDay() {
+    currentDay = currentDay.minusDays(1);
+    updateDayView();
+}
+
+@FXML
+private void loadNextDay() {
+    currentDay = currentDay.plusDays(1);
+    updateDayView();
+}
+private void onDayHeaderClicked(LocalDate date) {
+    radioButtonDay.setSelected(true);
+    currentDay = date;
+    updateDayView();
+}
 
     private void displayEvents() {
         for (Event event : events) {
@@ -199,6 +333,61 @@ public void applyDarkMode() {
     }
 }
 
+private void addEventToGridday(Event event, LocalDate displayDate) {
+    // Ensure we are only adding events for the given display date
+    LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    if (!eventDate.equals(displayDate)) {
+        return; // Skip events that are not for the display date
+    }
+
+    LocalTime startTime = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
+    LocalTime endTime = event.getEndDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
+
+    // For a day view, we only use one column
+    int dayColumn = 1;
+    int startRow = timeToRow(startTime);
+    int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
+
+    String[] teachers = Arrays.asList("").toArray(new String[0]);
+    if(event.getTeacher() != null) {
+        teachers = event.getTeacher().split(","); 
+    }
+    StringBuilder teachersWithNewLines = new StringBuilder();
+    for (String teacher : teachers) {
+        teachersWithNewLines.append(teacher.trim()).append("\n"); 
+    }
+    String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
+String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
+String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
+
+
+    VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
+   String backgroundColor = "lightblue";
+    String textColor = "black";
+    if(event.getType() != null){
+        if (event.getType().equals("Evaluation")) {
+            backgroundColor = "red";
+            textColor = "white";
+        }
+    }
+    else{
+        backgroundColor = "green";
+        textColor = "white";
+    }
+        eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
+
+    double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
+    eventBox.setMinHeight(eventHeight);
+// Définissez la largeur préférée pour le GridPane pour qu'elle corresponde à celle du ScrollPane.
+scheduleGridPane.setPrefWidth(scrollPane.getViewportBounds().getWidth());
+
+// Assurez-vous que le ScrollPane ne montre pas de barres de défilement lorsque son contenu est plus petit que la zone d'affichage.
+scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+
+    StackPane container = new StackPane(eventBox);
+    container.setAlignment(Pos.CENTER); // Centre le contenu dans le StackPane
+    scheduleGridPane.add(container, dayColumn, startRow, 1, durationInHalfHours);
+    }
 
     private void addEventToGrid(Event event) {
         LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
