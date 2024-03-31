@@ -2,10 +2,12 @@ import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.layout.RowConstraints;
@@ -20,13 +22,15 @@ import java.text.ParseException;
 public class MainSceneController {
 
     @FXML
+    private VBox newEventFieldsContainer;
+    @FXML
     private GridPane scheduleGridPane;
     @FXML
     private ComboBox filterType;
     @FXML
     private ComboBox filterChoice;
     private static final double MIN_HEIGHT_PER_HALF_HOUR = 60.0;
-    private ArrayList<Event> events = new ArrayList<Event>(); // Your events list
+    private ArrayList<Event> events = new ArrayList<Event>(); 
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
     private ParserTest parser;
@@ -64,7 +68,39 @@ public class MainSceneController {
             e.printStackTrace();
         }
     }
+    
+    @FXML
+    private void handleAddEvent() {
+        System.out.println("Ajouter un nouvel événement cliqué");
+        // Créer les zones de texte
+        TextField eventNameField = new TextField();
+        eventNameField.setPromptText("Nom de l'événement");
+        TextField dateField = new TextField();
+        dateField.setPromptText("Date (format: JJ/MM/AAAA)");
+        TextField startTimeField = new TextField();
+        startTimeField.setPromptText("Heure de début (format: HH:MM)");
+        TextField endTimeField = new TextField();
+        endTimeField.setPromptText("Heure de fin (format: HH:MM)");
+        TextField location = new TextField();
+        location.setPromptText("Lieu de l'évènement");
+        TextField type = new TextField();
+        type.setPromptText("Type d'évènement");
+        TextField group= new TextField();
+        group.setPromptText("Groupe concerné");
+        newEventFieldsContainer.getChildren().addAll(eventNameField, dateField, startTimeField, endTimeField,location);
+    
+        // Bouton pour soumettre l'événement
+        Button submitButton = new Button("Ajouter l'événement");
+        submitButton.setOnAction(e -> handleSubmitEvent(eventNameField.getText(), dateField.getText(), startTimeField.getText(), endTimeField.getText(),location.getText(),type.getText(),group.getText()));
+        newEventFieldsContainer.getChildren().add(submitButton);
+    }
 
+    private void handleSubmitEvent(String eventName, String date, String startTime, String endTime,String l,String t,String g) {
+        // Ici, vous traiterez l'ajout de l'événement, par exemple :
+        System.out.println("Événement ajouté: " + eventName + ", Date: " + date + ", De: " + startTime + " à " + endTime);
+Event e=new Event(date,date,null,l,eventName,t,g);
+
+ }
     private void handleFilterTypeSelection(String selectedItem) {
         filterChoice.getItems().clear();
         switch (selectedItem) {

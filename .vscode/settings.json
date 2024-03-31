@@ -14,5 +14,6 @@
         "lib/ical4j-3.0.0/ical4j-3.0.0/ical4j-3.0.0.jar",
         "lib/slf4j-api-2.0.9.jar",
         "lib/logback-classic-1.5.0.jar"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

@@ -10,6 +10,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
     <VBox layoutX="250.0" prefHeight="560.0" prefWidth="630.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
@@ -31,6 +33,8 @@
    <VBox fx:id="filterVBox" layoutX="35.0" layoutY="55.0" prefHeight="525.0" prefWidth="189.0" spacing="10.0">
         <Button fx:id="lightModeButton" text="Mode Clair" onAction="#applyLightMode"/>
             <Button fx:id="darkModeButton" text="Mode Sombre" onAction="#applyDarkMode"/>
+            <Button fx:id="addEventButton" text="Ajouter un nouvel événement!" onAction="#handleAddEvent"/>
+
       <children>
          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="94.0" text="Filtrer par :" textAlignment="CENTER">
             <VBox.margin>
@@ -51,6 +55,7 @@
             </VBox.margin>
          </ComboBox>
          <Button fx:id="filterButton" onAction="#handleFilterButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" text="Filtrer">
+         
             <VBox.margin>
                <Insets left="35.0" top="15.0" />
             </VBox.margin>
@@ -58,5 +63,8 @@
                <Font size="19.0" />
             </font>
          </Button>
+         <VBox fx:id="newEventFieldsContainer" spacing="10.0">
+            <!-- Les nouvelles zones de texte seront ajoutées ici -->
+        </VBox>
       </children></VBox>
 </AnchorPane>
