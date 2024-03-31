@@ -7,17 +7,32 @@
     <artifactId>ProjetCalendrier_44c593b3</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <sourceDirectory>C:\Users\Junio\Downloads\VraiProjetGit\ProjetCalendrier\src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>16</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <!-- MongoDB driver -->
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver-sync</artifactId>
-            <version>5.0.0</version>
+            <version>4.2.3</version> <!-- Assurez-vous d'utiliser la version appropriée du pilote MongoDB -->
         </dependency>
+        <!-- Dépendances JavaFX -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17</version>
+            <version>17</version> <!-- Utilisez la version de JavaFX qui correspond à votre version de Java -->
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -25,30 +40,5 @@
             <version>17</version>
         </dependency>
         <!-- Ajoutez d'autres modules JavaFX selon les besoins -->
-        
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <id>add-source</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <source>src</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-    
 </project>

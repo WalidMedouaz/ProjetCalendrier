@@ -14,7 +14,7 @@
             "request": "launch",
             "mainClass": "<App.class>",
             "projectName": "<ProjetCalendrier_44c593b3>"
-        },        
+        },
         {
             "type": "java",
             "name": "App",

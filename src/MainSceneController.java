@@ -98,7 +98,6 @@ public class MainSceneController {
     private void handleSubmitEvent(String eventName, String date, String startTime, String endTime,String l,String t,String g) {
         // Ici, vous traiterez l'ajout de l'événement, par exemple :
         System.out.println("Événement ajouté: " + eventName + ", Date: " + date + ", De: " + startTime + " à " + endTime);
-Event e=new Event(date,date,null,l,eventName,t,g);
 
  }
     private void handleFilterTypeSelection(String selectedItem) {
