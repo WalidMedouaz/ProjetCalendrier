@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Sneux"
+        },
+        {
+            "type": "java",
             "name": "ParserMain",
             "request": "launch",
             "mainClass": "ParserMain",

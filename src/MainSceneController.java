@@ -1,30 +1,38 @@
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
-import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 import javafx.scene.layout.RowConstraints;
-import javafx.scene.layout.StackPane;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.*;
 import java.io.IOException;
 import java.text.ParseException;
 
+
 public class MainSceneController {
+    @FXML
+    private Button reservationButton;
     @FXML
     private Button previousWeekButton;
     @FXML
@@ -59,6 +67,10 @@ public class MainSceneController {
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
     private ParserTest parser;
+     private BooleanProperty edtPerso = new SimpleBooleanProperty(true);
+    private BooleanProperty edtFormation = new SimpleBooleanProperty(false);
+    private BooleanProperty edtEnseignant = new SimpleBooleanProperty(false);
+    private BooleanProperty edtSalle = new SimpleBooleanProperty(false);
     @FXML
 private Button previousDayButton;
 @FXML
@@ -67,6 +79,7 @@ private Button nextDayButton;
 private Label dayHeader=new Label();
 
 private LocalDate currentDay;
+private LocalDate currentMonth = LocalDate.now().with(TemporalAdjusters.firstDayOfMonth());
 
 
     @FXML
@@ -77,6 +90,7 @@ private LocalDate currentDay;
             loadEvents();
             createDefaultTimeSlots();
             currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+            currentDay = LocalDate.now();
             setupWeekdaysHeader();
             displayEvents();
             setEqualColumnWidths();
@@ -129,26 +143,35 @@ private LocalDate currentDay;
     }
 
     private void updateViewBasedOnRadioButton(RadioButton selectedRadioButton) {
+        clearGridPane();
+        createDefaultTimeSlots();
         if (selectedRadioButton == radioButtonDay) {
             // Changez le texte des boutons pour l'affichage "Jour"
             previousWeekButton.setText("Jour précédent");
             nextWeekButton.setText("Jour suivant");
             currentWeekButton.setText("Jour actuel");
-            // Mettez ici le code pour mettre à jour la vue d'affichage en mode "Jour"
+            previousWeekButton.setOnAction(e -> loadPreviousDay());
+            nextWeekButton.setOnAction(e -> loadNextDay());
+            currentWeekButton.setOnAction(e -> loadCurrentDay());
+    
+         setupDayHeader(currentDay);
+            displayEventsForDay(currentDay);
         } else if (selectedRadioButton == radioButtonWeek) {
             // Changez le texte des boutons pour l'affichage "Semaine"
             previousWeekButton.setText("Semaine précédente");
             nextWeekButton.setText("Semaine suivante");
             currentWeekButton.setText("Semaine actuelle");
-            // Mettez ici le code pour mettre à jour la vue d'affichage en mode "Semaine"
-        } else if (selectedRadioButton == radioButtonMonth) {
-            // Changez le texte des boutons pour l'affichage "Mois"
-            previousWeekButton.setText("Mois précédent");
-            nextWeekButton.setText("Mois suivant");
-            currentWeekButton.setText("Mois actuel");
-            // Mettez ici le code pour mettre à jour la vue d'affichage en mode "Mois"
-        }
+            previousWeekButton.setOnAction(e -> loadPreviousWeek());
+            nextWeekButton.setOnAction(e -> loadNextWeek());
+            currentWeekButton.setOnAction(e -> loadCurrentWeek());
+ 
+            setupWeekdaysHeader();
+            displayEvents();
+            setEqualColumnWidths();
+            
+        } 
     }
+    
     private void updateButtonLabels(String prevLabel, String nextLabel, String currentLabel) {
         previousWeekButton.setText(prevLabel); // Changez l'id en fonction de votre FXML
         nextWeekButton.setText(nextLabel); // Changez l'id en fonction de votre FXML
@@ -225,35 +248,121 @@ private LocalDate currentDay;
 
     @FXML
     private void handleFilterButton() throws IOException, ParseException {
+       
         events.clear();
         events.addAll(calendarCERI.getEvents());
         parser.filter(events, filterType.getValue().toString(), filterChoice.getValue().toString());
-        updateWeekView();
         System.out.println(events.size());
+    
+        
+        RadioButton selectedRadioButton = (RadioButton) viewToggleGroup.getSelectedToggle();
+        if (selectedRadioButton != null) { 
+            if (selectedRadioButton == radioButtonDay) {
+                updateDayView();
+            } else if (selectedRadioButton == radioButtonWeek) {
+                updateWeekView();
+            } 
+        }
     }
+    
 
     private void loadEvents() throws IOException, ParseException {
         calendarCERI = parser.getCalendarHeader();
         parser.getCalendarEvents(calendarCERI.getEvents());
         events.addAll(calendarCERI.getEvents());
     }
+    private void setWeekViewColumnWidths() {
+        int numberOfDaysInWeek = 7;
+        setColumnWidths(numberOfDaysInWeek); // Pour la vue par semaine
+    }
+    
+    // Méthode pour configurer les largeurs de colonnes pour la vue jour
+    private void setDayViewColumnWidths() {
+        int numberOfColumnsForDayView = 1;
+        setColumnWidths(numberOfColumnsForDayView); // Pour la vue par jour
+    }
 
     private void setupWeekdaysHeader() {
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
-    for (int i = 0; i < 7; i++) { // commencez à 0 pour l'alignement avec les colonnes
-        LocalDate date = currentMonday.plusDays(i);
-        String headerText = date.format(formatter);
-        Label dayLabel = new Label(headerText);
-        dayLabel.setOnMouseClicked(e -> displayDayView(date)); // Ajoutez le gestionnaire de clic ici
-        scheduleGridPane.add(dayLabel, i + 1, 0); // i+1 car la première colonne est pour les heures
-        GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
+        for (int i = 0; i < 7; i++) {
+            LocalDate date = currentMonday.plusDays(i);
+            String headerText = date.format(formatter);
+            Label dayLabel = new Label(headerText);
+            
+            // Utilisez une expression lambda pour passer la date à la méthode onDayHeaderClicked
+            dayLabel.setOnMouseClicked(e -> onDayHeaderClicked(date));
+            
+            scheduleGridPane.add(dayLabel, i + 1, 0);
+            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
+        }
     }
-}
+    
+    private void onDayHeaderClicked(LocalDate date) {
+        radioButtonDay.setSelected(true); // Sélectionnez le bouton radio Jour
+        currentDay = date;
+        updateDayView(); // Mettez à jour la vue pour le jour sélectionné
+        
+        // Mettez à jour les libellés et les actions des boutons
+        updateButtonLabels("Jour précédent", "Jour suivant", "Jour d'aujourd'hui");
+        previousWeekButton.setOnAction(e -> loadPreviousDay());
+        nextWeekButton.setOnAction(e -> loadNextDay());
+        currentWeekButton.setOnAction(e -> loadCurrentDay());
+    }
 
 private void displayDayView(LocalDate l) {
     clearGridPane();
+    createDefaultTimeSlots();
+    setupDayHeader(l);
+    displayEventsForDay(l);
   
 }
+/*private void setupMonthView() {
+    clearGridPane();
+    setWeekViewColumnWidths(); 
+
+    LocalDate firstDayOfMonth = currentMonth.with(TemporalAdjusters.firstDayOfMonth());
+    int dayOfWeekOffset = firstDayOfMonth.getDayOfWeek().getValue() % 7; 
+    for (int i = 0; i < dayOfWeekOffset; i++) {
+        scheduleGridPane.add(new Label(""), i, 1); // Ajoutez des cellules vides au besoin
+    }
+
+    LocalDate currentDate = firstDayOfMonth;
+    while (currentDate.getMonth() == currentMonth.getMonth()) {
+        int dayOfWeek = currentDate.getDayOfWeek().getValue() % 7;
+        int weekOfMonth = (int) ChronoUnit.WEEKS.between(firstDayOfMonth, currentDate) + 1;
+
+        int eventCount = getEventCountForDate(currentDate);
+        VBox dayBox = new VBox(new Label(Integer.toString(currentDate.getDayOfMonth())), getEventIndicators(eventCount));
+        dayBox.setOnMouseClicked(e -> onDayBoxClicked(currentDate));
+
+        scheduleGridPane.add(dayBox, dayOfWeek, weekOfMonth);
+        currentDate = currentDate.plusDays(1);
+    }
+}
+*/
+private int getEventCountForDate(LocalDate date) {
+    // Votre logique pour obtenir le nombre d'événements pour une date spécifique
+    // Cela peut nécessiter d'interroger votre source de données / backend / liste d'événements
+    return 0; // Retournez le nombre réel d'événements ici
+}
+
+private Node getEventIndicators(int eventCount) {
+    HBox indicators = new HBox();
+    for (int i = 0; i < eventCount; i++) {
+        Circle circle = new Circle(5);
+        circle.setFill(Color.BLUE);
+        indicators.getChildren().add(circle);
+    }
+    return indicators;
+}
+
+private void onDayBoxClicked(LocalDate date) {
+    // Logic to transition to the week view for the selected date
+    System.out.println("Day box clicked: " + date);
+    // Potentially set currentMonday to the start of the week for this date
+    // and update the view to week view
+}
+
 
 private void displayEventsForDay(LocalDate l) {
     for (Event event : events) {
@@ -271,12 +380,14 @@ private void setupDayHeader(LocalDate date) {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
     String headerText = date.format(formatter);
     Label dayLabel = new Label(headerText);
-    scheduleGridPane.add(dayLabel, 1, 0); // i+1 car la première colonne est pour les heures
-    GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 100));
-
+    scheduleGridPane.add(dayLabel, 1, 0);
+    GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
 }
 private void updateDayView() {
-    displayDayView(currentDay);
+    clearGridPane();
+    createDefaultTimeSlots();
+    setupDayHeader(currentDay);
+    displayEventsForDay(currentDay);
 }
 
 @FXML
@@ -290,11 +401,11 @@ private void loadNextDay() {
     currentDay = currentDay.plusDays(1);
     updateDayView();
 }
-private void onDayHeaderClicked(LocalDate date) {
-    radioButtonDay.setSelected(true);
-    currentDay = date;
+private void loadCurrentDay() {
+    currentDay = LocalDate.now();
     updateDayView();
 }
+
 
     private void displayEvents() {
         for (Event event : events) {
@@ -334,16 +445,10 @@ public void applyDarkMode() {
 }
 
 private void addEventToGridday(Event event, LocalDate displayDate) {
-    // Ensure we are only adding events for the given display date
-    LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-    if (!eventDate.equals(displayDate)) {
-        return; // Skip events that are not for the display date
-    }
-
+    LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     LocalTime startTime = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
     LocalTime endTime = event.getEndDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
 
-    // For a day view, we only use one column
     int dayColumn = 1;
     int startRow = timeToRow(startTime);
     int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
@@ -378,15 +483,9 @@ String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithN
 
     double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
     eventBox.setMinHeight(eventHeight);
-// Définissez la largeur préférée pour le GridPane pour qu'elle corresponde à celle du ScrollPane.
-scheduleGridPane.setPrefWidth(scrollPane.getViewportBounds().getWidth());
-
-// Assurez-vous que le ScrollPane ne montre pas de barres de défilement lorsque son contenu est plus petit que la zone d'affichage.
-scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-
-    StackPane container = new StackPane(eventBox);
-    container.setAlignment(Pos.CENTER); // Centre le contenu dans le StackPane
-    scheduleGridPane.add(container, dayColumn, startRow, 1, durationInHalfHours);
+    scheduleGridPane.add(eventBox, dayColumn, startRow, 4, durationInHalfHours);
+    GridPane.setValignment(eventBox, VPos.TOP);
+    GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
 
     private void addEventToGrid(Event event) {
@@ -491,8 +590,17 @@ String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithN
         ColumnConstraints columnConstraints = new ColumnConstraints();
         columnConstraints.setPercentWidth(columnWidthPercentage);
         scheduleGridPane.getColumnConstraints().clear();
-        scheduleGridPane.getColumnConstraints().add(new ColumnConstraints()); // Default constraints for the first column
+        scheduleGridPane.getColumnConstraints().add(new ColumnConstraints()); 
         for (int i = 0; i < 7; i++) {
+            scheduleGridPane.getColumnConstraints().add(columnConstraints);
+        }
+    }
+    private void setColumnWidths(int numberOfColumns) {
+        scheduleGridPane.getColumnConstraints().clear(); 
+        double columnWidthPercentage = 100.0 / numberOfColumns;
+        ColumnConstraints columnConstraints = new ColumnConstraints();
+        columnConstraints.setPercentWidth(columnWidthPercentage);
+        for (int i = 0; i < numberOfColumns; i++) {
             scheduleGridPane.getColumnConstraints().add(columnConstraints);
         }
     }
