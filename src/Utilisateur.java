@@ -1,7 +1,6 @@
 import org.bson.Document;
 
 import java.util.List;
-import java.util.List;
 
 public class Utilisateur {
     public String id;

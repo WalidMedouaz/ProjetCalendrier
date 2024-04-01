@@ -22,16 +22,19 @@ public class MongoService {
         database = mongoClient.getDatabase("cal_aw");
         userCollection = database.getCollection("user");
     }
+
     public Document getUser(String username, String password) {
         Document query = new Document("id", username).append("mdp", password);
         Document userDocument = userCollection.find(query).first();
         return userDocument;
     }
+
     public void updateMode(String username, String mode) {
         Document query = new Document("id", username);
         Document update = new Document("$set", new Document("modeFavori", mode));
         userCollection.updateOne(query, update);
     }
+
     public void addReservation(String username, Event event) {
         Document query = new Document("id", username);
         Document reservation = new Document();
@@ -41,6 +44,7 @@ public class MongoService {
         Document update = new Document("$push", new Document("reservations", reservation));
         userCollection.updateOne(query, update);
     }
+    
     public void closeMongoClient() {
         mongoClient.close();
     }

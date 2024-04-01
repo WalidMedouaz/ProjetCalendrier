@@ -13,6 +13,15 @@
         "c:\\javafx-sdk-21.0.2\\lib\\javafx-swt.jar",
         "lib/ical4j-3.0.0/ical4j-3.0.0/ical4j-3.0.0.jar",
         "lib/slf4j-api-2.0.9.jar",
-        "lib/logback-classic-1.5.0.jar"
-    ]
+        "lib/logback-classic-1.5.0.jar",
+        "lib/mongodb-driver-sync-4.9.0.jar",
+        "lib/bson-5.0.0.jar",
+        "/lib/bson-4.9.0.jar",
+        "lib/logback-core-1.5.3.jar",
+        "lib/ongodb-driver-core-4.9.0.jar",
+"lib/bson-record-codec-4.9.0.jar",
+"lib/logback-classic-1.5.3.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.dependency.packagePresentation": "hierarchical"
 }
