@@ -14,8 +14,10 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.util.Pair;
 import org.bson.Document;
+import java.awt.Desktop;
 
 import java.io.IOException;
+import java.net.URI;
 import java.text.ParseException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -776,9 +778,28 @@ public class MainSceneController {
         String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
         String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "en " + event.getLocation() : "";
         String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
+        VBox eventBox = new VBox(new Text(event.getSubject()));
+        if(!edtFormation.get()) {
+            eventBox.getChildren().add(new Text(message3 +message1 +"\n"+ message2));
+        }
+        else {
+            for(String teacher : teachers) {
+                eventBox = new VBox(new Text(event.getSubject()));
+                Hyperlink link = new Hyperlink(teacher.stripLeading());
+                link.setOnAction(e -> {
+                    try {
+                        String[] fullName = teacher.toLowerCase().split(" ");
+                        Desktop.getDesktop().mail(new URI("mailto:" + fullName[1] + "." + fullName[0] + "@univ-avignon.fr" + "?subject=" + event.getSubject().replace(" ", "%20")));
+                    }
+                    catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                });
+                eventBox.getChildren().add(link);
+            }
 
-
-        VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
+            eventBox.getChildren().add(new Text(message1 +"\n"+ message2));
+        }
         String backgroundColor = "lightblue";
         String textColor = "black";
         if(event.getType() != null){
@@ -822,7 +843,27 @@ public class MainSceneController {
         String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
         String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
 
-        VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
+        VBox eventBox = new VBox(new Text(event.getSubject()));
+        if(!edtFormation.get()) {
+            eventBox.getChildren().add(new Text(message3 +message1 +"\n"+ message2 ));
+        }
+        else {
+            for(String teacher : teachers) {
+                eventBox = new VBox(new Text(event.getSubject()));
+                Hyperlink link = new Hyperlink(teacher.stripLeading());
+                link.setOnAction(e -> {
+                    try {
+                        String[] fullName = teacher.toLowerCase().split(" ");
+                        Desktop.getDesktop().mail(new URI("mailto:" + fullName[1] + "." + fullName[0] + "@univ-avignon.fr" + "?subject=" + event.getSubject().replace(" ", "%20")));
+                    }
+                    catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                });
+                eventBox.getChildren().add(link);
+            }
+            eventBox.getChildren().add(new Text(message1 +"\n"+ message2));
+        }
         String backgroundColor = "lightblue";
         String textColor = "black";
         if(event.getType() != null){
