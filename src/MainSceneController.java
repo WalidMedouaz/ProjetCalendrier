@@ -56,21 +56,19 @@ public class MainSceneController {
     private void initialize() {
         parser = new ParserTest();
         currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+        if(ConnexionController.currentUser.isEnseignant) {
+            edtEnseignant.setValue(true);
+        }
         Thread parserThread = new Thread(() -> {
             try {
                 parser = new ParserTest();
                 loadEvents();
-                loadReservations();
 
                 Platform.runLater(() -> {
                     createDefaultTimeSlots();
                     setupWeekdaysHeader();
                     displayEvents();
                     setEqualColumnWidths();
-
-                    if(ConnexionController.currentUser.isEnseignant) {
-                        edtEnseignant.setValue(true);
-                    }
 
                     List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
                     filterType.getItems().addAll(stringList);
@@ -361,9 +359,6 @@ public class MainSceneController {
                 if(!distinctSubjects.isEmpty()) {
                     filterChoice.setValue(distinctSubjects.get(0));
                 }
-                if(edtEnseignant.get()) {
-                    loadReservations();
-                }
                 updateWeekView();
             });
         });
@@ -371,15 +366,17 @@ public class MainSceneController {
     }
 
     private void loadReservations() {
-        for (Document d : ConnexionController.currentUser.reservations) {
-            Date startDate = d.getDate("startDate");
-            Date endDate = d.getDate("endDate");
-            String location = d.getString("location");
-            String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
+        if(ConnexionController.currentUser.reservations != null) {
+            for (Document d : ConnexionController.currentUser.reservations) {
+                Date startDate = d.getDate("startDate");
+                Date endDate = d.getDate("endDate");
+                String location = d.getString("location");
+                String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
 
-            if(edtSalle.get() && Objects.equals(getFullLocationName(searchField.getText()), location) || edtPerso.get()) { // Si la salle saisie est bien la salle recherchée
-                Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
-                events.add(event);
+                if(edtSalle.get() && Objects.equals(getFullLocationName(searchField.getText()), location) || edtPerso.get()) { // Si la salle saisie est bien la salle recherchée
+                    Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
+                    events.add(event);
+                }
             }
         }
     }
@@ -388,6 +385,7 @@ public class MainSceneController {
         calendarCERI = parser.getCalendarHeader();
         parser.getCalendarEvents(calendarCERI.getEvents());
         events.addAll(calendarCERI.getEvents());
+        loadReservations();
     }
 
     private void setupWeekdaysHeader() {

@@ -156,6 +156,7 @@ public class ParserTest {
     }
 
     public void getCalendarEvents(ArrayList<Event> events) throws IOException, ParseException {
+        clearDistinctArrays();
         URL url = new URL(QUERY_URL);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
@@ -333,7 +334,6 @@ public class ParserTest {
     }
 
     public void setSalleURL(String salle) {
-        clearDistinctArrays();
         switch (salle) {
             case "Stat 1":
                 QUERY_URL = QUERY_URL_STAT1;
@@ -368,7 +368,6 @@ public class ParserTest {
     }
 
     public void setEnseignantURL(String enseignant) {
-        clearDistinctArrays();
         switch (enseignant) {
             case "Cecillon Noé":
                 QUERY_URL = QUERY_URL_CECILLON_NOE;
@@ -382,7 +381,6 @@ public class ParserTest {
     }
 
     public void setFormationURL(String formation) {
-        clearDistinctArrays();
         switch (formation) {
             case "L1":
                 QUERY_URL = QUERY_URL_L1;
