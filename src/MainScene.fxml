@@ -12,6 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
     <VBox layoutX="250.0" prefHeight="560.0" prefWidth="630.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
@@ -20,7 +21,7 @@
             <Button fx:id="nextWeekButton" onAction="#loadNextWeek" text="Semaine suivante" />
             <Button fx:id="currentWeekButton" onAction="#loadCurrentWeek" text="Aujourd'hui" />
         </HBox>
-        <ScrollPane prefHeight="700.0" prefWidth="817.0" VBox.vgrow="ALWAYS">
+        <ScrollPane prefHeight="525.0" prefWidth="817.0" VBox.vgrow="ALWAYS">
             <content>
                 <GridPane fx:id="scheduleGridPane" alignment="TOP_CENTER" minWidth="900" VBox.vgrow="ALWAYS">
                     <!-- Calendar events will be displayed here -->

@@ -184,6 +184,7 @@ public class MainSceneController {
 
     private void setupMonthHeader() {
         String[] weekDays = {"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"};
+        scheduleGridPane.getRowConstraints().add(new RowConstraints(MIN_HEIGHT_PER_HALF_HOUR));
         for (int i = 0; i < 7; i++) {
             Label dayLabel = new Label(weekDays[i]);
             scheduleGridPane.add(dayLabel, i, 0);
@@ -201,9 +202,10 @@ public class MainSceneController {
             VBox dayBox = new VBox();
             dayBox.setPadding(new Insets(5));
             dayBox.setSpacing(5);
-            
+    
             Label dateLabel = new Label(String.valueOf(date.getDayOfMonth()));
             dayBox.getChildren().add(dateLabel);
+    
             int eventCount = getEventCountForDate(date);
             if (eventCount > 0) {
                 HBox hbox = new HBox();
