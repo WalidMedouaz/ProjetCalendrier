@@ -1,27 +1,31 @@
 import javafx.application.Platform;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.util.Pair;
+import org.bson.Document;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class MainSceneController {
 
@@ -36,11 +40,17 @@ public class MainSceneController {
     private ComboBox searchBox;
     @FXML
     private TextField searchField;
+    @FXML
+    private Button reservationButton;
 
     private ArrayList<Event> events = new ArrayList<Event>(); // Your events list
     private LocalDate currentMonday;
     private CalendarCERI calendarCERI;
     private ParserTest parser;
+    private BooleanProperty edtPerso = new SimpleBooleanProperty(true);
+    private BooleanProperty edtFormation = new SimpleBooleanProperty(false);
+    private BooleanProperty edtEnseignant = new SimpleBooleanProperty(false);
+    private BooleanProperty edtSalle = new SimpleBooleanProperty(false);
 
     @FXML
     private void initialize() {
@@ -50,11 +60,17 @@ public class MainSceneController {
             try {
                 parser = new ParserTest();
                 loadEvents();
+                loadReservations();
+
                 Platform.runLater(() -> {
                     createDefaultTimeSlots();
                     setupWeekdaysHeader();
                     displayEvents();
                     setEqualColumnWidths();
+
+                    if(ConnexionController.currentUser.isEnseignant) {
+                        edtEnseignant.setValue(true);
+                    }
 
                     List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
                     filterType.getItems().addAll(stringList);
@@ -79,6 +95,26 @@ public class MainSceneController {
                             handleFilterTypeSelection((String) newValue);
                         }
                     });
+
+                    if(Objects.equals(ConnexionController.currentUser.modeFavori, "dark")) {
+                        applyDarkMode();
+                    }
+                    else {
+                        applyLightMode();
+                    }
+
+                    ChangeListener<Boolean> salleListener = new ChangeListener<Boolean>() {
+                        @Override
+                        public void changed(ObservableValue<? extends Boolean> observableValue, Boolean oldValue, Boolean newValue) {
+                            if(edtEnseignant.get() && newValue) {
+                                reservationButton.setVisible(true);
+                            }
+                            else {
+                                reservationButton.setVisible(false);
+                            }
+                        }
+                    };
+                    edtSalle.addListener(salleListener);
 
                 });
             } catch (IOException | ParseException e) {
@@ -125,6 +161,156 @@ public class MainSceneController {
         }
     }
 
+    private boolean isSpaceOccupied(GridPane gridPane, int column, int row) {
+        for (Node child : gridPane.getChildren()) {
+            if (GridPane.getColumnIndex(child) == column && GridPane.getRowIndex(child) == row) {
+                return true; // L'espace est déjà occupé
+            }
+        }
+        return false; // L'espace n'est pas occupé
+    }
+
+    @FXML
+    private void handleReservation() {
+        Dialog<Pair<LocalDateTime, LocalDateTime>> dialog = new Dialog<>();
+        dialog.setTitle("Sélection des Dates de Réservation");
+        dialog.setHeaderText("Choisissez les dates de début et de fin pour la réservation");
+
+        ButtonType okButtonType = new ButtonType("Confirmer", ButtonBar.ButtonData.OK_DONE);
+        dialog.getDialogPane().getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
+
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(20, 150, 10, 10));
+
+        DatePicker startDatePicker = new DatePicker(LocalDate.now());
+        ComboBox<Integer> startHourComboBox = new ComboBox<>();
+        startHourComboBox.getItems().addAll(IntStream.rangeClosed(0, 23).boxed().collect(Collectors.toList()));
+        startHourComboBox.setValue(LocalTime.now().getHour());
+
+        ComboBox<Integer> startMinuteComboBox = new ComboBox<>();
+        startMinuteComboBox.getItems().addAll(IntStream.rangeClosed(0, 59).boxed().collect(Collectors.toList()));
+        startMinuteComboBox.setValue(LocalTime.now().getMinute());
+
+        DatePicker endDatePicker = new DatePicker(LocalDate.now().plusDays(1)); // Suggère le lendemain comme date de fin par défaut
+        ComboBox<Integer> endHourComboBox = new ComboBox<>();
+        endHourComboBox.getItems().addAll(IntStream.rangeClosed(0, 23).boxed().collect(Collectors.toList()));
+        endHourComboBox.setValue(LocalTime.now().getHour());
+
+        ComboBox<Integer> endMinuteComboBox = new ComboBox<>();
+        endMinuteComboBox.getItems().addAll(IntStream.rangeClosed(0, 59).boxed().collect(Collectors.toList()));
+        endMinuteComboBox.setValue(LocalTime.now().getMinute());
+
+        // Ajoutez les composants au GridPane
+        grid.add(new Label("Date de début:"), 0, 0);
+        grid.add(startDatePicker, 1, 0);
+        grid.add(startHourComboBox, 2, 0);
+        grid.add(startMinuteComboBox, 3, 0);
+        grid.add(new Label("Date de fin:"), 0, 1);
+        grid.add(endDatePicker, 1, 1);
+        grid.add(endHourComboBox, 2, 1);
+        grid.add(endMinuteComboBox, 3, 1);
+
+        dialog.getDialogPane().setContent(grid);
+
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == okButtonType) {
+                LocalDateTime startDateTime = LocalDateTime.of(startDatePicker.getValue(), LocalTime.of(startHourComboBox.getValue(), startMinuteComboBox.getValue()));
+                LocalDateTime endDateTime = LocalDateTime.of(endDatePicker.getValue(), LocalTime.of(endHourComboBox.getValue(), endMinuteComboBox.getValue()));
+                return new Pair<>(startDateTime, endDateTime);
+            }
+            return null;
+        });
+
+        Optional<Pair<LocalDateTime, LocalDateTime>> result = dialog.showAndWait();
+
+        result.ifPresent(dateTimes -> {
+            //System.out.println("Date de début sélectionnée : " + dateTimes.getKey());
+            //System.out.println("Date de fin sélectionnée : " + dateTimes.getValue());
+
+            String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
+
+            // Conversion en Date pour créer un Event
+            ZonedDateTime startZonedDateTime = dateTimes.getKey().atZone(ZoneId.systemDefault());
+            Date startDate = Date.from(startZonedDateTime.toInstant());
+
+            ZonedDateTime endZonedDateTime = dateTimes.getValue().atZone(ZoneId.systemDefault());
+            Date endDate = Date.from(endZonedDateTime.toInstant());
+
+            String location = searchField.getText();
+
+            location = getFullLocationName(location);
+
+            Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
+
+            int dayColumnStart = dayOfWeekToColumn(dateTimes.getKey().getDayOfWeek());
+            int startRow = timeToRow(LocalTime.from(dateTimes.getKey()));
+
+            int dayColumnEnd = dayOfWeekToColumn(dateTimes.getValue().getDayOfWeek());
+            int endRow = timeToRow(LocalTime.from(dateTimes.getValue()));
+
+            boolean isRoomFree = true;
+
+            for(int i = dayColumnStart; i <= dayColumnEnd; i++) {
+                for(int j = startRow; j < endRow; j++) {
+                    if(isSpaceOccupied(scheduleGridPane, i, j)) {
+                        isRoomFree = false;
+                    }
+                }
+            }
+
+            if(isRoomFree) {
+                events.add(event);
+                updateWeekView();
+                ConnexionController.mongoService.addReservation(ConnexionController.currentUser.id, event);
+            }
+
+        });
+    }
+
+    private String getFullLocationName(String location) {
+        for(String s : parser.getDistinctLocation()) {
+            if(s.contains(location)) {
+                location = s; // on récupère l'intitulé complet de la salle
+            }
+        }
+        return location;
+    }
+
+
+    @FXML
+    private void handlePersonalEDTButton() {
+        edtFormation.setValue(false);
+        edtPerso.setValue(true);
+        edtSalle.setValue(false);
+
+        events.clear();
+        Thread parserThread = new Thread(() -> {
+            try {
+                parser.loadDefaultURL();
+                loadEvents();
+            }
+            catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+            Platform.runLater(() -> {
+                filterChoice.getItems().clear();
+                ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
+                filterChoice.getItems().addAll(distinctSubjects);
+                if(!distinctSubjects.isEmpty()) {
+                    filterChoice.setValue(distinctSubjects.get(0));
+                }
+                updateWeekView();
+            });
+        });
+        parserThread.start();
+    }
+
+
     @FXML
     private void handleFilterButton() throws IOException, ParseException {
         events.clear();
@@ -138,12 +324,21 @@ public class MainSceneController {
         switch (searchBox.getValue().toString()) {
             case "Formation":
                 parser.setFormationURL(searchField.getText());
+                edtFormation.setValue(true);
+                edtPerso.setValue(false);
+                edtSalle.setValue(false);
                 break;
             case "Enseignant":
                 parser.setEnseignantURL(searchField.getText());
+                edtFormation.setValue(false);
+                edtPerso.setValue(false);
+                edtSalle.setValue(false);
                 break;
             case "Salle":
                 parser.setSalleURL(searchField.getText());
+                edtFormation.setValue(false);
+                edtPerso.setValue(false);
+                edtSalle.setValue(true);
                 break;
             default:
                 System.out.println("Sélection invalide ...");
@@ -159,9 +354,34 @@ public class MainSceneController {
             catch (ParseException e) {
                 throw new RuntimeException(e);
             }
-            Platform.runLater(this::updateWeekView);
+            Platform.runLater(() -> {
+                filterChoice.getItems().clear();
+                ArrayList<String> distinctSubjects = parser.getDistinctSubjects();
+                filterChoice.getItems().addAll(distinctSubjects);
+                if(!distinctSubjects.isEmpty()) {
+                    filterChoice.setValue(distinctSubjects.get(0));
+                }
+                if(edtEnseignant.get()) {
+                    loadReservations();
+                }
+                updateWeekView();
+            });
         });
         parserThread.start();
+    }
+
+    private void loadReservations() {
+        for (Document d : ConnexionController.currentUser.reservations) {
+            Date startDate = d.getDate("startDate");
+            Date endDate = d.getDate("endDate");
+            String location = d.getString("location");
+            String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
+
+            if(edtSalle.get() && Objects.equals(getFullLocationName(searchField.getText()), location) || edtPerso.get()) { // Si la salle saisie est bien la salle recherchée
+                Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
+                events.add(event);
+            }
+        }
     }
 
     private void loadEvents() throws IOException, ParseException {
@@ -185,7 +405,7 @@ public class MainSceneController {
         for (Event event : events) {
             if (event.getStartDate() == null) {
                 //System.out.println("Date nulle détectée...");
-                continue;
+                continue; // on passe à l'évènement suivant
             }
             LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
             if (!eventDate.isBefore(currentMonday) && !eventDate.isAfter(currentMonday.plusDays(6))) {
@@ -194,29 +414,33 @@ public class MainSceneController {
         }
 
     }
+
     @FXML
     private void loadCurrentWeek() {
         currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
         updateWeekView();  
     }
      public void applyLightMode() {
-    // Récupère la scène à partir de n'importe quel composant ajouté à celle-ci, ici le GridPane.
-    Scene scene = scheduleGridPane.getScene();
-    if (scene != null) {
-        scene.getStylesheets().clear();
-        scene.getStylesheets().add(getClass().getResource("/lightmode.css").toExternalForm());
+        // Récupère la scène à partir de n'importe quel composant ajouté à celle-ci, ici le GridPane.
+        Scene scene = scheduleGridPane.getScene();
+        if (scene != null) {
+            scene.getStylesheets().clear();
+            //scene.getStylesheets().add(getClass().getResource("/lightmode.css").toExternalForm()); // version Junior
+            scene.getStylesheets().add(getClass().getResource("lightmode.css").toExternalForm()); // version Walid
+        }
+         ConnexionController.updateMode("light");
     }
-}
 
-public void applyDarkMode() {
-    // Même chose pour le mode sombre.
-    Scene scene = scheduleGridPane.getScene();
-    if (scene != null) {
-        scene.getStylesheets().clear();
-        scene.getStylesheets().add(getClass().getResource("/darkmode.css").toExternalForm());
+    public void applyDarkMode() {
+        // Même chose pour le mode sombre.
+        Scene scene = scheduleGridPane.getScene();
+        if (scene != null) {
+            scene.getStylesheets().clear();
+            // scene.getStylesheets().add(getClass().getResource("/darkmode.css").toExternalForm()); // version Junior
+            scene.getStylesheets().add(getClass().getResource("darkmode.css").toExternalForm()); // version Walid
+        }
+        ConnexionController.updateMode("dark");
     }
-}
-
 
     private void addEventToGrid(Event event) {
         LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();

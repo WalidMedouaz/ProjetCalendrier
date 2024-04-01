@@ -39,6 +39,10 @@ public class ParserTest {
     String QUERY_URL;
 
     public ParserTest() {
+        loadDefaultURL();
+    }
+
+    public void loadDefaultURL() {
         // sélection de l'url pour l'emploi du temps affiché par défaut :
 
         switch (ConnexionController.currentUser.filiere) {
@@ -329,32 +333,33 @@ public class ParserTest {
     }
 
     public void setSalleURL(String salle) {
+        clearDistinctArrays();
         switch (salle) {
-            case "STAT1":
+            case "Stat 1":
                 QUERY_URL = QUERY_URL_STAT1;
                 break;
-            case "STAT2":
+            case "Stat 2":
                 QUERY_URL = QUERY_URL_STAT2;
                 break;
-            case "STAT3":
+            case "Stat 3":
                 QUERY_URL = QUERY_URL_STAT3;
                 break;
-            case "STAT4":
+            case "Stat 4":
                 QUERY_URL = QUERY_URL_STAT4;
                 break;
-            case "STAT5":
+            case "Stat 5":
                 QUERY_URL = QUERY_URL_STAT5;
                 break;
-            case "STAT6":
+            case "Stat 6":
                 QUERY_URL = QUERY_URL_STAT6;
                 break;
-            case "STAT7":
+            case "Stat 7":
                 QUERY_URL = QUERY_URL_STAT7;
                 break;
-            case "STAT8":
+            case "Stat 8":
                 QUERY_URL = QUERY_URL_STAT8;
                 break;
-            case "STAT9":
+            case "Stat 9":
                 QUERY_URL = QUERY_URL_STAT9;
                 break;
             default:
@@ -363,6 +368,7 @@ public class ParserTest {
     }
 
     public void setEnseignantURL(String enseignant) {
+        clearDistinctArrays();
         switch (enseignant) {
             case "Cecillon Noé":
                 QUERY_URL = QUERY_URL_CECILLON_NOE;
@@ -376,6 +382,7 @@ public class ParserTest {
     }
 
     public void setFormationURL(String formation) {
+        clearDistinctArrays();
         switch (formation) {
             case "L1":
                 QUERY_URL = QUERY_URL_L1;
@@ -398,6 +405,13 @@ public class ParserTest {
             default:
                 System.out.println("Formation inconnue : " + formation);
         }
+    }
+
+    public void clearDistinctArrays() {
+        distinctSubjects.clear();
+        distinctTypes.clear();
+        distinctLocation.clear();
+        distinctGroups.clear();
     }
 
 

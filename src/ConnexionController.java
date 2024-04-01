@@ -20,7 +20,7 @@ public class ConnexionController {
     @FXML
     private TextField tfusername;
 
-    MongoService mongoService = new MongoService();
+    public static MongoService mongoService = new MongoService();
 
     public static Utilisateur currentUser;
 
@@ -29,13 +29,13 @@ public class ConnexionController {
         String username = tfusername.getText();
         String password = tfpassword.getText();
 
-        Document userDocument = mongoService.connect(username, password);
+        Document userDocument = mongoService.getUser(username, password);
         if (userDocument != null) {
             if(Objects.equals(userDocument.get("isEnseignant").toString(), "false")) {
-                currentUser = new Utilisateur(userDocument.getString("id"), userDocument.getString("nom"), userDocument.getString("prenom"), userDocument.getString("filiere"), userDocument.getString("groupe"), userDocument.getBoolean("isEnseignant"), userDocument.getString("modeFavori"), userDocument.getList("eventPerso", String.class));
+                currentUser = new Utilisateur(userDocument.getString("id"), userDocument.getString("nom"), userDocument.getString("prenom"), userDocument.getString("filiere"), userDocument.getString("groupe"), userDocument.getBoolean("isEnseignant"), userDocument.getString("modeFavori"), userDocument.getList("eventPerso", Document.class));
             }
             else {
-                currentUser = new Utilisateur(userDocument.getString("id"), userDocument.getString("nom"), userDocument.getString("prenom"), userDocument.getBoolean("isEnseignant"), userDocument.getString("modeFavori"), userDocument.getList("eventPerso", String.class), userDocument.getList("reservations", String.class));
+                currentUser = new Utilisateur(userDocument.getString("id"), userDocument.getString("nom"), userDocument.getString("prenom"), userDocument.getBoolean("isEnseignant"), userDocument.getString("modeFavori"), userDocument.getList("eventPerso", Document.class), userDocument.getList("reservations", Document.class));
             }
 
             try {
@@ -55,6 +55,10 @@ public class ConnexionController {
             alert.setContentText("Vérifiez vos informations.");
             alert.showAndWait();
         }
+    }
+
+    public static void updateMode(String mode) {
+        mongoService.updateMode(currentUser.id, mode);
     }
 
 }
