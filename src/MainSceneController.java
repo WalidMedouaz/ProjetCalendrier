@@ -204,7 +204,7 @@ public class MainSceneController {
             nextWeekButton.setOnAction(e -> loadNextDay());
             currentWeekButton.setOnAction(e -> loadCurrentDay());
     
-         setupDayHeader(currentDay);
+            setupDayHeader(currentDay);
             displayEventsForDay(currentDay);
         } else if (selectedRadioButton == radioButtonWeek) {
             // Changez le texte des boutons pour l'affichage "Semaine"
@@ -413,7 +413,6 @@ public class MainSceneController {
         return location;
     }
 
-
     @FXML
     private void handlePersonalEDTButton() {
         edtFormation.setValue(false);
@@ -444,7 +443,6 @@ public class MainSceneController {
         });
         parserThread.start();
     }
-
 
     @FXML
     private void handleFilterButton() throws IOException, ParseException {
@@ -504,39 +502,40 @@ public class MainSceneController {
     }
 
     private void loadReservations() {
-        if(ConnexionController.currentUser.reservations != null) {
+        if (ConnexionController.currentUser.reservations != null) {
             for (Document d : ConnexionController.currentUser.reservations) {
                 Date startDate = d.getDate("startDate");
                 Date endDate = d.getDate("endDate");
                 String location = d.getString("location");
                 String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
 
-                if(edtSalle.get() && Objects.equals(getFullLocationName(searchField.getText()), location) || edtPerso.get()) { // Si la salle saisie est bien la salle recherchée
+                if (edtSalle.get() && Objects.equals(getFullLocationName(searchField.getText()), location) || edtPerso.get()) { // Si la salle saisie est bien la salle recherchée
                     Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
                     events.add(event);
                 }
             }
-        parser.filter(events, filterType.getValue().toString(), filterChoice.getValue().toString());
-        System.out.println(events.size());
-    
-        
-        RadioButton selectedRadioButton = (RadioButton) viewToggleGroup.getSelectedToggle();
-        if (selectedRadioButton != null) { 
-            if (selectedRadioButton == radioButtonDay) {
-                updateDayView();
-            } else if (selectedRadioButton == radioButtonWeek) {
-                updateWeekView();
-            } 
+            parser.filter(events, filterType.getValue().toString(), filterChoice.getValue().toString());
+            System.out.println(events.size());
+
+
+            RadioButton selectedRadioButton = (RadioButton) viewToggleGroup.getSelectedToggle();
+            if (selectedRadioButton != null) {
+                if (selectedRadioButton == radioButtonDay) {
+                    updateDayView();
+                } else if (selectedRadioButton == radioButtonWeek) {
+                    updateWeekView();
+                }
+            }
         }
     }
     
-
     private void loadEvents() throws IOException, ParseException {
         calendarCERI = parser.getCalendarHeader();
         parser.getCalendarEvents(calendarCERI.getEvents());
         events.addAll(calendarCERI.getEvents());
         loadReservations();
     }
+
     private void setWeekViewColumnWidths() {
         int numberOfDaysInWeek = 7;
         setColumnWidths(numberOfDaysInWeek); // Pour la vue par semaine
@@ -713,50 +712,49 @@ private void loadCurrentDay() {
         }
         ConnexionController.updateMode("dark");
     }
-}
 
-private void addEventToGridday(Event event, LocalDate displayDate) {
-    LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-    LocalTime startTime = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
-    LocalTime endTime = event.getEndDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
+    private void addEventToGridday(Event event, LocalDate displayDate) {
+        LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        LocalTime startTime = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
+        LocalTime endTime = event.getEndDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
 
-    int dayColumn = 1;
-    int startRow = timeToRow(startTime);
-    int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
+        int dayColumn = 1;
+        int startRow = timeToRow(startTime);
+        int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
 
-    String[] teachers = Arrays.asList("").toArray(new String[0]);
-    if(event.getTeacher() != null) {
-        teachers = event.getTeacher().split(","); 
-    }
-    StringBuilder teachersWithNewLines = new StringBuilder();
-    for (String teacher : teachers) {
-        teachersWithNewLines.append(teacher.trim()).append("\n"); 
-    }
-    String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
-String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
-String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
+        String[] teachers = Arrays.asList("").toArray(new String[0]);
+        if(event.getTeacher() != null) {
+            teachers = event.getTeacher().split(",");
+        }
+        StringBuilder teachersWithNewLines = new StringBuilder();
+        for (String teacher : teachers) {
+            teachersWithNewLines.append(teacher.trim()).append("\n");
+        }
+        String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
+        String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
+        String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
 
 
-    VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
-   String backgroundColor = "lightblue";
-    String textColor = "black";
-    if(event.getType() != null){
-        if (event.getType().equals("Evaluation")) {
-            backgroundColor = "red";
+        VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
+       String backgroundColor = "lightblue";
+        String textColor = "black";
+        if(event.getType() != null){
+            if (event.getType().equals("Evaluation")) {
+                backgroundColor = "red";
+                textColor = "white";
+            }
+        }
+        else{
+            backgroundColor = "green";
             textColor = "white";
         }
-    }
-    else{
-        backgroundColor = "green";
-        textColor = "white";
-    }
-        eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
+            eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
 
-    double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
-    eventBox.setMinHeight(eventHeight);
-    scheduleGridPane.add(eventBox, dayColumn, startRow, 4, durationInHalfHours);
-    GridPane.setValignment(eventBox, VPos.TOP);
-    GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
+        double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
+        eventBox.setMinHeight(eventHeight);
+        scheduleGridPane.add(eventBox, dayColumn, startRow, 4, durationInHalfHours);
+        GridPane.setValignment(eventBox, VPos.TOP);
+        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
 
     private void addEventToGrid(Event event) {
