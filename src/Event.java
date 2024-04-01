@@ -2,7 +2,6 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Event {
@@ -13,8 +12,9 @@ public class Event {
     private final SimpleStringProperty subject;
     private final SimpleStringProperty type;
     private final SimpleStringProperty group;
+    private final SimpleStringProperty color;
 
-    public Event(Date startDate, Date endDate, String teacher, String location, String subject, String type, String group) {
+    public Event(Date startDate, Date endDate, String teacher, String location, String subject, String type, String group, String color) {
         this.startDate = new SimpleObjectProperty<>(startDate);
         this.endDate = new SimpleObjectProperty<>(endDate);
         this.teacher = new SimpleStringProperty(teacher);
@@ -22,6 +22,15 @@ public class Event {
         this.subject = new SimpleStringProperty(subject);
         this.type = new SimpleStringProperty(type);
         this.group = new SimpleStringProperty(group);
+        this.color = new SimpleStringProperty(color);
+    }
+
+    public String getColor() {
+        return color.get();
+    }
+
+    public SimpleStringProperty colorProperty() {
+        return color;
     }
 
     // StartDate
