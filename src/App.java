@@ -17,7 +17,7 @@ public class App extends Application {
             Parent root = loader.load();
 
             // Créer la scène et définir sur la fenêtre principale
-            Scene scene = new Scene(root, 1920, 1000);
+            Scene scene = new Scene(root);
             primaryStage.setTitle("Début");
             primaryStage.setScene(scene);
             primaryStage.show();

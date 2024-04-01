@@ -36,8 +36,55 @@ public class ParserTest {
     final String QUERY_URL_CECILLON_NOE = "https://edt-api.univ-avignon.fr/api/exportAgenda/enseignant/def5020014cf744f63f7181931e243c5139c5d8427de488f3da5b30b52905edfe9de85e8da750e291f852c095f6fd05f93658cbbf3260bf1308a84c444accdb9ab8f67de5f5758e0b59200e3c78068a677fc5055644c4635";
     final String QUERY_URL_AMALVY_ARTHUR = "https://edt-api.univ-avignon.fr/api/exportAgenda/enseignant/def502001e3795b29e379709bfc2fd4ddeb12e5483199b08e545dd64087bc2fec0fd10d33bdac3784ec51248e6d1f7615b53eb572179264f74b796ffb1a512da93a1d7954384c2f73388323ccda9e8dacafb6d229a95cb01";
 
-    // choix final :
-    final String QUERY_URL = QUERY_URL_M1_ILSEN;
+    String QUERY_URL;
+
+    public ParserTest() {
+        loadDefaultURL();
+    }
+
+    public void loadDefaultURL() {
+        // sélection de l'url pour l'emploi du temps affiché par défaut :
+
+        switch (ConnexionController.currentUser.filiere) {
+            case "M1-ILSEN":
+                QUERY_URL = QUERY_URL_M1_ILSEN;
+                break;
+
+            case "M1-IA":
+                QUERY_URL = QUERY_URL_M1_IA;
+                break;
+
+            case "M1-SICOM":
+                QUERY_URL = QUERY_URL_M1_SICOM;
+                break;
+
+            case "L1":
+                QUERY_URL = QUERY_URL_L1;
+                break;
+
+            case "L2":
+                QUERY_URL = QUERY_URL_L2;
+                break;
+
+            case "L3":
+                QUERY_URL = QUERY_URL_L3;
+                break;
+
+            case null:
+                if(Objects.equals(ConnexionController.currentUser.nom, "Cecillon")) {
+                    QUERY_URL = QUERY_URL_CECILLON_NOE;
+                }
+                else {
+                    QUERY_URL = QUERY_URL_AMALVY_ARTHUR;
+                }
+                break;
+
+            default:
+                QUERY_URL = QUERY_URL_M1_ILSEN;
+
+        }
+    }
+
     public ArrayList<String> getDistinctGroups() {
         return distinctGroups;
     }
@@ -86,12 +133,16 @@ public class ParserTest {
                 } else if (inputLine.contains("X-WR-CALNAME")) { // nom de la formation
                     int firstIndex = inputLine.indexOf("<") + 1;
                     int lastIndex = inputLine.indexOf(">");
+                    if(!inputLine.contains("<") && !inputLine.contains(">")) {
+                        break;
+                    }
                     if (lastIndex == -1) { // si la formation est écrite sur plusieurs lignes
                         String firstPart = inputLine.substring(firstIndex);
                         inputLine = in.readLine();
                         lastIndex = inputLine.indexOf(">");
                         course = firstPart.concat(inputLine.substring(1, lastIndex));
-                    } else {
+                    }
+                    else {
                         course = inputLine.substring(inputLine.indexOf("<") + 1, inputLine.indexOf(">"));
                     }
                 }
@@ -105,6 +156,7 @@ public class ParserTest {
     }
 
     public void getCalendarEvents(ArrayList<Event> events) throws IOException, ParseException {
+        clearDistinctArrays();
         URL url = new URL(QUERY_URL);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
@@ -280,5 +332,85 @@ public class ParserTest {
             System.out.println("Error with " + filterType + " for this event !");
         }
     }
+
+    public void setSalleURL(String salle) {
+        switch (salle) {
+            case "Stat 1":
+                QUERY_URL = QUERY_URL_STAT1;
+                break;
+            case "Stat 2":
+                QUERY_URL = QUERY_URL_STAT2;
+                break;
+            case "Stat 3":
+                QUERY_URL = QUERY_URL_STAT3;
+                break;
+            case "Stat 4":
+                QUERY_URL = QUERY_URL_STAT4;
+                break;
+            case "Stat 5":
+                QUERY_URL = QUERY_URL_STAT5;
+                break;
+            case "Stat 6":
+                QUERY_URL = QUERY_URL_STAT6;
+                break;
+            case "Stat 7":
+                QUERY_URL = QUERY_URL_STAT7;
+                break;
+            case "Stat 8":
+                QUERY_URL = QUERY_URL_STAT8;
+                break;
+            case "Stat 9":
+                QUERY_URL = QUERY_URL_STAT9;
+                break;
+            default:
+                System.out.println("Salle inconnue : " + salle);
+        }
+    }
+
+    public void setEnseignantURL(String enseignant) {
+        switch (enseignant) {
+            case "Cecillon Noé":
+                QUERY_URL = QUERY_URL_CECILLON_NOE;
+                break;
+            case "Amalvy Arthur":
+                QUERY_URL = QUERY_URL_AMALVY_ARTHUR;
+                break;
+            default:
+                System.out.println("Enseignant inconnu " + enseignant);
+        }
+    }
+
+    public void setFormationURL(String formation) {
+        switch (formation) {
+            case "L1":
+                QUERY_URL = QUERY_URL_L1;
+                break;
+            case "L2":
+                QUERY_URL = QUERY_URL_L2;
+                break;
+            case "L3":
+                QUERY_URL = QUERY_URL_L3;
+                break;
+            case "M1-ILSEN":
+                QUERY_URL = QUERY_URL_M1_ILSEN;
+                break;
+            case "M1-IA":
+                QUERY_URL = QUERY_URL_M1_IA;
+                break;
+            case "M1-SICOM":
+                QUERY_URL = QUERY_URL_M1_SICOM;
+                break;
+            default:
+                System.out.println("Formation inconnue : " + formation);
+        }
+    }
+
+    public void clearDistinctArrays() {
+        distinctSubjects.clear();
+        distinctTypes.clear();
+        distinctLocation.clear();
+        distinctGroups.clear();
+    }
+
 
 }
