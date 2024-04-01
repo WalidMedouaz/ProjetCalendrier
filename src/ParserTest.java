@@ -232,7 +232,7 @@ public class ParserTest {
                             inputLine = in.readLine();
                         }
                     }
-                    events.add(new Event(startDate, endDate, teacher, location, subject, type, group));
+                    events.add(new Event(startDate, endDate, teacher, location, subject, type, group, null));
                     getDistinctSubject(subject);
                     getDistinctLocation(location);
                     getDistinctGroup(group);

@@ -49,7 +49,8 @@
             <Button fx:id="searchButton" text="Rechercher" onAction="#handleSearchButton"/>
             <Button fx:id="personalEDTButton" text="Mon EDT" onAction="#handlePersonalEDTButton"/>
             <Button fx:id="reservationButton" text="Réserver la salle" onAction="#handleReservation"/>
-            <!-- Additional buttons or controls can be added here -->
+            <Button fx:id="cancel" text="Annuler" onAction="#Cancel"/>
+         
             <VBox fx:id="newEventFieldsContainer">
             </VBox>
         </VBox>

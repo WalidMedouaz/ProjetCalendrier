@@ -5,6 +5,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import java.awt.Desktop;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
 import javafx.scene.Node;
@@ -22,6 +23,7 @@ import javafx.util.Pair;
 import org.bson.Document;
 
 import java.io.IOException;
+import java.net.URI;
 import java.text.ParseException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -59,6 +61,8 @@ public class MainSceneController {
     @FXML
     private RadioButton radioButtonDay;
     @FXML
+    private Button addEventButton;
+    @FXML
     private RadioButton radioButtonWeek;
     @FXML
     private RadioButton radioButtonMonth;
@@ -88,6 +92,8 @@ public class MainSceneController {
     private void initialize() {
         parser = new ParserTest();
         currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
+        currentDay = LocalDate.now();
+
         if(ConnexionController.currentUser.isEnseignant) {
             edtEnseignant.setValue(true);
         }
@@ -98,12 +104,9 @@ public class MainSceneController {
 
                 Platform.runLater(() -> {
                     createDefaultTimeSlots();
-                    currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
-                    currentDay = LocalDate.now();
                     setupWeekdaysHeader();
                     displayEvents();
                     setEqualColumnWidths();
-
 
                     List<String> stringList = Arrays.asList("Matière", "Groupe", "Salle", "Type de cours");
                     filterType.getItems().addAll(stringList);
@@ -148,6 +151,20 @@ public class MainSceneController {
                         }
                     };
                     edtSalle.addListener(salleListener);
+
+                    ChangeListener<Boolean> personalEDTListener = new ChangeListener<Boolean>() {
+                        @Override
+                        public void changed(ObservableValue<? extends Boolean> observableValue, Boolean oldValue, Boolean newValue) {
+                            if(newValue) {
+                                addEventButton.setVisible(true);
+                            }
+                            else {
+                                addEventButton.setVisible(false);
+                            }
+                        }
+                    };
+                    edtPerso.addListener(personalEDTListener);
+
                     radioButtonDay.setToggleGroup(viewToggleGroup);
                     radioButtonWeek.setToggleGroup(viewToggleGroup);
                     radioButtonMonth.setToggleGroup(viewToggleGroup);
@@ -172,6 +189,7 @@ public class MainSceneController {
                             updateViewBasedOnRadioButton((RadioButton) newToggle);
                         }
                     });
+
                 });
             } catch (IOException | ParseException e) {
                 e.printStackTrace();
@@ -191,14 +209,41 @@ public class MainSceneController {
             GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125)); 
         }
     }
+   @FXML
+   private void Cancel() {
+       // Reset the search and filter fields
+       searchField.setText("");
+       filterType.setValue("Matière"); // or your default value
+       filterChoice.setValue("Reservation de salles"); // or your default value
+       
+       
+       edtPerso.set(true); 
+       edtFormation.set(false);
+       edtEnseignant.set(false);
+       edtSalle.set(false);
+       
+    
+       events.clear();
+       try {
+        
+        parser.loadDefaultURL();
+        loadEvents();
+       } catch (IOException | ParseException e) {
+           e.printStackTrace();
+       }
+   
+       updateViewBasedOnRadioButton((RadioButton) viewToggleGroup.getSelectedToggle());
+   }
+   
 
     private void displayMonthView() {
         YearMonth yearMonth = YearMonth.from(currentMonth);
         int daysInMonth = yearMonth.lengthOfMonth();
         LocalDate firstOfMonth = currentMonth.withDayOfMonth(1);
         int firstDayOfWeek = (firstOfMonth.getDayOfWeek().getValue());
-        for (int day = 0; day < daysInMonth; day++) {
+        for (int day = 0; day <= daysInMonth; day++) {
             LocalDate date = firstOfMonth.plusDays(day);
+            
             VBox dayBox = new VBox();
             dayBox.setPadding(new Insets(5));
             dayBox.setSpacing(5);
@@ -321,33 +366,125 @@ private void displayMonthEvents(LocalDate month) {
     }
     @FXML
     private void handleAddEvent() {
-        System.out.println("Ajouter un nouvel événement cliqué");
-        TextField eventNameField = new TextField();
-        eventNameField.setPromptText("Nom de l'événement");
-        TextField dateField = new TextField();
-        dateField.setPromptText("Date (format: JJ/MM/AAAA)");
-        TextField startTimeField = new TextField();
-        startTimeField.setPromptText("Heure de début (format: HH:MM)");
-        TextField endTimeField = new TextField();
-        endTimeField.setPromptText("Heure de fin (format: HH:MM)");
-        TextField location = new TextField();
-        location.setPromptText("Lieu de l'évènement");
-        TextField type = new TextField();
-        type.setPromptText("Type d'évènement");
-        TextField group= new TextField();
-        group.setPromptText("Groupe concerné");
-        newEventFieldsContainer.getChildren().addAll(eventNameField, dateField, startTimeField, endTimeField,location);
-    
-        Button submitButton = new Button("Ajouter l'événement");
-        submitButton.setOnAction(e -> {
-            handleSubmitEvent(eventNameField.getText(), dateField.getText(), startTimeField.getText(), endTimeField.getText(), location.getText(), type.getText(), group.getText());
-            newEventFieldsContainer.getChildren().clear();
+        Dialog<Pair<LocalDateTime, LocalDateTime>> dialog = new Dialog<>();
+        dialog.setTitle("Sélection des Dates de l'événement");
+        dialog.setHeaderText("Choisissez les dates de début et de fin pour l'évènement");
+
+        ButtonType okButtonType = new ButtonType("Confirmer", ButtonBar.ButtonData.OK_DONE);
+        dialog.getDialogPane().getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
+
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(20, 150, 10, 10));
+
+        DatePicker startDatePicker = new DatePicker(LocalDate.now());
+        ComboBox<Integer> startHourComboBox = new ComboBox<>();
+        startHourComboBox.getItems().addAll(IntStream.rangeClosed(0, 23).boxed().collect(Collectors.toList()));
+        startHourComboBox.setValue(LocalTime.now().getHour());
+
+        ComboBox<Integer> startMinuteComboBox = new ComboBox<>();
+        startMinuteComboBox.getItems().addAll(IntStream.rangeClosed(0, 59).boxed().collect(Collectors.toList()));
+        startMinuteComboBox.setValue(LocalTime.now().getMinute());
+
+        DatePicker endDatePicker = new DatePicker(LocalDate.now().plusDays(1)); // Suggère le lendemain comme date de fin par défaut
+        ComboBox<Integer> endHourComboBox = new ComboBox<>();
+        endHourComboBox.getItems().addAll(IntStream.rangeClosed(0, 23).boxed().collect(Collectors.toList()));
+        endHourComboBox.setValue(LocalTime.now().getHour());
+
+        ComboBox<Integer> endMinuteComboBox = new ComboBox<>();
+        endMinuteComboBox.getItems().addAll(IntStream.rangeClosed(0, 59).boxed().collect(Collectors.toList()));
+        endMinuteComboBox.setValue(LocalTime.now().getMinute());
+
+        TextField locationTextField = new TextField();
+        TextField subjectTextField = new TextField();
+        TextField typeTextField = new TextField();
+
+        ColorPicker cp = new ColorPicker(Color.BLUE);
+
+        // Ajoutez les composants au GridPane
+        grid.add(new Label("Date de début:"), 0, 0);
+        grid.add(startDatePicker, 1, 0);
+        grid.add(startHourComboBox, 2, 0);
+        grid.add(startMinuteComboBox, 3, 0);
+
+        grid.add(new Label("Date de fin:"), 0, 1);
+        grid.add(endDatePicker, 1, 1);
+        grid.add(endHourComboBox, 2, 1);
+        grid.add(endMinuteComboBox, 3, 1);
+
+        grid.add(new Label("Lieu:"), 0, 2);
+        grid.add(locationTextField, 1, 2);
+
+        grid.add(new Label("Cours:"), 0, 3);
+        grid.add(subjectTextField, 1, 3);
+
+        grid.add(new Label("Type:"), 0, 4);
+        grid.add(typeTextField, 1, 4);
+
+        grid.add(new Label("Couleur:"), 0, 5);
+        grid.add(cp, 1, 5);
+
+        dialog.getDialogPane().setContent(grid);
+
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == okButtonType) {
+                LocalDateTime startDateTime = LocalDateTime.of(startDatePicker.getValue(), LocalTime.of(startHourComboBox.getValue(), startMinuteComboBox.getValue()));
+                LocalDateTime endDateTime = LocalDateTime.of(endDatePicker.getValue(), LocalTime.of(endHourComboBox.getValue(), endMinuteComboBox.getValue()));
+                return new Pair<>(startDateTime, endDateTime);
+            }
+            return null;
         });
-         newEventFieldsContainer.getChildren().add(submitButton);
+
+        Optional<Pair<LocalDateTime, LocalDateTime>> result = dialog.showAndWait();
+
+        result.ifPresent(dateTimes -> {
+            //System.out.println("Date de début sélectionnée : " + dateTimes.getKey());
+            //System.out.println("Date de fin sélectionnée : " + dateTimes.getValue());
+
+            String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
+
+            // Conversion en Date pour créer un Event
+            ZonedDateTime startZonedDateTime = dateTimes.getKey().atZone(ZoneId.systemDefault());
+            Date startDate = Date.from(startZonedDateTime.toInstant());
+
+            ZonedDateTime endZonedDateTime = dateTimes.getValue().atZone(ZoneId.systemDefault());
+            Date endDate = Date.from(endZonedDateTime.toInstant());
+
+            String location = locationTextField.getText();
+            String subject = subjectTextField.getText();
+            String type = typeTextField.getText();
+
+            location = getFullLocationName(location);
+            String colorString = cp.getValue().getRed() + "," + cp.getValue().getGreen() + "," + cp.getValue().getBlue() + "," + cp.getValue().getOpacity();
+
+            Event event = new Event(startDate, endDate, fullName, location, subject, type, null, colorString);
+
+            int dayColumnStart = dayOfWeekToColumn(dateTimes.getKey().getDayOfWeek());
+            int startRow = timeToRow(LocalTime.from(dateTimes.getKey()));
+
+            int dayColumnEnd = dayOfWeekToColumn(dateTimes.getValue().getDayOfWeek());
+            int endRow = timeToRow(LocalTime.from(dateTimes.getValue()));
+
+            boolean isRoomFree = true;
+
+            for(int i = dayColumnStart; i <= dayColumnEnd; i++) {
+                for(int j = startRow; j < endRow; j++) {
+                    if(isSpaceOccupied(scheduleGridPane, i, j)) {
+                        isRoomFree = false;
+                    }
+                }
+            }
+
+            if(isRoomFree) {
+                events.add(event);
+                updateWeekView();
+                ConnexionController.mongoService.addPersonalEvent(ConnexionController.currentUser.id, event, colorString);
+            }
+
+        });
     }
-    private void handleSubmitEvent(String eventName, String date, String startTime, String endTime,String l,String t,String g) {
-        System.out.println("Événement ajouté: " + eventName + ", Date: " + date + ", De: " + startTime + " à " + endTime);
- }
+
  private void setWeekViewColumnWidths() {
     int numberOfDaysInWeek = 7;
     setColumnWidths(numberOfDaysInWeek);
@@ -416,7 +553,7 @@ private void displayEventsForDay(LocalDate l) {
         }
         LocalDate eventDate = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         if (eventDate.equals(l)) {
-            addEventToGridday(event, l);
+            addEventToGridDay(event, l);
         }
     }
 }
@@ -465,30 +602,46 @@ private void loadCurrentDay() {
         }
 
     }
-    private void addEventToGridday(Event event, LocalDate displayDate) {
+    private void addEventToGridDay(Event event, LocalDate displayDate) {
         LocalDate date = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         LocalTime startTime = event.getStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
         LocalTime endTime = event.getEndDate().toInstant().atZone(ZoneId.systemDefault()).toLocalTime();
-    
+
         int dayColumn = 1;
         int startRow = timeToRow(startTime);
         int durationInHalfHours = (int) Duration.between(startTime, endTime).toMinutes() / 30;
-    
+
         String[] teachers = Arrays.asList("").toArray(new String[0]);
         if(event.getTeacher() != null) {
-            teachers = event.getTeacher().split(","); 
+            teachers = event.getTeacher().split(",");
         }
         StringBuilder teachersWithNewLines = new StringBuilder();
         for (String teacher : teachers) {
-            teachersWithNewLines.append(teacher.trim()).append("\n"); 
+            teachersWithNewLines.append(teacher.trim()).append("\n");
         }
         String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
-    String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
-    String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
-    
-    
-        VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
-       String backgroundColor = "lightblue";
+        String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "en " + event.getLocation() : "";
+        String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
+        VBox eventBox = new VBox(new Text(event.getSubject()));
+            eventBox.getChildren().add(new Text(message3 +message1 +"\n"+ message2));
+            for(String teacher : teachers) {
+                eventBox = new VBox(new Text(event.getSubject()));
+                Hyperlink link = new Hyperlink(teacher.stripLeading());
+                link.setOnAction(e -> {
+                    try {
+                        String[] fullName = teacher.toLowerCase().split(" ");
+                        Desktop.getDesktop().mail(new URI("mailto:" + fullName[1] + "." + fullName[0] + "@univ-avignon.fr" + "?subject=" + event.getSubject().replace(" ", "%20")));
+                    }
+                    catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                });
+                eventBox.getChildren().add(link);
+            }
+
+            eventBox.getChildren().add(new Text(message1 +"\n"+ message2));
+        
+        String backgroundColor = "lightblue";
         String textColor = "black";
         if(event.getType() != null){
             if (event.getType().equals("Evaluation")) {
@@ -500,14 +653,15 @@ private void loadCurrentDay() {
             backgroundColor = "green";
             textColor = "white";
         }
-            eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
-    
+
+        eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
+
         double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
         eventBox.setMinHeight(eventHeight);
         scheduleGridPane.add(eventBox, dayColumn, startRow, 4, durationInHalfHours);
         GridPane.setValignment(eventBox, VPos.TOP);
         GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
-        }
+    }
 
         private void setColumnWidths(int numberOfColumns) {
             scheduleGridPane.getColumnConstraints().clear(); 
@@ -633,7 +787,7 @@ private void loadCurrentDay() {
 
             location = getFullLocationName(location);
 
-            Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
+            Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null, null);
 
             int dayColumnStart = dayOfWeekToColumn(dateTimes.getKey().getDayOfWeek());
             int startRow = timeToRow(LocalTime.from(dateTimes.getKey()));
@@ -767,7 +921,17 @@ private void loadCurrentDay() {
                 if(!distinctSubjects.isEmpty()) {
                     filterChoice.setValue(distinctSubjects.get(0));
                 }
+                RadioButton selectedRadioButton = (RadioButton) viewToggleGroup.getSelectedToggle();
+        if (selectedRadioButton != null) { 
+            if (selectedRadioButton == radioButtonDay) {
+                updateDayView();
+            } else if (selectedRadioButton == radioButtonWeek) {
                 updateWeekView();
+            }
+            else if (selectedRadioButton == radioButtonMonth) {
+                updateMonthView();
+            }
+        }
             });
         });
         parserThread.start();
@@ -782,7 +946,7 @@ private void loadCurrentDay() {
                 String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
 
                 if(edtSalle.get() && Objects.equals(getFullLocationName(searchField.getText()), location) || edtPerso.get()) {
-                    Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null);
+                    Event event = new Event(startDate, endDate, fullName, location, "Réservation de salle", null, null, null);
                     events.add(event);
                 }
             }
@@ -831,7 +995,7 @@ private void loadCurrentDay() {
 
         String[] teachers = List.of("").toArray(new String[0]);
         if(event.getTeacher() != null) {
-            teachers = event.getTeacher().split(",");
+            teachers = event.getTeacher().split(","); // Séparez les noms des enseignants en utilisant la virgule comme délimiteur
         }
         StringBuilder teachersWithNewLines = new StringBuilder();
         for (String teacher : teachers) {
@@ -841,9 +1005,26 @@ private void loadCurrentDay() {
         String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
         String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
 
-
-        VBox eventBox = new VBox(new Text(event.getSubject() + message3+ message1 +"\n"+ message2));
-       String backgroundColor = "lightblue";
+        VBox eventBox = new VBox(new Text(event.getSubject()));
+            eventBox.getChildren().add(new Text(message3 +message1 +"\n"+ message2 ));
+        
+        
+            for(String teacher : teachers) {
+                eventBox = new VBox(new Text(event.getSubject()));
+                Hyperlink link = new Hyperlink(teacher.stripLeading());
+                link.setOnAction(e -> {
+                    try {
+                        String[] fullName = teacher.toLowerCase().split(" ");
+                        Desktop.getDesktop().mail(new URI("mailto:" + fullName[1] + "." + fullName[0] + "@univ-avignon.fr" + "?subject=" + event.getSubject().replace(" ", "%20")));
+                    }
+                    catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                });
+                eventBox.getChildren().add(link);
+            eventBox.getChildren().add(new Text(message1 +"\n"+ message2));
+        }
+        String backgroundColor = "lightblue";
         String textColor = "black";
         if(event.getType() != null){
             if (event.getType().equals("Evaluation")) {
@@ -855,7 +1036,16 @@ private void loadCurrentDay() {
             backgroundColor = "green";
             textColor = "white";
         }
-            eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
+
+        if(event.getColor() != null) {
+            String[] cArray = event.getColor().split(",");
+            Color eventColor = new Color(Double.parseDouble(cArray[0]), Double.parseDouble(cArray[1]), Double.parseDouble(cArray[2]), Double.parseDouble(cArray[3]));
+            String hexColor = String.format("#%02x%02x%02x%02x", (int) (eventColor.getRed() * 255), (int) (eventColor.getGreen() * 255), (int) (eventColor.getBlue() * 255), (int) (eventColor.getOpacity() * 255));
+
+            backgroundColor = hexColor;
+        }
+
+        eventBox.setStyle("-fx-background-color: " + backgroundColor + "; -fx-border-color: black; -fx-text-fill: " + textColor + ";");
 
         double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
         eventBox.setMinHeight(eventHeight);
@@ -863,6 +1053,9 @@ private void loadCurrentDay() {
         GridPane.setValignment(eventBox, VPos.TOP);
         GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
     }
+
+
+
 
     private void createDefaultTimeSlots() {
         LocalTime startTime = LocalTime.of(8, 0);

@@ -44,6 +44,18 @@ public class MongoService {
         Document update = new Document("$push", new Document("reservations", reservation));
         userCollection.updateOne(query, update);
     }
+    public void addPersonalEvent(String username, Event event, String color) {
+        Document query = new Document("id", username);
+        Document newEvent = new Document();
+        newEvent.put("startDate", event.getStartDate());
+        newEvent.put("endDate", event.getEndDate());
+        newEvent.put("location", event.getLocation());
+        newEvent.put("subject", event.getSubject());
+        newEvent.put("type", event.getType());
+        newEvent.put("color", color);
+        Document update = new Document("$push", new Document("eventPerso", newEvent));
+        userCollection.updateOne(query, update);
+    }
     
     public void closeMongoClient() {
         mongoClient.close();
