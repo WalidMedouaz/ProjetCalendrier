@@ -35,6 +35,7 @@ import java.util.stream.IntStream;
 public class MainSceneController {
 
     private static final double MIN_HEIGHT_PER_HALF_HOUR = 40.0;
+    private static final double MIN_WIDTH_BETWEEN_EVENTS = 40.0;
     @FXML
     private GridPane scheduleGridPane;
     @FXML
@@ -201,7 +202,7 @@ public class MainSceneController {
         for (int i = 0; i < 7; i++) {
             Label dayLabel = new Label(weekDays[i]);
             scheduleGridPane.add(dayLabel, i, 0);
-            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 60));
+            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, MIN_WIDTH_BETWEEN_EVENTS * 2));
         }
     }
    @FXML
@@ -481,7 +482,7 @@ public class MainSceneController {
             dayLabel.setOnMouseClicked(e -> onDayHeaderClicked(date));
             
             scheduleGridPane.add(dayLabel, i + 1, 0);
-            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 80));
+            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, MIN_WIDTH_BETWEEN_EVENTS * 2));
         }
     }
 
@@ -537,7 +538,7 @@ public class MainSceneController {
         String headerText = date.format(formatter);
         Label dayLabel = new Label(headerText);
         scheduleGridPane.add(dayLabel, 1, 0);
-        GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 100));
+        GridPane.setMargin(dayLabel, new Insets(0, 0, 0, MIN_WIDTH_BETWEEN_EVENTS * 2));
     }
     private void updateDayView() {
         clearGridPane();
@@ -634,7 +635,7 @@ public class MainSceneController {
         eventBox.setMinHeight(eventHeight);
         scheduleGridPane.add(eventBox, dayColumn, startRow, 4, durationInHalfHours);
         GridPane.setValignment(eventBox, VPos.TOP);
-        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 30));
+        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, MIN_WIDTH_BETWEEN_EVENTS));
     }
 
         private void setColumnWidths(int numberOfColumns) {
@@ -994,9 +995,17 @@ public class MainSceneController {
         String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
         String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
 
-        VBox eventBox = new VBox(new Label(event.getSubject()));
+        VBox eventBox = new VBox();
+        eventBox.setSpacing(5);
+
+        Label subjectLabel = new Label(event.getSubject());
+        subjectLabel.setWrapText(true);
+        // Bind label width to eventBox width minus some padding to ensure text wrapping works dynamically.
+        subjectLabel.maxWidthProperty().bind(eventBox.widthProperty().subtract(10));
+
+        eventBox.getChildren().add(subjectLabel);
         eventBox.getChildren().add(new Label(message3 +message1 +"\n"+ message2 ));
-        
+
         for(String teacher : teachers) {
             eventBox = new VBox(new Label(event.getSubject()));
             Hyperlink link = new Hyperlink(teacher.stripLeading());
@@ -1038,10 +1047,11 @@ public class MainSceneController {
         double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
         eventBox.setMinHeight(eventHeight);
         eventBox.setMinWidth(100.0);
-        eventBox.setPrefWidth(200.0);
+        eventBox.setPrefWidth(Region.USE_COMPUTED_SIZE);
+        eventBox.setFillWidth(true);
         scheduleGridPane.add(eventBox, dayColumn, startRow, 1, durationInHalfHours);
         GridPane.setValignment(eventBox, VPos.TOP);
-        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 60));
+        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, MIN_WIDTH_BETWEEN_EVENTS));
     }
 
     private void createDefaultTimeSlots() {
@@ -1052,7 +1062,7 @@ public class MainSceneController {
         while (!startTime.isAfter(LocalTime.of(20, 0))) {
             Text timeText = new Text(startTime.toString());
             scheduleGridPane.add(timeText, 0, row);
-            GridPane.setMargin(timeText, new Insets(0,0,0,40));
+            GridPane.setMargin(timeText, new Insets(0,0,0,MIN_WIDTH_BETWEEN_EVENTS));
 
             RowConstraints rowConstraints = new RowConstraints(MIN_HEIGHT_PER_HALF_HOUR);
             scheduleGridPane.getRowConstraints().add(rowConstraints);
