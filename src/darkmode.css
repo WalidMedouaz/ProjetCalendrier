@@ -28,7 +28,7 @@
 }
 
 .label {
-    -fx-text-fill: #e0e0e0; /* Couleur du texte pour les étiquettes */
+    -fx-text-fill: #ffffff; /* Couleur du texte pour les étiquettes */
 }
 
 .text-field {
@@ -39,6 +39,3 @@
 .scroll-bar {
     -fx-background-color: #2b2b2b; /* Couleur de fond des barres de défilement */
 }
-
-/* Et ainsi de suite pour les autres éléments que vous souhaitez styliser */
-

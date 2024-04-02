@@ -44,6 +44,7 @@ public class ConnexionController {
 
                 Stage stage = (Stage) tfpassword.getScene().getWindow();
                 stage.setScene(new Scene(root, 1920, 1000));
+                stage.setMaximized(true);
             } catch (IOException e) {
                 e.printStackTrace();
             }

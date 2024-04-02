@@ -4,36 +4,37 @@ import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import java.awt.Desktop;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.*;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.RowConstraints;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 import javafx.util.Pair;
 import org.bson.Document;
-import java.awt.Desktop;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.text.ParseException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
+import java.util.List;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class MainSceneController {
 
-    private static final double MIN_HEIGHT_PER_HALF_HOUR = 60.0;
+    private static final double MIN_HEIGHT_PER_HALF_HOUR = 40.0;
     @FXML
     private GridPane scheduleGridPane;
     @FXML
@@ -42,8 +43,6 @@ public class MainSceneController {
     private ComboBox filterChoice;
     @FXML
     private ComboBox searchBox;
-    @FXML
-    private VBox newEventFieldsContainer;
     @FXML
     private TextField searchField;
     @FXML
@@ -65,7 +64,7 @@ public class MainSceneController {
     @FXML
     private Button previousDayButton;
     @FXML
-    private Button nextDayButton; 
+    private Button nextDayButton;
     @FXML
     private Label dayHeader=new Label();
     
@@ -202,15 +201,15 @@ public class MainSceneController {
         for (int i = 0; i < 7; i++) {
             Label dayLabel = new Label(weekDays[i]);
             scheduleGridPane.add(dayLabel, i, 0);
-            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125)); 
+            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 60));
         }
     }
    @FXML
    private void Cancel() {
        // Reset the search and filter fields
        searchField.setText("");
-       filterType.setValue("Matière"); // or your default value
-       filterChoice.setValue("Reservation de salles"); // or your default value
+       filterType.setValue("Matière");
+       filterChoice.setValue("Reservation de salles");
        
        
        edtPerso.set(true); 
@@ -283,18 +282,7 @@ public class MainSceneController {
         displayMonthView();
     }
 
-private void displayMonthEvents(LocalDate month) {
-    YearMonth yearMonth = YearMonth.from(month);
-    int totalDaysInMonth = yearMonth.lengthOfMonth();
-
-
-    for (int day = 1; day <= totalDaysInMonth; day++) {
-        LocalDate currentDate = yearMonth.atDay(day);
-        displayEventsForDay(currentDate); 
-    }
-}
-
-@FXML
+    @FXML
     private void loadPreviousMonth() {
         currentMonth = currentMonth.minusMonths(1);
         updateMonthView();
@@ -482,28 +470,18 @@ private void displayMonthEvents(LocalDate month) {
 
         });
     }
-
-    private void setWeekViewColumnWidths() {
-        int numberOfDaysInWeek = 7;
-        setColumnWidths(numberOfDaysInWeek);
-    }
-
-    private void setDayViewColumnWidths() {
-        int numberOfColumnsForDayView = 1;
-        setColumnWidths(numberOfColumnsForDayView);
-    }
-
     private void setupWeekdaysHeader() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE d MMM", Locale.FRENCH);
         for (int i = 0; i < 7; i++) {
             LocalDate date = currentMonday.plusDays(i);
             String headerText = date.format(formatter);
             Label dayLabel = new Label(headerText);
+            dayLabel.setMinSize(100, 100);
             
             dayLabel.setOnMouseClicked(e -> onDayHeaderClicked(date));
             
             scheduleGridPane.add(dayLabel, i + 1, 0);
-            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
+            GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 80));
         }
     }
 
@@ -542,8 +520,6 @@ private void displayMonthEvents(LocalDate month) {
         return indicators;
     }
 
-
-
     private void displayEventsForDay(LocalDate l) {
         for (Event event : events) {
             if (event.getStartDate() == null) {
@@ -561,7 +537,7 @@ private void displayMonthEvents(LocalDate month) {
         String headerText = date.format(formatter);
         Label dayLabel = new Label(headerText);
         scheduleGridPane.add(dayLabel, 1, 0);
-        GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 125));
+        GridPane.setMargin(dayLabel, new Insets(0, 0, 0, 100));
     }
     private void updateDayView() {
         clearGridPane();
@@ -620,10 +596,10 @@ private void displayMonthEvents(LocalDate month) {
         String message1 = event.getType() != null && !event.getType().isEmpty() ? "pour un(e) " + event.getType() + "\n" : "";
         String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "en " + event.getLocation() : "";
         String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
-        VBox eventBox = new VBox(new Text(event.getSubject()));
-            eventBox.getChildren().add(new Text(message3 +message1 +"\n"+ message2));
+        VBox eventBox = new VBox(new Label(event.getSubject()));
+            eventBox.getChildren().add(new Label(message3 +message1 +"\n"+ message2));
             for(String teacher : teachers) {
-                eventBox = new VBox(new Text(event.getSubject()));
+                eventBox = new VBox(new Label(event.getSubject()));
                 Hyperlink link = new Hyperlink(teacher.stripLeading());
                 link.setOnAction(e -> {
                     try {
@@ -637,7 +613,7 @@ private void displayMonthEvents(LocalDate month) {
                 eventBox.getChildren().add(link);
             }
 
-            eventBox.getChildren().add(new Text(message1 +"\n"+ message2));
+            eventBox.getChildren().add(new Label(message1 +"\n"+ message2));
         
         String backgroundColor = "lightblue";
         String textColor = "black";
@@ -658,7 +634,7 @@ private void displayMonthEvents(LocalDate month) {
         eventBox.setMinHeight(eventHeight);
         scheduleGridPane.add(eventBox, dayColumn, startRow, 4, durationInHalfHours);
         GridPane.setValignment(eventBox, VPos.TOP);
-        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
+        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 30));
     }
 
         private void setColumnWidths(int numberOfColumns) {
@@ -670,7 +646,6 @@ private void displayMonthEvents(LocalDate month) {
                 scheduleGridPane.getColumnConstraints().add(columnConstraints);
             }
         }
-    
 
     private void handleFilterTypeSelection(String selectedItem) {
         filterChoice.getItems().clear();
@@ -875,7 +850,6 @@ private void displayMonthEvents(LocalDate month) {
             }
         }
     }
-    
 
     @FXML
     private void handleSearchButton() throws IOException, ParseException {
@@ -959,6 +933,23 @@ private void displayMonthEvents(LocalDate month) {
         loadPersonalEvents();
     }
 
+    private void loadPersonalEvents() {
+        if (edtPerso.get() && ConnexionController.currentUser.eventPerso != null) {
+            for (Document d : ConnexionController.currentUser.eventPerso) {
+                Date startDate = d.getDate("startDate");
+                Date endDate = d.getDate("endDate");
+                String location = d.getString("location");
+                String fullName = ConnexionController.currentUser.nom + " " + ConnexionController.currentUser.prenom;
+                String subject = d.getString("subject");
+                String type = d.getString("type");
+                String color = d.getString("color");
+
+                Event event = new Event(startDate, endDate, fullName, location, subject, type, null, color);
+                events.add(event);
+            }
+        }
+    }
+
     @FXML
     private void loadCurrentWeek() {
         currentMonday = LocalDate.now().with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
@@ -1003,24 +994,23 @@ private void displayMonthEvents(LocalDate month) {
         String message2 = event.getLocation() != null && !event.getLocation().isEmpty() ? "dans la salle " + event.getLocation() : "";
         String message3 = teachersWithNewLines.length() > 0 ? " avec \n" + teachersWithNewLines.toString() : "";
 
-        VBox eventBox = new VBox(new Text(event.getSubject()));
-            eventBox.getChildren().add(new Text(message3 +message1 +"\n"+ message2 ));
+        VBox eventBox = new VBox(new Label(event.getSubject()));
+        eventBox.getChildren().add(new Label(message3 +message1 +"\n"+ message2 ));
         
-        
-            for(String teacher : teachers) {
-                eventBox = new VBox(new Text(event.getSubject()));
-                Hyperlink link = new Hyperlink(teacher.stripLeading());
-                link.setOnAction(e -> {
-                    try {
-                        String[] fullName = teacher.toLowerCase().split(" ");
-                        Desktop.getDesktop().mail(new URI("mailto:" + fullName[1] + "." + fullName[0] + "@univ-avignon.fr" + "?subject=" + event.getSubject().replace(" ", "%20")));
-                    }
-                    catch (Exception ex) {
-                        ex.printStackTrace();
-                    }
-                });
-                eventBox.getChildren().add(link);
-            eventBox.getChildren().add(new Text(message1 +"\n"+ message2));
+        for(String teacher : teachers) {
+            eventBox = new VBox(new Label(event.getSubject()));
+            Hyperlink link = new Hyperlink(teacher.stripLeading());
+            link.setOnAction(e -> {
+                try {
+                    String[] fullName = teacher.toLowerCase().split(" ");
+                    Desktop.getDesktop().mail(new URI("mailto:" + fullName[1] + "." + fullName[0] + "@univ-avignon.fr" + "?subject=" + event.getSubject().replace(" ", "%20")));
+                }
+                catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            });
+            eventBox.getChildren().add(link);
+            eventBox.getChildren().add(new Label(message1 +"\n"+ message2));
         }
         String backgroundColor = "lightblue";
         String textColor = "black";
@@ -1047,13 +1037,12 @@ private void displayMonthEvents(LocalDate month) {
 
         double eventHeight = durationInHalfHours * MIN_HEIGHT_PER_HALF_HOUR;
         eventBox.setMinHeight(eventHeight);
+        eventBox.setMinWidth(100.0);
+        eventBox.setPrefWidth(200.0);
         scheduleGridPane.add(eventBox, dayColumn, startRow, 1, durationInHalfHours);
         GridPane.setValignment(eventBox, VPos.TOP);
-        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 100));
+        GridPane.setMargin(eventBox, new Insets(MIN_HEIGHT_PER_HALF_HOUR / 2, 0, 0, 60));
     }
-
-
-
 
     private void createDefaultTimeSlots() {
         LocalTime startTime = LocalTime.of(8, 0);
@@ -1063,7 +1052,7 @@ private void displayMonthEvents(LocalDate month) {
         while (!startTime.isAfter(LocalTime.of(20, 0))) {
             Text timeText = new Text(startTime.toString());
             scheduleGridPane.add(timeText, 0, row);
-            GridPane.setMargin(timeText, new Insets(0,0,0,75));
+            GridPane.setMargin(timeText, new Insets(0,0,0,40));
 
             RowConstraints rowConstraints = new RowConstraints(MIN_HEIGHT_PER_HALF_HOUR);
             scheduleGridPane.getRowConstraints().add(rowConstraints);
